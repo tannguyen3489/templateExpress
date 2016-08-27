@@ -1,5 +1,7 @@
 exports.render = function(req, res) {
+
     res.render('index', {
-        title: 'Express'
+        title: 'Express',
+        locale: 'de'
     });
 };
