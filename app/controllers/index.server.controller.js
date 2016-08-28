@@ -5,3 +5,8 @@ exports.render = function(req, res) {
         locale: 'de'
     });
 };
+
+exports.api = function(req, res) {
+
+    res.send('aaaaaaaa');
+};
