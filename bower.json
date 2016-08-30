@@ -1,0 +1,21 @@
+{
+  "name": "MiLoSite",
+  "description": "",
+  "main": "",
+  "authors": [
+    "kevin <tannguyen3489@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/tannguyen3489/templateExpress",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.1.0"
+  }
+}
