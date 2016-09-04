@@ -10,8 +10,26 @@ import Page2 from "./components/page2";
 class App extends Component {
     render() {
         return (
-            <div>
-                <header>{ __("Hello World") }</header>
+            <div className="rootApp">
+                <div className="headerArea">
+                    <nav className="navbar navbar-default navbar-static-top">
+                        <div className="container-fluid">
+                            <div className="navbar-header">
+                                <a className="navbar-brand menu" href="#">
+                                    <img alt="Menu" src="/images/Menu_mobile.png"/>
+                                </a>
+                            </div>
+
+                            <div className="navbar-header">
+                                <a className="navbar-brand logo" href="#">
+                                    <img alt="Logo" src="/images/Logo.png"/>
+                                </a>
+                            </div>
+
+                            <p className="navbar-text rightMenu navbar-right"><span>Contatti</span><a href="#" className="navbar-link"></a></p>
+                        </div>
+                    </nav>
+                </div>
                 <menu>
                     <ul>
                         <li><Link to="/page1">Page1</Link></li>

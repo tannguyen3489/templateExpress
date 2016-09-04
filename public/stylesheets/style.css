@@ -1,8 +1,837 @@
+/*@font-face{*/
+    /*font-family:"Univers LT Std";*/
+    /*src:url('/fonts/universal-condensed.ttf');*/
+/*}*/
+
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    font: 16px Arial, Helvetica, Arial, sans-serif;
 }
 
-a {
-  color: #00B7FF;
+/*body, html {*/
+    /*padding: 0 !important;*/
+    /*margin: 0 !important;*/
+/*}*/
+
+#root {
+    max-width: 1920px;
+    margin: 0 auto;
+    background: #ffffff;
+}
+
+#root .navbar .container-fluid .navbar-header {
+    height: 45px;
+}
+
+#root .navbar {
+    /*height: 45px;*/
+    min-height: 45px;
+    margin: 0;
+    border-color: #999;
+
+}
+
+#root .navbar .navbar-brand.menu {
+    margin-left: 0;
+    padding-left: 5px;
+}
+
+#root .navbar .navbar-brand.logo {
+    margin-left: 25px;
+    padding-left: 0;
+    padding-top: 0;
+}
+
+#root p.navbar-text span {
+    position: relative;
+    top: -7px;
+}
+
+#root .collapsed.navbar-toggle {
+    border: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#root .collapsed.navbar-toggle:hover {
+    background: none;
+}
+
+#root .collapsed.navbar-toggle p.navbar-text {
+    margin-top: 8px;
+    margin-bottom: 0;
+}
+
+#root .navbar-brand {
+    height: 45px;
+}
+
+#root p.navbar-text {
+    margin-right: 5px;
+    font-size: 16px;
+    color: #008cd2;
+    cursor: pointer;
+    margin-top: 8px;
+    margin-bottom: 0;
+}
+
+#root div.body {
+    min-height: calc(100vh - 45px);
+}
+
+#root p.navbar-text a {
+    width: 35px;
+    height: 28px;
+    margin-left: 10px;
+    display: inline-block;
+    background: url('../images/Main_button.png');
+}
+
+#root .body div.nexButton span {
+    color: #008cd2;
+    font-size: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+    position: absolute;
+}
+
+#root .body div.nexButton {
+    width: 124px;
+    height: 40px;
+    position: relative;
+    cursor: pointer;
+    background: url('../images/Invio_bg.png');
+    background-size: 124px 40px;
+}
+
+#root .formInfo div.row > h2.titleForm {
+    font-size: 30px;
+    color: #4c4c4c;
+    font-weight: normal;
+}
+
+#root .formInfo .container-fluid form div.row.infoPart .form-group label {
+    font-size: 12px;
+}
+
+#root .formInfo .form-group label {
+    font-size: 16px;
+    color: #4c4c4c;
+    font-weight: normal;
+}
+
+#root .formInfo {
+    padding-top: 120px;
+    padding-bottom: 230px;
+}
+
+@media (min-width: 768px) {
+    #root .formInfo .container-fluid {
+        padding-left: 135px;
+    }
+}
+
+#root .formInfo .container-fluid form > div.row:before {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 100%;
+    border-bottom: 1px dashed #008cd2;
+}
+
+#root .formInfo .container-fluid form > div.row.bottomBorder:after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 100%;
+    border-bottom: 1px dashed #008cd2;
+}
+
+#root .formInfo .container-fluid form > div.row.noBorder:before {
+    border-bottom: none;
+}
+
+#root .formInfo .container-fluid input[type=text],
+#root .formInfo .container-fluid input[type=email],
+#root .formInfo .container-fluid input[type=tel],
+#root .formInfo .container-fluid input[type=number] {
+    border-radius: 0;
+    border-color: #008cd2;
+    color: #008cd2;
+    font-size: 16px;
+    height: 40px;
+}
+
+#root .formInfo .container-fluid span.select2.select2-container span.select2-selection .select2-selection__arrow {
+    background: url('../images/1280_formulario.png');
+    width: 30px;
+    height: 30px;
+    right: 0;
+}
+
+#root .formInfo .container-fluid span.select2.select2-container span.select2-selection .select2-selection__arrow > b {
+    display: none;
+}
+
+#root .formInfo .container-fluid span.select2.select2-container span.select2-selection .select2-selection__rendered {
+    color: #008cd2;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+#root .formInfo .container-fluid .bootstrap-select {
+    /*border: #008cd2 solid 1px;*/
+    color: #008cd2;
+    font-size: 16px;
+    height: 30px;
+    cursor: pointer;
+}
+
+#root .formInfo .container-fluid .bootstrap-select > button:after {
+    width: 30px;
+    height: 30px;
+    content: '';
+    position: absolute;
+    right: -1px;
+    top: -1px;
+    background: url('../images/1280_formulario.png');
+}
+
+#root .formInfo .container-fluid .bootstrap-select > button {
+    height: 30px;
+    border: #008cd2 solid 1px;
+    background: #fff;
+    box-shadow: none;
+    outline: none !important;
+
+}
+
+#root .formInfo .container-fluid .bootstrap-select > button span {
+    color: #008cd2;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+#root .formInfo .container-fluid select {
+    border-color: #008cd2;
+    color: #008cd2;
+    font-size: 16px;
+    height: 30px;
+    cursor: pointer;
+}
+
+#root .formInfo .container-fluid div.selectWrap {
+    position: relative;
+}
+
+#root .formInfo .container-fluid div.selectWrap:before {
+    content: '';
+    position: absolute;
+    right: 0;
+    pointer-events: none;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background: url('../images/1280_formulario.png');
+}
+
+/*#root .formInfo .container-fluid div.selectWrap > select{*/
+/*width: calc(100% - 30px);*/
+/*border-bottom-right-radius: 0;*/
+/*border-top-right-radius: 0;*/
+/*border-right: 0;*/
+
+/*}*/
+
+input[type=checkbox]:before {
+    opacity: 1;
+    content: '';
+    background: url('../images/Dot_9_not_active.jpg') center no-repeat transparent;
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+}
+
+input[type=checkbox]:checked:before {
+    opacity: 1;
+    content: '';
+    background: url('../images/Dot_9.jpg') center no-repeat transparent;
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+}
+
+#root .formInfo h1 {
+    margin-bottom: 26px;
+    font-size: 30px;
+}
+
+#root .formInfo h1.contenuti,
+#root .formInfo h1.commentFinal {
+    margin-top: 50px;
+}
+
+#root .formInfo h1.commentFinal {
+    margin-bottom: 30px;
+}
+
+#root .formInfo .form-group {
+    margin-bottom: 20px;
+}
+
+#root .formInfo .form-group > .form-group {
+    margin-bottom: 12px;
+}
+
+#root .formInfo .form-group > .form-group > label {
+    margin-bottom: 0;
+}
+
+#root .formInfo form .part1 > div > :nth-child(1) {
+    margin-top: 15px;
+}
+
+#root .formInfo .container-fluid form div.form-group div.checkbox label > span {
+    margin-left: 18px;
+}
+
+#root .formInfo .container-fluid form div.form-group input[type=checkbox] {
+    margin-top: 0;
+}
+
+#root .formInfo .container-fluid form div.form-group .checkbox {
+    /*padding-top: 5px;*/
+}
+
+#root .formInfo .container-fluid form > div.row > div.labelInputGroup {
+    padding-left: 12px;
+    max-width: 500px;
+}
+
+#root .formInfo .container-fluid form > div.row > div.labelInputGroup label {
+    width: calc(100% - 4px);
+}
+
+#root .formInfo form .part1 div.labelInputGroup > div.form-group {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#root .formInfo form .stampati h1 {
+    margin-top: 45px;
+}
+
+#root .formInfo .container-fluid .labelInputGroup .selectWrap {
+    margin-left: 19px;
+    display: inline-block;
+}
+
+#root .formInfo .container-fluid .labelInputGroup .selectWrap select {
+    width: 180px;
+}
+
+#root .formInfo .container-fluid form .labelInputGroup div.form-group div.checkbox label > div.selectWrap + span {
+    margin-left: 26px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+#root .formInfo form div.row div.labelInputGroup > div.form-group.inputSelectGroup {
+    margin-bottom: 10px;
+}
+
+#root .formInfo form div.row div.labelInputGroup > div.form-group.inputSelectGroup input[type=checkbox] {
+    margin-top: 6px;
+}
+
+#root .formInfo .container-fluid form .labelTextareaGroup textarea {
+    margin-top: 20px;
+    margin-left: 18px;
+    height: 120px;
+    max-height: 160px;
+    border: #008cd2 1px solid;
+    border-radius: 0;
+    font-size: 16px;
+    color: #008cd2;
+}
+
+#root .formInfo .container-fluid form textarea {
+    border: #008cd2 1px solid;
+    border-radius: 0;
+    color: #008cd2;
+    font-size: 16px;
+}
+
+#root .formInfo .container-fluid form textarea.finalComment {
+    height: 300px;
+}
+
+#root .formInfo .container-fluid div.row.nextBtn {
+    margin-top: 38px;
+}
+
+#root .navbar .container-fluid .navbar-header .navbar-brand.menu img {
+    width: 25px;
+    height: 15px;
+}
+
+#root .navbar .container-fluid .navbar-header .navbar-brand.logo img {
+    width: 65px;
+    height: 38px;
+}
+
+#root .formInfo div.formHeaderTitle h1 {
+    font-size: 60px;
+    color: #008cd2;
+    margin-top: 0;
+    margin-bottom: 70px;
+}
+
+#leftMenu .modal-dialog  {
+    /*width: 100%;*/
+    /*height: 100%;*/
+    margin: 0;
+    position: static;
+}
+
+#leftMenu .modal-dialog .modal-content {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 0;
+    width: 320px;
+    background-color: #999999;
+    height: 100vh;
+}
+
+.modal-backdrop.in {
+    opacity: 0.85;
+}
+
+#leftMenu .modal-dialog .btnArea {
+    text-align: right;
+}
+
+#leftMenu .modal-dialog .btnArea > span:first-child {
+    margin-right: 15px;
+    color: #fff;
+    font-size: 16px;
+    position: relative;
+    top: -12px;
+}
+
+#leftMenu .modal-dialog .btnClose {
+    width: 35px;
+    height: 35px;
+    background-size: 35px;
+    display: inline-block;
+    background-image: url('../images/X.png');
+    cursor: pointer;
+}
+#leftMenu .modal-dialog .languageArea {
+    text-align: center;
+    margin-top: 40px;
+
+}
+
+#leftMenu .modal-dialog .locale {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    border: #fff 1px solid;
+    border-radius: 4px;
+    padding-top: 6px;
+    color: #fff;
+    margin: 0 10px;
+    cursor: pointer;
+}
+#leftMenu .modal-dialog .locale.active {
+    background-color: #ffff00;
+    border: none;
+    color: #000;
+    border: #ffff00 1px solid;
+}
+
+#leftMenu .modal-dialog .menuLinksArea {
+    margin-top: 50px;
+}
+
+#leftMenu .modal-dialog .menuLinksArea .gotoLink a:hover {
+    text-decoration: none;
+    color: #ffff00;
+}
+#leftMenu .modal-dialog .menuLinksArea .gotoLink {
+    padding-bottom: 18px;
+    padding-top: 18px;
+    border-bottom: #b3b3b3 solid 1px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+#leftMenu .modal-dialog .menuLinksArea .gotoLink.active a {
+    color: #ffff00;
+}
+
+#leftMenu .modal-dialog .menuLinksArea .gotoLink a {
+    font-size: 24px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.headerArea {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+}
+
+.headerArea > nav {
+    background-color: #fff;
+}
+
+
+#rootApp .homeSlider {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+#rootApp .homeSlider:not(.showcaseSlider) .carousel .carousel-indicators,
+#rootApp .homeSlider:not(.showcaseSlider) .carousel .carousel-control{
+    display: none;
+}
+
+#rootApp .homeSlider:not(.productSlider) .carousel .carousel-indicators,
+#rootApp .homeSlider:not(.productSlider) .carousel .carousel-control{
+    display: none;
+}
+
+
+#rootApp .homeSlider .carousel {
+    height: 100%;
+}
+
+#rootApp .homeSlider .carousel .carousel-inner {
+    height: 100%;
+    background-color: #000;
+}
+
+#rootApp .homeSlider .carousel .carousel-inner .item {
+    margin: auto 0;
+    /*position: relative;*/
+    /*top: 50%;*/
+    /*transform: translateY(-50%);*/
+}
+/*#rootApp .homeSlider .carousel .carousel-inner .item img{*/
+    /*position: absolute;*/
+    /*top: 50%;*/
+    /*left: 50%;*/
+    /*bottom: 0;*/
+    /*max-height: 100%;*/
+    /*transform: translate(-50%, -50%);*/
+/*}*/
+
+#rootApp .homeSlider .carousel .carousel-inner .item {
+    text-align: center;
+    position: relative;
+    height: 100%;
+}
+
+#rootApp .homeSlider .carousel .carousel-inner .item .wrapSlider{
+    display: inline;
+    position: relative;
+}
+#rootApp .homeSlider .carousel .carousel-inner .item img {
+    max-height: 100%;
+    display: inline;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+    /*#rootApp .homeSlider .carousel .carousel-inner .item img {*/
+    /*max-width: 100%;*/
+    /*max-height: 100%;*/
+    /*!*max-width: calc(100% - 300px);*!*/
+    /*display: inline;*/
+
+    /*position: relative;*/
+    /*top: 50%;*/
+    /*!*left: 50%;*!*/
+    /*transform: translateY(-50%);*/
+/*}*/
+
+/*#rootApp .homeSlider .carousel .carousel-inner .item .carousel-caption {*/
+    /*bottom: auto;*/
+    /*text-align: left;*/
+    /*font-size: 60px;*/
+    /*!*font-size: 3vw;*!*/
+    /*font-weight: bold;*/
+    /*right: auto;*/
+    /*color: #fff;*/
+    /*top: 50%;*/
+    /*left: 40px;*/
+    /*transform: translate(0, -50%);*/
+    /*padding: 0;*/
+    /*margin: 0;*/
+/*}*/
+
+#rootApp .homeSlider .carousel .carousel-inner .item .carousel-caption {
+    bottom: auto;
+    text-align: left;
+    font-size: 60px;
+    /*font-size: 3vw;*/
+    font-weight: bold;
+    right: auto;
+    color: #fff;
+    top: 30px;
+    left: 50%;
+    transform: translate(-68%, 0%);
+    padding: 0;
+    margin: 0;
+    position: fixed;
+}
+
+#rootApp .homeSlider .carousel .carousel-control {
+    width: 5%;
+}
+
+div.body {
+    margin-top: 45px;
+    position: relative;
+}
+
+.contact .container-fluid {
+    padding-top: 80px;
+    padding-bottom: 150px;
+}
+
+.contact .container-fluid h1.titleForm {
+    font-size: 60px;
+    color: #008cd2;
+}
+
+.contact .container-fluid p {
+    margin-top: 40px;
+    margin-bottom: 110px;
+    font-size: 24px;
+    color: #999999;
+    max-width: 860px;
+}
+
+.contact .container-fluid .row.ownerInfo {
+    margin-top: 50px;
+}
+
+.contact .container-fluid .userImage {
+    width: 240px;
+    height: 290px;
+    float: left;
+}
+
+.contact .container-fluid .infos {
+    float: left;
+    width: calc(100% - 290px);
+    color: #4c4c4c;
+    min-width: 300px;
+}
+
+.contact .container-fluid .infos .info:nth-child(1) {
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.contact .container-fluid .infos .info:nth-child(2) {
+    font-size: 16px;
+    margin-top: 24px;
+}
+.contact .container-fluid .infos .info:nth-child(3) {
+    font-size: 16px;
+    color: #999999;
+    margin-top: 20px;
+}
+.contact .container-fluid .infos .info:nth-child(4) {
+    font-size: 16px;
+    margin-top: 10px;
+    color: #999999;
+}
+
+.contact .container-fluid .infos .viewProfile {
+    width: 182px;
+    height: 36px;
+    margin-top: 30px;
+    font-size: 16px;
+    color: #008cd2;
+}
+
+.myBtn {
+    background: url('../images/nextBtn.png') center right 7px no-repeat;
+    background-size: 20px 17px;
+    border: 2px #ffff00 solid;
+    text-align: left;
+    color: #008cd2;
+    padding-right: 50px;
+}
+
+.myBtn.closeBtn {
+    background-image: url('../images/closeIcon.png');
+    background-size: 15px 15px;
+    height: 40px;
+    font-size: 16px;
+    padding-top: 9px;
+    cursor: pointer;
+}
+
+.myBtn:hover {
+    color: #008cd2;
+}
+
+.contact .chiSite {
+    margin-top: 130px;
+}
+.contact .chiSite + div.row p:first-child {
+    margin-bottom: 0;
+}
+
+.contact .chiSite + div.row p:last-child {
+    margin-top: 15px;
+}
+
+.modal.userInfoModal {
+    /*background: rgba(38, 38, 38, 0.85);*/
+}
+
+.modal.userInfoModal .modal-content {
+    max-width: 650px;
+    min-height: 445px;
+    background-color: #fafafa;
+    border-radius: 0;
+}
+
+.modal.userInfoModal .myBtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.modal.userInfoModal .modal-content .modal-body {
+    padding: 30px;
+}
+
+.modal.userInfoModal .modal-content .modal-body .ownerInfo > div > div {
+    float: left;
+}
+
+.modal.userInfoModal .modal-content .modal-body .ownerInfo .userImage{
+    width: 110px;
+    height: 130px;
+    margin-right: 40px;
+}
+
+.modal.userInfoModal .modal-content .modal-body .ownerInfo .infos .info:first-child {
+    margin-top: 30px;
+    font-size: 30px;
+    color: #4c4c4c;
+}
+.modal.userInfoModal .modal-content .modal-body .ownerInfo .infos .info:last-child {
+    font-size: 16px;
+    color: #4c4c4c;
+    margin-top: 20px;
+}
+
+.modal.userInfoModal .modal-content .modal-body .ownerInfo p {
+    margin-top: 60px;
+    font-size: 16px;
+    color: #999999;
+}
+
+.modal.userInfoModal .modal-dialog {
+    margin: 0;
+    top: 50%;
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    max-width: 650px;
+    transform: translate(-50%, -50%);
+}
+
+#rootApp .homeSlider.showcaseSlider .carousel .carousel-inner .item .carousel-caption {
+    transform: translate(-150%, 0);
+    font-weight: bold;
+    background-color: rgba(0,0,0, 0.4);
+    padding: 0 15px;
+}
+
+#rootApp .homeSlider.showcaseSlider.productSlider .carousel .carousel-inner .item .carousel-caption {
+    transform: translate(-72%, 0);
+}
+
+#rootApp .homeSlider.showcaseSlider .carousel .carousel-control > span:first-child:before{
+    background: url('../images/nextSlider.png');
+    width: 40px;
+    height: 40px;
+    content: '';
+    display: inline-block;
+}
+
+#rootApp .homeSlider.showcaseSlider .carousel .left.carousel-control > span:first-child:before{
+    background: url('../images/nextSlider.png');
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+#root .formInfo.contact .container-fluid form textarea.finalComment{
+    min-width: 0;
+    width: 490px;
+}
+#root .formInfo.contact {
+    padding-bottom: 0;
+}
+
+#root .formInfo.contact .phoneNumber{
+    font-size: 16px;
+    color: #008cd2;
+}
+
+#root .formInfo.contact .phoneNumber:before {
+    display: inline-block;
+    width: 18px;
+    content: '';
+    height: 16px;
+    margin-right: 20px;
+    background: url('../images/Icon_phone.png') center center no-repeat;
+}
+
+#root .formInfo.contact .contactEmail{
+    font-size: 16px;
+    color: #008cd2;
+    margin-top: 28px;
+    margin-bottom: 30px;
+}
+
+#root .formInfo.contact .contactEmail:before{
+    display: inline-block;
+    width: 20px;
+    height: 16px;
+    content: '';
+    margin-right: 20px;
+    background: url('../images/Icon_e-mail.png') center center no-repeat;
+}
+
+#root .formInfo.contact div.row > div:first-child {
+    min-width: 368px;
+}
+
+#root .formInfo.contact .formHeaderTitle > div:last-child {
+    padding-left: 12px;
 }

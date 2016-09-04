@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/libs/bootstrap-select/js/bootstrap-select.js"></script>
+    <script src="/scripts/utils.js"></script>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/libs/bootstrap-select/css/bootstrap-select.min.css"/>
+    <link rel='stylesheet' href='/stylesheets/minireset.min.css'/>
+    <link rel='stylesheet' href='/stylesheets/animate.css'/>
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+    <link rel='stylesheet' href='/stylesheets/media.css'/>
+</head>
+<body>
+<div id="root">
+    <div id="rootApp">
+        <%- include('sites/leftmenu', {}) %>
+        <div class="headerArea">
+            <nav class="navbar navbar-default navbar-static-top">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand menu" href="#">
+                            <img alt="Menu" src="/images/Menu_mobile.png"/>
+                        </a>
+                        <a class="navbar-brand logo" href="/home">
+                            <img alt="Logo" src="/images/Logo.png"/>
+                        </a>
+
+                        <div class="collapsed navbar-toggle">
+                            <p class="navbar-text rightMenu">
+                                <span>Contatti</span>
+                                <a href="#" class="navbar-link"></a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div id="navbar" class="navbar-collapse collapse navbar-right" aria-expanded="false"
+                         style="height: 1px;">
+                        <p class="navbar-text rightMenu ">
+                            <span>Contatti</span>
+                            <a href="#" class="navbar-link"></a>
+                        </p>
+                    </div>
+
+                </div>
+
+            </nav>
+        </div>
+        <div class="body">
+            <%- include('sites/' + fileName, {}) %>
+        </div>
+    </div>
+
+</div>
+</body>
+<!--<script src="/<%= locale %>.bundle.js"></script>-->
+</html>

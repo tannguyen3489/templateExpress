@@ -1,0 +1,256 @@
+@media (max-width: 530px) {
+    #rootApp .homeSlider .carousel .carousel-inner .item .carousel-caption {
+        left: 10px;
+        transform: translate(0, 0);
+    }
+}
+
+@media (max-width: 1070px) {
+    #rootApp .homeSlider.showcaseSlider .carousel .carousel-inner .item .carousel-caption {
+        left: 10%;
+        transform: translate(0, 0);
+    }
+}
+
+@media (min-width: 580px) {
+    .contact .container-fluid .infos {
+        padding-left: 50px;
+    }
+}
+
+
+
+@media (min-width: 768px) {
+    #root .formInfo .container-fluid {
+        padding-left: 100px;
+    }
+
+    #root .formInfo .container-fluid form div.row.infoPart input{
+        max-width: 300px;
+    }
+
+    #root .formInfo .container-fluid form div.row.part1 .bootstrap-select {
+        max-width: 250px;
+    }
+
+    #root .formInfo .container-fluid form > div.row{
+        padding-left: 50px;
+
+    }
+
+    #root .formInfo .container-fluid form > div.row:before,
+    #root .formInfo .container-fluid form > div.row.bottomBorder:after {
+        max-width: 550px;
+    }
+
+    #root .formInfo .container-fluid div.selectWrap {
+        max-width: 250px;
+    }
+
+    #root .formInfo .container-fluid form > div.row > div {
+        padding-left: 50px;
+    }
+
+    #root .formInfo .container-fluid form textarea.finalComment {
+        width: 500px;
+        min-width: 500px;
+        max-width: 500px;
+        height: 300px;
+    }
+
+    #root .formInfo .container-fluid form .labelTextareaGroup textarea {
+        margin-top: 20px;
+        margin-left: 18px;
+        width: 300px;
+        max-width: 500px;
+        height: 120px;
+        max-height: 160px;
+        border: #008cd2 1px solid;
+        border-radius: 0;
+    }
+
+    .contact .container-fluid {
+        padding-left: 145px;
+    }
+}
+
+@media (min-width: 1920px) {
+    #root .formInfo h1 {
+        font-size: 45px;
+    }
+
+    #root .formInfo .form-group label {
+        font-size: 24px;
+    }
+
+    body {
+        font-size: 24px;
+    }
+    #root .formInfo .container-fluid select {
+        font-size: 24px;
+    }
+
+    #root .formInfo .container-fluid input[type=text] ,
+    #root .formInfo .container-fluid input[type=email],
+    #root .formInfo .container-fluid input[type=tel],
+    #root .formInfo .container-fluid input[type=number] {
+        font-size: 24px;
+    }
+
+    #root .formInfo .container-fluid form .labelTextareaGroup textarea {
+        font-size: 24px;
+    }
+
+    #root .formInfo .container-fluid select {
+        height: 46px;
+        border-radius: 7px;
+        box-shadow: inset 0 0 4px #84c7e9;
+    }
+
+    #root .formInfo .container-fluid form > div.row > div.labelInputGroup {
+        max-width: 810px;
+    }
+    #root .formInfo .container-fluid form > div.row:before, #root .formInfo .container-fluid form > div.row.bottomBorder:after {
+        max-width: 810px;
+    }
+
+    input[type=checkbox]:before{
+        position: relative;
+        top: -5px;
+    }
+
+    input[type=checkbox] {
+        transform: translateY(5px);
+    }
+
+    #root .formInfo .container-fluid div.selectWrap:before {
+        width: 45px;
+        height: 46px;
+        background: url('../images/1920_formulario.png');
+    }
+
+    #root .formInfo .container-fluid .labelInputGroup .selectWrap select {
+        width: 270px;
+    }
+    #root .formInfo .container-fluid div.selectWrap {
+        max-width: 370px;
+    }
+
+    #root .formInfo .container-fluid input[type=text],
+    #root .formInfo .container-fluid input[type=email],
+    #root .formInfo .container-fluid input[type=tel],
+    #root .formInfo .container-fluid input[type=number] {
+        height: 60px;
+    }
+
+    #root .formInfo .container-fluid form div.row.infoPart input {
+        max-width: 450px;
+    }
+
+    #root .formInfo .container-fluid form div.row.infoPart .form-group  label {
+        font-size: 18px;
+    }
+
+    #root .formInfo form div.row div.labelInputGroup > div.form-group.inputSelectGroup input[type=checkbox] {
+        transform: translateY(12px);
+    }
+
+    #root .formInfo .container-fluid form .labelTextareaGroup textarea {
+        width: 450px;
+        height: 180px;
+
+        max-width: 760px;
+        min-height: 180px;
+        max-height: 220px;
+    }
+    #root .formInfo .form-group {
+        margin-bottom: 30px;
+    }
+
+    #root .navbar {
+        min-height: 70px;
+    }
+    #root .navbar-brand {
+        height: 70px;
+    }
+
+    #root p.navbar-text {
+        margin-top: 18px;
+    }
+
+    #root .navbar .container-fluid .navbar-header .navbar-brand.menu img {
+        width: auto;
+        height: auto;
+        margin-left: 22px;
+        margin-top: 6px;
+    }
+
+    #root .navbar .container-fluid .navbar-header .navbar-brand.logo img {
+        width: auto;
+        height: auto;
+    }
+
+    #root .navbar .navbar-brand.logo {
+        margin-left: 45px;
+    }
+
+    #root .formInfo .container-fluid form > div.row > div {
+        padding-left: 75px;
+    }
+
+    #root .body div.nexButton {
+        width: 178px;
+        height: 61px;
+        background: url('../images/Invio_bg.png');
+        background-size: 178px 61px;
+
+    }
+    #root .body div.nexButton span {
+        font-size: 24px;
+    }
+
+    #root .formInfo .container-fluid form > div.row > div.labelInputGroup {
+        padding-left: 36px;
+    }
+
+    #root .formInfo div.formHeaderTitle h1 {
+        font-size: 90px;
+    }
+
+    #leftMenu .modal-dialog .languageArea {
+        font-size: 16px;
+    }
+
+    #root .formInfo .container-fluid form textarea {
+        font-size: 24px;
+    }
+
+    #root .formInfo {
+        padding-top: 146px;
+    }
+
+    /*#rootApp .homeSlider {*/
+        /*padding-top: 70px;*/
+    /*}*/
+
+    div.body {
+        margin-top: 70px;
+    }
+
+    #root div.body {
+        min-height: calc(100vh - 70px);
+    }
+    .contact .container-fluid {
+        padding-left: 224px;
+    }
+    #root .formInfo.contact .contactEmail {
+        font-size: 24px;
+    }
+    #root .formInfo.contact .phoneNumber {
+        font-size: 24px;
+    }
+
+    #root .formInfo.contact .formHeaderTitle > div:last-child {
+        padding-left: 34px;
+    }
+}
