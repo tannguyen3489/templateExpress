@@ -501,15 +501,15 @@ input[type=checkbox]:checked:before {
     left: 0;
     right: 0;
 }
-#rootApp .homeSlider:not(.showcaseSlider) .carousel .carousel-indicators,
-#rootApp .homeSlider:not(.showcaseSlider) .carousel .carousel-control{
+#rootApp .homeSlider:not(.showcaseSlider):not(.productSlider) .carousel .carousel-indicators,
+#rootApp .homeSlider:not(.showcaseSlider):not(.productSlider) .carousel .carousel-control{
     display: none;
 }
 
-#rootApp .homeSlider:not(.productSlider) .carousel .carousel-indicators,
-#rootApp .homeSlider:not(.productSlider) .carousel .carousel-control{
-    display: none;
-}
+/*#rootApp .homeSlider:not(.productSlider) .carousel .carousel-indicators,*/
+/*#rootApp .homeSlider:not(.productSlider) .carousel .carousel-control{*/
+    /*display: none;*/
+/*}*/
 
 
 #rootApp .homeSlider .carousel {
