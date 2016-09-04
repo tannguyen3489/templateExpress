@@ -24,11 +24,11 @@ module.exports = function () {
     app.set('views', './app/views');
     app.set('view engine', 'ejs');
 
-    app.use(session({
-        saveUninitialized: true,
-        resave: true,
-        secret: config.sessionSecret
-    }));
+    // app.use(session({
+    //     saveUninitialized: true,
+    //     resave: true,
+    //     secret: config.sessionSecret
+    // }));
 
 
     app.use(express.static('./public'));
