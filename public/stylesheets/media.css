@@ -10,6 +10,15 @@
         left: 10%;
         transform: translate(0, 0);
     }
+
+    #rootApp .homeSlider .carousel .carousel-inner .item .wrapSlider {
+        position: static;
+    }
+
+    #rootApp .homeSlider .carousel .carousel-inner .item img {
+        top: 50%;
+        transform: translateY(-50%);
+    }
 }
 
 @media (min-width: 580px) {
