@@ -5,7 +5,7 @@ module.exports = function (app) {
   app.get('/', index.home);
   // app.get('/*', index.render);
   app.get('/formal', index.formal);
-  app.get('/', index.home);
+  app.get('/home', index.home);
   app.get('/about', index.about);
   app.get('/showcase', index.showcase);
   app.get('/product', index.product);
