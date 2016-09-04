@@ -836,3 +836,7 @@ div.body {
 #root .formInfo.contact .formHeaderTitle > div:last-child {
     padding-left: 12px;
 }
+
+#root .formInfo.contact {
+    padding-top: 20px;
+}
