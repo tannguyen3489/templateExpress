@@ -840,3 +840,7 @@ div.body {
 #root .formInfo.contact {
     padding-top: 20px;
 }
+
+#root .formInfo.contact .container-fluid {
+    padding-bottom: 0;
+}
