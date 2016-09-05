@@ -21,13 +21,6 @@
     }
 }
 
-@media (min-width: 580px) {
-    .contact .container-fluid .infos {
-        padding-left: 50px;
-    }
-}
-
-
 
 @media (min-width: 768px) {
     #root .formInfo .container-fluid {
