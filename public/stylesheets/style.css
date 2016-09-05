@@ -78,7 +78,7 @@ body {
 
 #root div.body {
     min-height: calc(100vh - 45px);
-    background-color: #fafafa;
+    background-color: rgba(243, 243, 243, 0.5);
 }
 
 #root p.navbar-text a {
@@ -711,7 +711,7 @@ div.body {
 .modal.userInfoModal .modal-content {
     max-width: 650px;
     min-height: 445px;
-    background-color: #fafafa;
+    background-color: rgba(243, 243, 243, 0.5);
     border-radius: 0;
 }
 
@@ -849,11 +849,11 @@ div.body {
 
 #rootApp .body.contact,
 #rootApp .body.formal {
-    background-color: #fafafa;
+    background-color: rgba(243, 243, 243, 0.5);
 }
 
 #rootApp .body.about div.contact > div.container-fluid:first-child {
-    background-color: #fafafa;
+    background-color: rgba(243, 243, 243, 0.5);
     padding-bottom: 0;
 }
 #rootApp .body.about div.contact > div.container-fluid:nth-child(2) {
