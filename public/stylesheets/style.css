@@ -78,6 +78,7 @@ body {
 
 #root div.body {
     min-height: calc(100vh - 45px);
+    background-color: #fafafa;
 }
 
 #root p.navbar-text a {
@@ -124,7 +125,7 @@ body {
 
 #root .formInfo {
     padding-top: 120px;
-    padding-bottom: 230px;
+    padding-bottom: 160px;
 }
 
 @media (min-width: 768px) {
@@ -670,7 +671,7 @@ div.body {
 }
 
 .myBtn {
-    background: url('../images/nextBtn.png') center right 7px no-repeat;
+    background: url('../images/nextBtn.png') center right 7px no-repeat #fff;
     background-size: 20px 17px;
     border: 2px #ffff00 solid;
     text-align: left;
@@ -796,7 +797,7 @@ div.body {
     width: 490px;
 }
 #root .formInfo.contact {
-    padding-bottom: 0;
+    padding-bottom: 160px;
 }
 
 #root .formInfo.contact .phoneNumber{
@@ -843,4 +844,22 @@ div.body {
 
 #root .formInfo.contact .container-fluid {
     padding-bottom: 0;
+}
+
+
+#rootApp .body.contact,
+#rootApp .body.formal {
+    background-color: #fafafa;
+}
+
+#rootApp .body.about div.contact > div.container-fluid:first-child {
+    background-color: #fafafa;
+    padding-bottom: 0;
+}
+#rootApp .body.about div.contact > div.container-fluid:nth-child(2) {
+    padding-top: 0;
+}
+
+#rootApp .body.about div.contact > div.container-fluid:last-child {
+    padding-bottom: 160px;
 }
