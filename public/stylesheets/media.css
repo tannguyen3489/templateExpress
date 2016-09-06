@@ -199,9 +199,9 @@
         margin-left: 45px;
     }
 
-    #root .formInfo .container-fluid form > div.row > div {
-        padding-left: 75px;
-    }
+    /*#root .formInfo .container-fluid form > div.row > div {*/
+    /*padding-left: 0px;*/
+    /*}*/
 
     #root .body div.nexButton {
         width: 178px;
@@ -214,9 +214,9 @@
         font-size: 24px;
     }
 
-    #root .formInfo .container-fluid form > div.row > div.labelInputGroup {
-        padding-left: 36px;
-    }
+    /*#root .formInfo .container-fluid form > div.row > div.labelInputGroup {*/
+    /*padding-left: 36px;*/
+    /*}*/
 
     #root .formInfo div.formHeaderTitle h1 {
         font-size: 90px;
