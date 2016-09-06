@@ -22,22 +22,22 @@ class Formal extends Component {
                             <div className="row infoPart noBorder">
                                 <div className="col-md-6 col-sm-6 col-md-offset-1">
                                     <div className="form-group">
-                                        <label for="name">NOME E COGNOME</label>
+                                        <label htmlFor="name">NOME E COGNOME</label>
                                         <input value="" type="text" className="form-control"
                                                id="name" placeholder="Name"/>
                                     </div>
                                     <div className="form-group">
-                                        <label for="email">E-Mail</label>
+                                        <label htmlFor="email">E-Mail</label>
                                         <input value="" type="email" className="form-control"
                                                id="email" placeholder="Email"/>
                                     </div>
                                     <div className="form-group">
-                                        <label for="phone">TELEFONO</label>
+                                        <label htmlFor="phone">TELEFONO</label>
                                         <input value="" type="tel" className="form-control"
                                                id="phone" placeholder="Phone"/>
                                     </div>
                                     <div className="form-group">
-                                        <label for="country">PAESE</label>
+                                        <label htmlFor="country">PAESE</label>
                                         <input value="" type="text" className="form-control"
                                                id="country" placeholder="Country"/>
                                     </div>
@@ -56,7 +56,7 @@ class Formal extends Component {
 
                                     <div className="form-group">
                                         <div className="form-group">
-                                            <label for="">Si tratta di un nuovo progetto o di un rebrand
+                                            <label htmlFor="">Si tratta di un nuovo progetto o di un rebrand
                                                 ?</label>
                                         </div>
                                         <div className="selectWrap">
@@ -74,7 +74,7 @@ class Formal extends Component {
 
                                     <div className="form-group">
                                         <div className="form-group">
-                                            <label for="">In quanto tempo volete che sia terminato
+                                            <label htmlFor="">In quanto tempo volete che sia terminato
                                                 ?</label>
                                         </div>
                                         <div className="selectWrap">
@@ -93,7 +93,7 @@ class Formal extends Component {
                                     <div className="form-group">
                                         <div className="form-group">
                                             <div className="form-group">
-                                                <label for="">Quanto intendete investire ?</label>
+                                                <label htmlFor="">Quanto intendete investire ?</label>
                                             </div>
                                             <div className="selectWrap">
                                                 <select className="form-control">
@@ -408,7 +408,7 @@ class Formal extends Component {
                                     <div className="form-group">
                                         <div className="form-group">
                                             <div className="form-group">
-                                                <label for="">Qual è lo stato attuale dei vostri contenuti?</label>
+                                                <label htmlFor="">Qual è lo stato attuale dei vostri contenuti?</label>
                                             </div>
                                             <div className="selectWrap">
                                                 <select className="form-control">
