@@ -63,13 +63,33 @@
 
 	var _reactRouter = __webpack_require__(173);
 
-	var _page = __webpack_require__(236);
+        var _leftPanel = __webpack_require__(238);
 
-	var _page2 = _interopRequireDefault(_page);
+        var _leftPanel2 = _interopRequireDefault(_leftPanel);
 
-	var _page3 = __webpack_require__(237);
+        var _about = __webpack_require__(239);
 
-	var _page4 = _interopRequireDefault(_page3);
+        var _about2 = _interopRequireDefault(_about);
+
+        var _contact = __webpack_require__(240);
+
+        var _contact2 = _interopRequireDefault(_contact);
+
+        var _formal = __webpack_require__(241);
+
+        var _formal2 = _interopRequireDefault(_formal);
+
+        var _home = __webpack_require__(242);
+
+        var _home2 = _interopRequireDefault(_home);
+
+        var _product = __webpack_require__(243);
+
+        var _product2 = _interopRequireDefault(_product);
+
+        var _showcases = __webpack_require__(244);
+
+        var _showcases2 = _interopRequireDefault(_showcases);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -93,72 +113,89 @@
 	    _createClass(App, [{
 	        key: "render",
 	        value: function render() {
+
+                var divStyle = {
+                    height: "1px"
+                };
+
 	            return _react2.default.createElement(
 	                "div",
-	                { className: "rootApp" },
+                    {id: "root"},
 	                _react2.default.createElement(
 	                    "div",
-	                    { className: "headerArea" },
+                        {id: "rootApp"},
+                        _react2.default.createElement(_leftPanel2.default, null),
 	                    _react2.default.createElement(
-	                        "nav",
-	                        { className: "navbar navbar-default navbar-static-top" },
+                            "div",
+                            {className: "headerArea"},
 	                        _react2.default.createElement(
-	                            "div",
-	                            { className: "container-fluid" },
+                                "nav",
+                                {className: "navbar navbar-default navbar-static-top"},
 	                            _react2.default.createElement(
 	                                "div",
-	                                { className: "navbar-header" },
+                                    {className: "container-fluid"},
 	                                _react2.default.createElement(
-	                                    "a",
-	                                    { className: "navbar-brand menu", href: "#" },
-	                                    _react2.default.createElement("img", { alt: "Menu", src: "/images/Menu_mobile.png" })
-	                                )
-	                            ),
-	                            _react2.default.createElement(
-	                                "div",
-	                                { className: "navbar-header" },
+                                        "div",
+                                        {className: "navbar-header"},
+                                        _react2.default.createElement(
+                                            "a",
+                                            {className: "navbar-brand menu", href: "#"},
+                                            _react2.default.createElement("img", {
+                                                alt: "Menu",
+                                                src: "/images/Menu_mobile.png"
+                                            })
+                                        ),
+                                        _react2.default.createElement(
+                                            "a",
+                                            {className: "navbar-brand logo", href: "/home"},
+                                            _react2.default.createElement("img", {alt: "Logo", src: "/images/Logo.png"})
+                                        ),
+                                        _react2.default.createElement(
+                                            "div",
+                                            {className: "collapsed navbar-toggle"},
+                                            _react2.default.createElement(
+                                                "p",
+                                                {className: "navbar-text rightMenu"},
+                                                _react2.default.createElement(
+                                                    "span",
+                                                    null,
+                                                    "Contatti"
+                                                ),
+                                                _react2.default.createElement("a", {
+                                                    href: "#",
+                                                    className: "navbar-link"
+                                                })
+                                            )
+                                        )
+                                    ),
 	                                _react2.default.createElement(
-	                                    "a",
-	                                    { className: "navbar-brand logo", href: "#" },
-	                                    _react2.default.createElement("img", { alt: "Logo", src: "/images/Logo.png" })
+                                        "div",
+                                        {
+                                            className: "navbar-collapse collapse navbar-right",
+                                            id: "navbar",
+                                            "aria-expanded": "false",
+                                            style: divStyle
+                                        },
+                                        _react2.default.createElement(
+                                            "p",
+                                            {className: "navbar-text rightMenu "},
+                                            _react2.default.createElement(
+                                                "span",
+                                                null,
+                                                "Contatti"
+                                            ),
+                                            _react2.default.createElement("a", {href: "#", className: "navbar-link"})
+                                        )
 	                                )
-	                            ),
-	                            _react2.default.createElement(
-	                                "p",
-	                                { className: "navbar-text rightMenu navbar-right" },
-	                                "Contatti ",
-	                                _react2.default.createElement("a", { href: "#", className: "navbar-link" })
 	                            )
 	                        )
-	                    )
-	                ),
-	                _react2.default.createElement(
-	                    "menu",
-	                    null,
+                        ),
 	                    _react2.default.createElement(
-	                        "ul",
-	                        null,
-	                        _react2.default.createElement(
-	                            "li",
-	                            null,
-	                            _react2.default.createElement(
-	                                _reactRouter.Link,
-	                                { to: "/page1" },
-	                                "Page1"
-	                            )
-	                        ),
-	                        _react2.default.createElement(
-	                            "li",
-	                            null,
-	                            _react2.default.createElement(
-	                                _reactRouter.Link,
-	                                { to: "/page2" },
-	                                "Page2"
-	                            )
-	                        )
+                            "div",
+                            {className: "body <%= fileName %>"},
+                            this.props.children
 	                    )
-	                ),
-	                this.props.children
+                    )
 	            );
 	        }
 	    }]);
@@ -172,9 +209,33 @@
 	    _react2.default.createElement(
 	        _reactRouter.Route,
 	        { path: "/", component: App },
-	        _react2.default.createElement(_reactRouter.IndexRoute, { component: _page2.default }),
-	        _react2.default.createElement(_reactRouter.Route, { path: "page1", component: _page2.default, title: "Page1" }),
-	        _react2.default.createElement(_reactRouter.Route, { path: "page2", component: _page4.default, title: "Page2" })
+            _react2.default.createElement(_reactRouter.IndexRoute, {component: _home2.default}),
+            _react2.default.createElement(_reactRouter.Route, {
+                path: "about",
+                component: _about2.default,
+                title: "About"
+            }),
+            _react2.default.createElement(_reactRouter.Route, {
+                path: "contact",
+                component: _contact2.default,
+                title: "Contact"
+            }),
+            _react2.default.createElement(_reactRouter.Route, {
+                path: "formal",
+                component: _formal2.default,
+                title: "Formal"
+            }),
+            _react2.default.createElement(_reactRouter.Route, {path: "home", component: _home2.default, title: "Home"}),
+            _react2.default.createElement(_reactRouter.Route, {
+                path: "product",
+                component: _product2.default,
+                title: "Product"
+            }),
+            _react2.default.createElement(_reactRouter.Route, {
+                path: "showcase",
+                component: _showcases2.default,
+                title: "Showcases"
+            })
 	    )
 	), document.getElementById('root'));
 
@@ -870,7 +931,7 @@
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
 	 * @providesModule reactProdInvariant
-	 * 
+	 *
 	 */
 	'use strict';
 
@@ -1450,7 +1511,7 @@
 	 * LICENSE file in the root directory of this source tree. An additional grant
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
-	 * 
+	 *
 	 */
 
 	function makeEmptyFunction(arg) {
@@ -1697,7 +1758,7 @@
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
 	 * @providesModule getIteratorFn
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -1743,7 +1804,7 @@
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
 	 * @providesModule KeyEscapeUtils
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -6487,7 +6548,7 @@
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
 	 * @providesModule accumulateInto
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -6551,7 +6612,7 @@
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
 	 * @providesModule forEachAccumulated
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -7820,7 +7881,7 @@
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
 	 * @providesModule ReactFeatureFlags
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -9099,7 +9160,7 @@
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
 	 * @providesModule isTextInputElement
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -12570,7 +12631,7 @@
 	 * LICENSE file in the root directory of this source tree. An additional grant
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
-	 * 
+	 *
 	 * @typechecks static-only
 	 */
 
@@ -16103,7 +16164,7 @@
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
 	 * @providesModule ReactNodeTypes
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -16149,7 +16210,7 @@
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
 	 * @typechecks
-	 * 
+	 *
 	 */
 
 	/*eslint-disable no-self-compare */
@@ -16388,7 +16449,7 @@
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
 	 * @providesModule flattenChildren
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -16568,7 +16629,7 @@
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
 	 * @providesModule ReactServerUpdateQueue
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -18718,7 +18779,7 @@
 	 * LICENSE file in the root directory of this source tree. An additional grant
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
-	 * 
+	 *
 	 */
 
 	var isTextNode = __webpack_require__(147);
@@ -21239,7 +21300,7 @@
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
 	 * @providesModule adler32
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -27486,7 +27547,9 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 236 */
+    /* 236 */,
+    /* 237 */,
+    /* 238 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -27501,6 +27564,8 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
+        var _reactRouter = __webpack_require__(173);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -27509,33 +27574,156 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	var Page1 = function (_Component) {
-	    _inherits(Page1, _Component);
+        var LeftPanel = function (_Component) {
+            _inherits(LeftPanel, _Component);
 
-	    function Page1() {
-	        _classCallCheck(this, Page1);
+            function LeftPanel() {
+                _classCallCheck(this, LeftPanel);
 
-	        return _possibleConstructorReturn(this, (Page1.__proto__ || Object.getPrototypeOf(Page1)).apply(this, arguments));
+                return _possibleConstructorReturn(this, (LeftPanel.__proto__ || Object.getPrototypeOf(LeftPanel)).apply(this, arguments));
 	    }
 
-	    _createClass(Page1, [{
+            _createClass(LeftPanel, [{
+                key: "closeLeftPanel",
+                value: function closeLeftPanel() {
+                    $("#leftMenu").modal('hide');
+                }
+            }, {
 	        key: "render",
 	        value: function render() {
 	            return _react2.default.createElement(
-	                "h1",
-	                null,
-	                "Page1"
+                    "div",
+                    {
+                        className: "modal",
+                        id: "leftMenu",
+                        tabIndex: "-1",
+                        role: "dialog",
+                        "aria-labelledby": "myModalLabel",
+                        "data-backdrop": "true"
+                    },
+                    _react2.default.createElement(
+                        "div",
+                        {className: "modal-dialog", role: "document"},
+                        _react2.default.createElement(
+                            "div",
+                            {className: "animated fadeInLeft modal-content"},
+                            _react2.default.createElement(
+                                "div",
+                                {className: "modal-body"},
+                                _react2.default.createElement(
+                                    "div",
+                                    {className: "btnArea"},
+                                    _react2.default.createElement(
+                                        "span",
+                                        null,
+                                        "Chiudi"
+                                    ),
+                                    _react2.default.createElement("span", {
+                                        className: "btnClose",
+                                        "data-dismiss": "modal"
+                                    })
+                                ),
+                                _react2.default.createElement(
+                                    "div",
+                                    {className: "languageArea"},
+                                    _react2.default.createElement(
+                                        "div",
+                                        {className: "locale"},
+                                        "EN"
+                                    ),
+                                    _react2.default.createElement(
+                                        "div",
+                                        {className: "locale"},
+                                        "DE"
+                                    ),
+                                    _react2.default.createElement(
+                                        "div",
+                                        {className: "locale"},
+                                        "FR"
+                                    ),
+                                    _react2.default.createElement(
+                                        "div",
+                                        {className: "locale active"},
+                                        "IT"
+                                    ),
+                                    _react2.default.createElement(
+                                        "div",
+                                        {className: "locale"},
+                                        "VN"
+                                    )
+                                ),
+                                _react2.default.createElement(
+                                    "div",
+                                    {className: "menuLinksArea"},
+                                    _react2.default.createElement(
+                                        "div",
+                                        {onClick: this.closeLeftPanel.bind(this), className: "gotoLink"},
+                                        _react2.default.createElement(
+                                            _reactRouter.Link,
+                                            {to: '/home'},
+                                            "Home page"
+                                        )
+                                    ),
+                                    _react2.default.createElement(
+                                        "div",
+                                        {onClick: this.closeLeftPanel.bind(this), className: "gotoLink"},
+                                        _react2.default.createElement(
+                                            _reactRouter.Link,
+                                            {to: '/about'},
+                                            "Chi siamo"
+                                        )
+                                    ),
+                                    _react2.default.createElement(
+                                        "div",
+                                        {onClick: this.closeLeftPanel.bind(this), className: "gotoLink"},
+                                        _react2.default.createElement(
+                                            _reactRouter.Link,
+                                            {to: '/formal'},
+                                            "Parlaci della tua idea"
+                                        )
+                                    ),
+                                    _react2.default.createElement(
+                                        "div",
+                                        {onClick: this.closeLeftPanel.bind(this), className: "gotoLink"},
+                                        _react2.default.createElement(
+                                            _reactRouter.Link,
+                                            {to: '/showcase'},
+                                            "Showcase"
+                                        )
+                                    ),
+                                    _react2.default.createElement(
+                                        "div",
+                                        {onClick: this.closeLeftPanel.bind(this), className: "gotoLink"},
+                                        _react2.default.createElement(
+                                            _reactRouter.Link,
+                                            {to: '/product'},
+                                            "La nostra marca"
+                                        )
+                                    ),
+                                    _react2.default.createElement(
+                                        "div",
+                                        {onClick: this.closeLeftPanel.bind(this), className: "gotoLink"},
+                                        _react2.default.createElement(
+                                            _reactRouter.Link,
+                                            {to: '/contact'},
+                                            "Contatti"
+                                        )
+                                    )
+                                )
+                            )
+                        )
+                    )
 	            );
 	        }
 	    }]);
 
-	    return Page1;
+            return LeftPanel;
 	}(_react.Component);
 
-	exports.default = Page1;
+        exports.default = LeftPanel;
 
 /***/ },
-/* 237 */
+    /* 239 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -27558,30 +27746,2446 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	var Page2 = function (_Component) {
-	    _inherits(Page2, _Component);
+        var About = function (_Component) {
+            _inherits(About, _Component);
 
-	    function Page2() {
-	        _classCallCheck(this, Page2);
+            function About() {
+                _classCallCheck(this, About);
 
-	        return _possibleConstructorReturn(this, (Page2.__proto__ || Object.getPrototypeOf(Page2)).apply(this, arguments));
+                return _possibleConstructorReturn(this, (About.__proto__ || Object.getPrototypeOf(About)).apply(this, arguments));
 	    }
 
-	    _createClass(Page2, [{
+            _createClass(About, [{
 	        key: "render",
 	        value: function render() {
 	            return _react2.default.createElement(
-	                "h1",
-	                null,
-	                "Page2"
+                    "div",
+                    {className: "body about"},
+                    _react2.default.createElement(
+                        "div",
+                        {className: "contact"},
+                        _react2.default.createElement(
+                            "div",
+                            {className: "container-fluid"},
+                            _react2.default.createElement(
+                                "div",
+                                {className: "row"},
+                                _react2.default.createElement(
+                                    "div",
+                                    {className: "col-md-9 col-sm-9 col-md-offset-1 "},
+                                    _react2.default.createElement(
+                                        "h1",
+                                        {className: "titleForm"},
+                                        "Chi siamo"
+                                    )
+                                )
+                            ),
+                            _react2.default.createElement(
+                                "div",
+                                {className: "row"},
+                                _react2.default.createElement(
+                                    "div",
+                                    {className: "col-md-9 col-sm-9 col-md-offset-1 "},
+                                    _react2.default.createElement(
+                                        "p",
+                                        null,
+                                        "Siamo un team con delle competenze specifiche che spaziano dalla grafica, la programmazione per siti internet, l’architettura e lo spazio urbano, possiamo rispondere a tutte le vostre esigenze inerenti alla concezione grafica e di design, siamo in grado di offrire degli ottimi servizi legati alle tecniche di stampa, di segnaletica e possiamo realizzare diversi progetti digitali quali la creazione di siti web, animazioni, video e 3D."
+                                    )
+                                )
+                            )
+                        ),
+                        _react2.default.createElement(
+                            "div",
+                            {className: "container-fluid"},
+                            _react2.default.createElement(
+                                "div",
+                                {className: "row ownerInfo"},
+                                _react2.default.createElement(
+                                    "div",
+                                    {className: "col-md-3 col-sm-3 col-md-offset-1 "},
+                                    _react2.default.createElement(
+                                        "div",
+                                        {className: "userImage"},
+                                        _react2.default.createElement("img", {src: "images/slides/_2-team/Milo.png"})
+                                    )
+                                ),
+                                _react2.default.createElement(
+                                    "div",
+                                    {className: "col-md-7 col-sm-7"},
+                                    _react2.default.createElement(
+                                        "div",
+                                        {className: "infos"},
+                                        _react2.default.createElement(
+                                            "div",
+                                            {className: "info"},
+                                            "Jean–Marie Balogh"
+                                        ),
+                                        _react2.default.createElement(
+                                            "div",
+                                            {className: "info"},
+                                            "Grafico, web designer e illustratore"
+                                        ),
+                                        _react2.default.createElement(
+                                            "div",
+                                            {className: "info"},
+                                            "jeanmarie.balogh@gmail.com"
+                                        ),
+                                        _react2.default.createElement(
+                                            "div",
+                                            {className: "info"},
+                                            "078 933 24 53"
+                                        ),
+                                        _react2.default.createElement(
+                                            "div",
+                                            {
+                                                className: "btn viewProfile myBtn",
+                                                "data-toggle": "modal",
+                                                "data-target": "#miloModal"
+                                            },
+                                            "Per saperne di più"
+                                        )
+                                    )
+                                )
+                            ),
+                            _react2.default.createElement(
+                                "div",
+                                {className: "row ownerInfo"},
+                                _react2.default.createElement(
+                                    "div",
+                                    {className: "col-md-3 col-sm-3 col-md-offset-1 "},
+                                    _react2.default.createElement(
+                                        "div",
+                                        {className: "userImage"},
+                                        _react2.default.createElement("img", {src: "images/slides/_2-team/Huy.png"})
+                                    )
+                                ),
+                                _react2.default.createElement(
+                                    "div",
+                                    {className: "col-md-7 col-sm-7"},
+                                    _react2.default.createElement(
+                                        "div",
+                                        {className: "infos"},
+                                        _react2.default.createElement(
+                                            "div",
+                                            {className: "info"},
+                                            "Nguyen Thi Minh Huy"
+                                        ),
+                                        _react2.default.createElement(
+                                            "div",
+                                            {className: "info"},
+                                            "Architetto, architetto urbanista e 3D designer"
+                                        ),
+                                        _react2.default.createElement(
+                                            "div",
+                                            {className: "info"},
+                                            "jeanmarie.balogh@gmail.com"
+                                        ),
+                                        _react2.default.createElement(
+                                            "div",
+                                            {className: "info"},
+                                            "078 933 24 53"
+                                        ),
+                                        _react2.default.createElement(
+                                            "div",
+                                            {
+                                                className: "btn viewProfile myBtn",
+                                                "data-toggle": "modal",
+                                                "data-target": "#huyModal"
+                                            },
+                                            "Per saperne di più"
+                                        )
+                                    )
+                                )
+                            ),
+                            _react2.default.createElement(
+                                "div",
+                                {className: "row ownerInfo"},
+                                _react2.default.createElement(
+                                    "div",
+                                    {className: "col-md-3 col-sm-3 col-md-offset-1 "},
+                                    _react2.default.createElement(
+                                        "div",
+                                        {className: "userImage"},
+                                        _react2.default.createElement("img", {src: "images/slides/_2-team/Eric.png"})
+                                    )
+                                ),
+                                _react2.default.createElement(
+                                    "div",
+                                    {className: "col-md-7 col-sm-7"},
+                                    _react2.default.createElement(
+                                        "div",
+                                        {className: "infos"},
+                                        _react2.default.createElement(
+                                            "div",
+                                            {className: "info"},
+                                            "Eric Spichiger"
+                                        ),
+                                        _react2.default.createElement(
+                                            "div",
+                                            {className: "info"},
+                                            "Web Master"
+                                        ),
+                                        _react2.default.createElement(
+                                            "div",
+                                            {className: "info"},
+                                            "jeanmarie.balogh@gmail.com"
+                                        ),
+                                        _react2.default.createElement(
+                                            "div",
+                                            {className: "info"},
+                                            "078 933 24 53"
+                                        ),
+                                        _react2.default.createElement(
+                                            "div",
+                                            {
+                                                className: "btn viewProfile myBtn",
+                                                "data-toggle": "modal",
+                                                "data-target": "#ericModal"
+                                            },
+                                            "Per saperne di più"
+                                        )
+                                    )
+                                )
+                            )
+                        ),
+                        _react2.default.createElement(
+                            "div",
+                            {className: "container-fluid"},
+                            _react2.default.createElement(
+                                "div",
+                                {className: "row chiSite"},
+                                _react2.default.createElement(
+                                    "div",
+                                    {className: "col-md-9 col-sm-9 col-md-offset-1"},
+                                    _react2.default.createElement(
+                                        "h1",
+                                        {className: "titleForm"},
+                                        "Chi siete ?"
+                                    )
+                                )
+                            ),
+                            _react2.default.createElement(
+                                "div",
+                                {className: "row"},
+                                _react2.default.createElement(
+                                    "div",
+                                    {className: "col-md-9 col-sm-9 col-md-offset-1"},
+                                    _react2.default.createElement(
+                                        "p",
+                                        null,
+                                        "Ora che avete dato uno sguardo ai nostri profili e avete visto le nostre competenze, vorremmo anche saper e chi siete, per cominciare a soddisfare le vostre esigenze e capire al meglio quello che necessitate in modo da definire il tempo e il vostro budget a disposizione per la realizzazione dei vostri progetti."
+                                    ),
+                                    _react2.default.createElement(
+                                        "p",
+                                        null,
+                                        "Siamo conformi a persone che vogliono investire per un design unico e specifico, oppure a chi necessitano di qualcosa di semplice con un prezzo conveniente pur mantenendo una buona qualita dei prodotti."
+                                    )
+                                )
+                            ),
+                            _react2.default.createElement(
+                                "div",
+                                {className: "row"},
+                                _react2.default.createElement(
+                                    "div",
+                                    {className: "col-md-9 col-sm-9 col-md-offset-1"},
+                                    _react2.default.createElement(
+                                        "div",
+                                        {className: "btn nextPage myBtn"},
+                                        "Parlaci della tua idea"
+                                    )
+                                )
+                            )
+                        ),
+                        _react2.default.createElement(
+                            "div",
+                            {
+                                className: "modal fade userInfoModal",
+                                id: "miloModal",
+                                tabIndex: "-1",
+                                role: "dialog",
+                                "aria-labelledby": "myModalLabel"
+                            },
+                            _react2.default.createElement(
+                                "div",
+                                {className: "modal-dialog", role: "document"},
+                                _react2.default.createElement(
+                                    "div",
+                                    {className: "modal-content"},
+                                    _react2.default.createElement(
+                                        "div",
+                                        {className: "modal-body"},
+                                        _react2.default.createElement(
+                                            "div",
+                                            {className: "btnArea"},
+                                            _react2.default.createElement(
+                                                "div",
+                                                {className: "btn myBtn closeBtn", "data-dismiss": "modal"},
+                                                "Chiudi"
+                                            )
+                                        ),
+                                        _react2.default.createElement(
+                                            "div",
+                                            {className: "row ownerInfo"},
+                                            _react2.default.createElement(
+                                                "div",
+                                                {className: "col-md-12 col-sm-12"},
+                                                _react2.default.createElement(
+                                                    "div",
+                                                    {className: "userImage"},
+                                                    _react2.default.createElement("img", {src: "images/slides/_2-team/Milo.png"})
+                                                ),
+                                                _react2.default.createElement(
+                                                    "div",
+                                                    {className: "infos"},
+                                                    _react2.default.createElement(
+                                                        "div",
+                                                        {className: "info"},
+                                                        "Jean–Marie Balogh"
+                                                    ),
+                                                    _react2.default.createElement(
+                                                        "div",
+                                                        {className: "info"},
+                                                        "Grafico, web designer e illustratore"
+                                                    )
+                                                )
+                                            )
+                                        ),
+                                        _react2.default.createElement(
+                                            "div",
+                                            {className: "row ownerInfo"},
+                                            _react2.default.createElement(
+                                                "div",
+                                                {className: "col-md-12 col-sm-12"},
+                                                _react2.default.createElement(
+                                                    "p",
+                                                    null,
+                                                    "Nato a Locarno nel 1980, mi sono diplomato come grafico illustratore alla Scuola del Fumetto di Milano, grafico federale al CSIA di Lugano e web design presso la SAE Institute di Ginevra.",
+                                                    _react2.default.createElement("br", null),
+                                                    _react2.default.createElement("br", null),
+                                                    "Sono in grado di rispondere alle vostre esigenze concezione di prodotti grafici, qualsiasi prodotto stampato.",
+                                                    _react2.default.createElement("br", null),
+                                                    _react2.default.createElement("br", null),
+                                                    "Le mie qualita principali vanno dal disegno, conoscenze tipografiche, storia dell’arte, arricchite da numerosi viaggi ed esperienze svolte all’estero."
+                                                )
+                                            )
+                                        )
+                                    )
+                                )
+                            )
+                        ),
+                        _react2.default.createElement(
+                            "div",
+                            {
+                                className: "modal fade userInfoModal",
+                                id: "huyModal",
+                                tabIndex: "-s",
+                                role: "dialog",
+                                "aria-labelledby": "myModalLabel"
+                            },
+                            _react2.default.createElement(
+                                "div",
+                                {className: "modal-dialog", role: "document"},
+                                _react2.default.createElement(
+                                    "div",
+                                    {className: "modal-content"},
+                                    _react2.default.createElement(
+                                        "div",
+                                        {className: "modal-body"},
+                                        _react2.default.createElement(
+                                            "div",
+                                            {className: "btnArea"},
+                                            _react2.default.createElement(
+                                                "div",
+                                                {className: "btn myBtn closeBtn", "data-dismiss": "modal"},
+                                                "Chiudi"
+                                            )
+                                        ),
+                                        _react2.default.createElement(
+                                            "div",
+                                            {className: "row ownerInfo"},
+                                            _react2.default.createElement(
+                                                "div",
+                                                {className: "col-md-12 col-sm-12"},
+                                                _react2.default.createElement(
+                                                    "div",
+                                                    {className: "userImage"},
+                                                    _react2.default.createElement("img", {src: "images/slides/_2-team/Huy.png"})
+                                                ),
+                                                _react2.default.createElement(
+                                                    "div",
+                                                    {className: "infos"},
+                                                    _react2.default.createElement(
+                                                        "div",
+                                                        {className: "info"},
+                                                        "Nguyen Thi Minh Huy"
+                                                    ),
+                                                    _react2.default.createElement(
+                                                        "div",
+                                                        {className: "info"},
+                                                        "Architetto, architetto urbanista e 3D designer"
+                                                    )
+                                                )
+                                            )
+                                        ),
+                                        _react2.default.createElement(
+                                            "div",
+                                            {className: "row ownerInfo"},
+                                            _react2.default.createElement(
+                                                "div",
+                                                {className: "col-md-12 col-sm-12"},
+                                                _react2.default.createElement(
+                                                    "p",
+                                                    null,
+                                                    "Nato a Locarno nel 1980, mi sono diplomato come grafico illustratore alla Scuola del Fumetto di Milano, grafico federale al CSIA di Lugano e web design presso la SAE Institute di Ginevra.",
+                                                    _react2.default.createElement("br", null),
+                                                    _react2.default.createElement("br", null),
+                                                    "Sono in grado di rispondere alle vostre esigenze concezione di prodotti grafici, qualsiasi prodotto stampato.",
+                                                    _react2.default.createElement("br", null),
+                                                    _react2.default.createElement("br", null),
+                                                    "Le mie qualita principali vanno dal disegno, conoscenze tipografiche, storia dell’arte, arricchite da numerosi viaggi ed esperienze svolte all’estero."
+                                                )
+                                            )
+                                        )
+                                    )
+                                )
+                            )
+                        ),
+                        _react2.default.createElement(
+                            "div",
+                            {
+                                className: "modal fade userInfoModal",
+                                id: "ericModal",
+                                tabIndex: "-1",
+                                role: "dialog",
+                                "aria-labelledby": "myModalLabel"
+                            },
+                            _react2.default.createElement(
+                                "div",
+                                {className: "modal-dialog", role: "document"},
+                                _react2.default.createElement(
+                                    "div",
+                                    {className: "modal-content"},
+                                    _react2.default.createElement(
+                                        "div",
+                                        {className: "modal-body"},
+                                        _react2.default.createElement(
+                                            "div",
+                                            {className: "btnArea"},
+                                            _react2.default.createElement(
+                                                "div",
+                                                {className: "btn myBtn closeBtn", "data-dismiss": "modal"},
+                                                "Chiudi"
+                                            )
+                                        ),
+                                        _react2.default.createElement(
+                                            "div",
+                                            {className: "row ownerInfo"},
+                                            _react2.default.createElement(
+                                                "div",
+                                                {className: "col-md-12 col-sm-12"},
+                                                _react2.default.createElement(
+                                                    "div",
+                                                    {className: "userImage"},
+                                                    _react2.default.createElement("img", {src: "images/slides/_2-team/Eric.png"})
+                                                ),
+                                                _react2.default.createElement(
+                                                    "div",
+                                                    {className: "infos"},
+                                                    _react2.default.createElement(
+                                                        "div",
+                                                        {className: "info"},
+                                                        "Eric Spichiger"
+                                                    ),
+                                                    _react2.default.createElement(
+                                                        "div",
+                                                        {className: "info"},
+                                                        "Web Master"
+                                                    )
+                                                )
+                                            )
+                                        ),
+                                        _react2.default.createElement(
+                                            "div",
+                                            {className: "row ownerInfo"},
+                                            _react2.default.createElement(
+                                                "div",
+                                                {className: "col-md-12 col-sm-12"},
+                                                _react2.default.createElement(
+                                                    "p",
+                                                    null,
+                                                    "Nato a Locarno nel 1980, mi sono diplomato come grafico illustratore alla Scuola del Fumetto di Milano, grafico federale al CSIA di Lugano e web design presso la SAE Institute di Ginevra.",
+                                                    _react2.default.createElement("br", null),
+                                                    _react2.default.createElement("br", null),
+                                                    "Sono in grado di rispondere alle vostre esigenze concezione di prodotti grafici, qualsiasi prodotto stampato.",
+                                                    _react2.default.createElement("br", null),
+                                                    _react2.default.createElement("br", null),
+                                                    "Le mie qualita principali vanno dal disegno, conoscenze tipografiche, storia dell’arte, arricchite da numerosi viaggi ed esperienze svolte all’estero."
+                                                )
+                                            )
+                                        )
+                                    )
+                                )
+                            )
+                        )
+                    )
 	            );
 	        }
 	    }]);
 
-	    return Page2;
+            return About;
 	}(_react.Component);
 
-	exports.default = Page2;
+        exports.default = About;
+
+        /***/
+    },
+    /* 240 */
+    /***/ function (module, exports, __webpack_require__) {
+
+        "use strict";
+
+        Object.defineProperty(exports, "__esModule", {
+            value: true
+        });
+
+        var _createClass = function () {
+            function defineProperties(target, props) {
+                for (var i = 0; i < props.length; i++) {
+                    var descriptor = props[i];
+                    descriptor.enumerable = descriptor.enumerable || false;
+                    descriptor.configurable = true;
+                    if ("value" in descriptor) descriptor.writable = true;
+                    Object.defineProperty(target, descriptor.key, descriptor);
+                }
+            }
+
+            return function (Constructor, protoProps, staticProps) {
+                if (protoProps) defineProperties(Constructor.prototype, protoProps);
+                if (staticProps) defineProperties(Constructor, staticProps);
+                return Constructor;
+            };
+        }();
+
+        var _react = __webpack_require__(2);
+
+        var _react2 = _interopRequireDefault(_react);
+
+        function _interopRequireDefault(obj) {
+            return obj && obj.__esModule ? obj : {default: obj};
+        }
+
+        function _classCallCheck(instance, Constructor) {
+            if (!(instance instanceof Constructor)) {
+                throw new TypeError("Cannot call a class as a function");
+            }
+        }
+
+        function _possibleConstructorReturn(self, call) {
+            if (!self) {
+                throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+            }
+            return call && (typeof call === "object" || typeof call === "function") ? call : self;
+        }
+
+        function _inherits(subClass, superClass) {
+            if (typeof superClass !== "function" && superClass !== null) {
+                throw new TypeError("Super expression must either be null or a function, not " + typeof superClass);
+            }
+            subClass.prototype = Object.create(superClass && superClass.prototype, {
+                constructor: {
+                    value: subClass,
+                    enumerable: false,
+                    writable: true,
+                    configurable: true
+                }
+            });
+            if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
+        }
+
+        var Contact = function (_Component) {
+            _inherits(Contact, _Component);
+
+            function Contact() {
+                _classCallCheck(this, Contact);
+
+                return _possibleConstructorReturn(this, (Contact.__proto__ || Object.getPrototypeOf(Contact)).apply(this, arguments));
+            }
+
+            _createClass(Contact, [{
+                key: "render",
+                value: function render() {
+                    return _react2.default.createElement(
+                        "div",
+                        {className: "body contact"},
+                        _react2.default.createElement(
+                            "div",
+                            {className: "formInfo contact"},
+                            _react2.default.createElement(
+                                "div",
+                                {className: "container-fluid"},
+                                _react2.default.createElement(
+                                    "form",
+                                    null,
+                                    _react2.default.createElement(
+                                        "div",
+                                        {className: "row formHeaderTitle noBorder"},
+                                        _react2.default.createElement(
+                                            "div",
+                                            {className: "col-md-4 col-sm-4"},
+                                            _react2.default.createElement(
+                                                "h1",
+                                                {className: "titleForm"},
+                                                "Contatti"
+                                            )
+                                        ),
+                                        _react2.default.createElement(
+                                            "div",
+                                            {className: "col-md-8 col-sm-8"},
+                                            _react2.default.createElement(
+                                                "div",
+                                                {className: "phoneNumber"},
+                                                "0041 78 933 24 53"
+                                            ),
+                                            _react2.default.createElement(
+                                                "div",
+                                                {className: "contactEmail"},
+                                                "jeanmarie.balogh@gmail.com"
+                                            )
+                                        )
+                                    ),
+                                    _react2.default.createElement(
+                                        "div",
+                                        {className: "row infoPart noBorder"},
+                                        _react2.default.createElement(
+                                            "div",
+                                            {className: "col-md-4 col-sm-4"},
+                                            _react2.default.createElement(
+                                                "div",
+                                                {className: "form-group"},
+                                                _react2.default.createElement(
+                                                    "label",
+                                                    {htmlFor: "name"},
+                                                    "NOME COGNOME"
+                                                ),
+                                                _react2.default.createElement("input", {
+                                                    value: "", type: "text", className: "form-control",
+                                                    id: "name", placeholder: "Name"
+                                                })
+                                            )
+                                        ),
+                                        _react2.default.createElement(
+                                            "div",
+                                            {className: "col-md-8 col-sm-8"},
+                                            _react2.default.createElement(
+                                                "div",
+                                                {className: "form-group"},
+                                                _react2.default.createElement(
+                                                    "label",
+                                                    {htmlFor: "name"},
+                                                    "SOGGETTO DELLA LETTERA"
+                                                ),
+                                                _react2.default.createElement("input", {
+                                                    value: "", type: "text", className: "form-control",
+                                                    id: "name", placeholder: "Name"
+                                                })
+                                            )
+                                        )
+                                    ),
+                                    _react2.default.createElement(
+                                        "div",
+                                        {className: "row infoPart noBorder"},
+                                        _react2.default.createElement(
+                                            "div",
+                                            {className: "col-md-4 col-sm-4"},
+                                            _react2.default.createElement(
+                                                "div",
+                                                {className: "form-group"},
+                                                _react2.default.createElement(
+                                                    "label",
+                                                    {htmlFor: "email"},
+                                                    "E-Mail"
+                                                ),
+                                                _react2.default.createElement("input", {
+                                                    value: "", type: "email", className: "form-control",
+                                                    id: "email", placeholder: "Email"
+                                                })
+                                            ),
+                                            _react2.default.createElement(
+                                                "div",
+                                                {className: "form-group"},
+                                                _react2.default.createElement(
+                                                    "label",
+                                                    {htmlFor: "phone"},
+                                                    "TELEFONO"
+                                                ),
+                                                _react2.default.createElement("input", {
+                                                    value: "", type: "tel", className: "form-control",
+                                                    id: "phone", placeholder: "Phone"
+                                                })
+                                            ),
+                                            _react2.default.createElement(
+                                                "div",
+                                                {className: "form-group"},
+                                                _react2.default.createElement(
+                                                    "label",
+                                                    {htmlFor: "country"},
+                                                    "PAESE"
+                                                ),
+                                                _react2.default.createElement("input", {
+                                                    value: "", type: "text", className: "form-control",
+                                                    id: "country", placeholder: "Country"
+                                                })
+                                            )
+                                        ),
+                                        _react2.default.createElement(
+                                            "div",
+                                            {className: "col-md-8 col-sm-8"},
+                                            _react2.default.createElement(
+                                                "div",
+                                                {className: "form-group"},
+                                                _react2.default.createElement(
+                                                    "label",
+                                                    {htmlFor: "phone"},
+                                                    "CONTENUTO DELLA LETTERA"
+                                                ),
+                                                _react2.default.createElement("textarea", {
+                                                    className: "form-control finalComment",
+                                                    rows: "3"
+                                                })
+                                            ),
+                                            _react2.default.createElement(
+                                                "div",
+                                                {className: "btn myBtn"},
+                                                "Invio"
+                                            )
+                                        )
+                                    )
+                                )
+                            )
+                        )
+                    );
+                }
+            }]);
+
+            return Contact;
+        }(_react.Component);
+
+        exports.default = Contact;
+
+        /***/
+    },
+    /* 241 */
+    /***/ function (module, exports, __webpack_require__) {
+
+        "use strict";
+
+        Object.defineProperty(exports, "__esModule", {
+            value: true
+        });
+
+        var _createClass = function () {
+            function defineProperties(target, props) {
+                for (var i = 0; i < props.length; i++) {
+                    var descriptor = props[i];
+                    descriptor.enumerable = descriptor.enumerable || false;
+                    descriptor.configurable = true;
+                    if ("value" in descriptor) descriptor.writable = true;
+                    Object.defineProperty(target, descriptor.key, descriptor);
+                }
+            }
+
+            return function (Constructor, protoProps, staticProps) {
+                if (protoProps) defineProperties(Constructor.prototype, protoProps);
+                if (staticProps) defineProperties(Constructor, staticProps);
+                return Constructor;
+            };
+        }();
+
+        var _react = __webpack_require__(2);
+
+        var _react2 = _interopRequireDefault(_react);
+
+        function _interopRequireDefault(obj) {
+            return obj && obj.__esModule ? obj : {default: obj};
+        }
+
+        function _classCallCheck(instance, Constructor) {
+            if (!(instance instanceof Constructor)) {
+                throw new TypeError("Cannot call a class as a function");
+            }
+        }
+
+        function _possibleConstructorReturn(self, call) {
+            if (!self) {
+                throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+            }
+            return call && (typeof call === "object" || typeof call === "function") ? call : self;
+        }
+
+        function _inherits(subClass, superClass) {
+            if (typeof superClass !== "function" && superClass !== null) {
+                throw new TypeError("Super expression must either be null or a function, not " + typeof superClass);
+            }
+            subClass.prototype = Object.create(superClass && superClass.prototype, {
+                constructor: {
+                    value: subClass,
+                    enumerable: false,
+                    writable: true,
+                    configurable: true
+                }
+            });
+            if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
+        }
+
+        var Formal = function (_Component) {
+            _inherits(Formal, _Component);
+
+            function Formal() {
+                _classCallCheck(this, Formal);
+
+                return _possibleConstructorReturn(this, (Formal.__proto__ || Object.getPrototypeOf(Formal)).apply(this, arguments));
+            }
+
+            _createClass(Formal, [{
+                key: "render",
+                value: function render() {
+                    return _react2.default.createElement(
+                        "div",
+                        {className: "body formal"},
+                        _react2.default.createElement(
+                            "div",
+                            {className: "formInfo"},
+                            _react2.default.createElement(
+                                "div",
+                                {className: "container-fluid"},
+                                _react2.default.createElement(
+                                    "form",
+                                    null,
+                                    _react2.default.createElement(
+                                        "div",
+                                        {className: "row formHeaderTitle noBorder"},
+                                        _react2.default.createElement(
+                                            "div",
+                                            {className: "col-md-6 col-sm-6 col-md-offset-1"},
+                                            _react2.default.createElement(
+                                                "h1",
+                                                {className: "titleForm"},
+                                                "Parlaci della tua idea"
+                                            )
+                                        )
+                                    ),
+                                    _react2.default.createElement(
+                                        "div",
+                                        {className: "row noBorder"},
+                                        _react2.default.createElement(
+                                            "div",
+                                            {className: "col-md-6 col-sm-6 col-md-offset-1"},
+                                            _react2.default.createElement(
+                                                "h1",
+                                                {className: "titleForm"},
+                                                "Informazioni personali"
+                                            )
+                                        )
+                                    ),
+                                    _react2.default.createElement(
+                                        "div",
+                                        {className: "row infoPart noBorder"},
+                                        _react2.default.createElement(
+                                            "div",
+                                            {className: "col-md-6 col-sm-6 col-md-offset-1"},
+                                            _react2.default.createElement(
+                                                "div",
+                                                {className: "form-group"},
+                                                _react2.default.createElement(
+                                                    "label",
+                                                    {"for": "name"},
+                                                    "NOME E COGNOME"
+                                                ),
+                                                _react2.default.createElement("input", {
+                                                    value: "", type: "text", className: "form-control",
+                                                    id: "name", placeholder: "Name"
+                                                })
+                                            ),
+                                            _react2.default.createElement(
+                                                "div",
+                                                {className: "form-group"},
+                                                _react2.default.createElement(
+                                                    "label",
+                                                    {"for": "email"},
+                                                    "E-Mail"
+                                                ),
+                                                _react2.default.createElement("input", {
+                                                    value: "", type: "email", className: "form-control",
+                                                    id: "email", placeholder: "Email"
+                                                })
+                                            ),
+                                            _react2.default.createElement(
+                                                "div",
+                                                {className: "form-group"},
+                                                _react2.default.createElement(
+                                                    "label",
+                                                    {"for": "phone"},
+                                                    "TELEFONO"
+                                                ),
+                                                _react2.default.createElement("input", {
+                                                    value: "", type: "tel", className: "form-control",
+                                                    id: "phone", placeholder: "Phone"
+                                                })
+                                            ),
+                                            _react2.default.createElement(
+                                                "div",
+                                                {className: "form-group"},
+                                                _react2.default.createElement(
+                                                    "label",
+                                                    {"for": "country"},
+                                                    "PAESE"
+                                                ),
+                                                _react2.default.createElement("input", {
+                                                    value: "", type: "text", className: "form-control",
+                                                    id: "country", placeholder: "Country"
+                                                })
+                                            )
+                                        )
+                                    ),
+                                    _react2.default.createElement(
+                                        "div",
+                                        {className: "row noBorder"},
+                                        _react2.default.createElement(
+                                            "div",
+                                            {className: "col-md-6 col-sm-6 col-md-offset-1"},
+                                            _react2.default.createElement(
+                                                "h1",
+                                                {className: "titleForm"},
+                                                "A proposito del mio progetto"
+                                            )
+                                        )
+                                    ),
+                                    _react2.default.createElement(
+                                        "div",
+                                        {className: "row part1"},
+                                        _react2.default.createElement(
+                                            "div",
+                                            {className: "col-md-6 col-sm-6 col-md-offset-1"},
+                                            _react2.default.createElement(
+                                                "div",
+                                                {className: "form-group"},
+                                                _react2.default.createElement(
+                                                    "div",
+                                                    {className: "form-group"},
+                                                    _react2.default.createElement(
+                                                        "label",
+                                                        {"for": ""},
+                                                        "Si tratta di un nuovo progetto o di un rebrand ?"
+                                                    )
+                                                ),
+                                                _react2.default.createElement(
+                                                    "div",
+                                                    {className: "selectWrap"},
+                                                    _react2.default.createElement(
+                                                        "select",
+                                                        {className: "form-control"},
+                                                        _react2.default.createElement(
+                                                            "option",
+                                                            null,
+                                                            "Selezionate la scelta"
+                                                        ),
+                                                        _react2.default.createElement(
+                                                            "option",
+                                                            null,
+                                                            "Selezionate la scelta"
+                                                        )
+                                                    )
+                                                )
+                                            )
+                                        )
+                                    ),
+                                    _react2.default.createElement(
+                                        "div",
+                                        {className: "row part1"},
+                                        _react2.default.createElement(
+                                            "div",
+                                            {className: "col-md-6 col-sm-6 col-md-offset-1"},
+                                            _react2.default.createElement(
+                                                "div",
+                                                {className: "form-group"},
+                                                _react2.default.createElement(
+                                                    "div",
+                                                    {className: "form-group"},
+                                                    _react2.default.createElement(
+                                                        "label",
+                                                        {"for": ""},
+                                                        "In quanto tempo volete che sia terminato ?"
+                                                    )
+                                                ),
+                                                _react2.default.createElement(
+                                                    "div",
+                                                    {className: "selectWrap"},
+                                                    _react2.default.createElement(
+                                                        "select",
+                                                        {className: "form-control"},
+                                                        _react2.default.createElement(
+                                                            "option",
+                                                            null,
+                                                            "Selezionate la scelta"
+                                                        ),
+                                                        _react2.default.createElement(
+                                                            "option",
+                                                            null,
+                                                            "Selezionate la scelta"
+                                                        )
+                                                    )
+                                                )
+                                            )
+                                        )
+                                    ),
+                                    _react2.default.createElement(
+                                        "div",
+                                        {className: "row part1"},
+                                        _react2.default.createElement(
+                                            "div",
+                                            {className: "col-md-6 col-sm-6 col-md-offset-1"},
+                                            _react2.default.createElement(
+                                                "div",
+                                                {className: "form-group"},
+                                                _react2.default.createElement(
+                                                    "div",
+                                                    {className: "form-group"},
+                                                    _react2.default.createElement(
+                                                        "div",
+                                                        {className: "form-group"},
+                                                        _react2.default.createElement(
+                                                            "label",
+                                                            {"for": ""},
+                                                            "Quanto intendete investire ?"
+                                                        )
+                                                    ),
+                                                    _react2.default.createElement(
+                                                        "div",
+                                                        {className: "selectWrap"},
+                                                        _react2.default.createElement(
+                                                            "select",
+                                                            {className: "form-control"},
+                                                            _react2.default.createElement(
+                                                                "option",
+                                                                null,
+                                                                "Selezionate la scelta"
+                                                            ),
+                                                            _react2.default.createElement(
+                                                                "option",
+                                                                null,
+                                                                "Selezionate la scelta"
+                                                            )
+                                                        )
+                                                    )
+                                                )
+                                            )
+                                        )
+                                    ),
+                                    _react2.default.createElement(
+                                        "div",
+                                        {className: "row part1"},
+                                        _react2.default.createElement(
+                                            "div",
+                                            {className: "labelInputGroup col-md-6 col-sm-6 col-md-offset-1"},
+                                            _react2.default.createElement(
+                                                "div",
+                                                {className: "form-group"},
+                                                _react2.default.createElement(
+                                                    "div",
+                                                    {className: "checkbox"},
+                                                    _react2.default.createElement(
+                                                        "label",
+                                                        null,
+                                                        _react2.default.createElement("input", {
+                                                            type: "checkbox",
+                                                            value: ""
+                                                        }),
+                                                        _react2.default.createElement(
+                                                            "span",
+                                                            null,
+                                                            "Desidero delle illustrazioni per la mia marca."
+                                                        ),
+                                                        _react2.default.createElement("span", {className: "fakeRadioBox"})
+                                                    )
+                                                )
+                                            )
+                                        )
+                                    ),
+                                    _react2.default.createElement(
+                                        "div",
+                                        {className: "row part1 bottomBorder"},
+                                        _react2.default.createElement(
+                                            "div",
+                                            {className: "labelInputGroup col-md-6 col-sm-6 col-md-offset-1"},
+                                            _react2.default.createElement(
+                                                "div",
+                                                {className: "form-group"},
+                                                _react2.default.createElement(
+                                                    "div",
+                                                    {className: "checkbox"},
+                                                    _react2.default.createElement(
+                                                        "label",
+                                                        null,
+                                                        _react2.default.createElement("input", {
+                                                            type: "checkbox",
+                                                            value: ""
+                                                        }),
+                                                        _react2.default.createElement(
+                                                            "span",
+                                                            null,
+                                                            "Necessito di uno storyboard per il mio film o animazione."
+                                                        ),
+                                                        _react2.default.createElement("span", {className: "fakeRadioBox"})
+                                                    )
+                                                )
+                                            )
+                                        )
+                                    ),
+                                    _react2.default.createElement(
+                                        "div",
+                                        {className: "row stampati noBorder"},
+                                        _react2.default.createElement(
+                                            "div",
+                                            {className: "col-md-6 col-sm-6 col-md-offset-1"},
+                                            _react2.default.createElement(
+                                                "h1",
+                                                {className: "titleForm"},
+                                                "Stampati commerciali"
+                                            )
+                                        )
+                                    ),
+                                    _react2.default.createElement(
+                                        "div",
+                                        {className: "row"},
+                                        _react2.default.createElement(
+                                            "div",
+                                            {className: "labelInputGroup col-md-6 col-sm-6 col-md-offset-1"},
+                                            _react2.default.createElement(
+                                                "div",
+                                                {className: "form-group inputSelectGroup"},
+                                                _react2.default.createElement(
+                                                    "div",
+                                                    {className: "checkbox"},
+                                                    _react2.default.createElement(
+                                                        "label",
+                                                        {className: "form-inline"},
+                                                        _react2.default.createElement("input", {
+                                                            type: "checkbox",
+                                                            value: ""
+                                                        }),
+                                                        _react2.default.createElement(
+                                                            "div",
+                                                            {className: "selectWrap"},
+                                                            _react2.default.createElement(
+                                                                "select",
+                                                                {className: "form-control"},
+                                                                _react2.default.createElement(
+                                                                    "option",
+                                                                    null,
+                                                                    "500 esemplari"
+                                                                ),
+                                                                _react2.default.createElement(
+                                                                    "option",
+                                                                    null,
+                                                                    "500 esemplari"
+                                                                )
+                                                            )
+                                                        ),
+                                                        _react2.default.createElement(
+                                                            "span",
+                                                            null,
+                                                            "Biglietto da visita"
+                                                        ),
+                                                        _react2.default.createElement("span", {className: "fakeRadioBox"})
+                                                    )
+                                                )
+                                            )
+                                        )
+                                    ),
+                                    _react2.default.createElement(
+                                        "div",
+                                        {className: "row"},
+                                        _react2.default.createElement(
+                                            "div",
+                                            {className: "labelInputGroup col-md-6 col-sm-6 col-md-offset-1"},
+                                            _react2.default.createElement(
+                                                "div",
+                                                {className: "form-group inputSelectGroup"},
+                                                _react2.default.createElement(
+                                                    "div",
+                                                    {className: "checkbox"},
+                                                    _react2.default.createElement(
+                                                        "label",
+                                                        {className: "form-inline"},
+                                                        _react2.default.createElement("input", {
+                                                            type: "checkbox",
+                                                            value: ""
+                                                        }),
+                                                        _react2.default.createElement(
+                                                            "div",
+                                                            {className: "selectWrap"},
+                                                            _react2.default.createElement(
+                                                                "select",
+                                                                {className: "form-control"},
+                                                                _react2.default.createElement(
+                                                                    "option",
+                                                                    null,
+                                                                    "100 esemplari"
+                                                                ),
+                                                                _react2.default.createElement(
+                                                                    "option",
+                                                                    null,
+                                                                    "100 esemplari"
+                                                                )
+                                                            )
+                                                        ),
+                                                        _react2.default.createElement(
+                                                            "span",
+                                                            null,
+                                                            "Busta con carta intestata"
+                                                        ),
+                                                        _react2.default.createElement("span", {className: "fakeRadioBox"})
+                                                    )
+                                                )
+                                            )
+                                        )
+                                    ),
+                                    _react2.default.createElement(
+                                        "div",
+                                        {className: "row"},
+                                        _react2.default.createElement(
+                                            "div",
+                                            {className: "labelInputGroup col-md-6 col-sm-6 col-md-offset-1"},
+                                            _react2.default.createElement(
+                                                "div",
+                                                {className: "form-group inputSelectGroup"},
+                                                _react2.default.createElement(
+                                                    "div",
+                                                    {className: "checkbox"},
+                                                    _react2.default.createElement(
+                                                        "label",
+                                                        {className: "form-inline"},
+                                                        _react2.default.createElement("input", {
+                                                            type: "checkbox",
+                                                            value: ""
+                                                        }),
+                                                        _react2.default.createElement(
+                                                            "div",
+                                                            {className: "selectWrap"},
+                                                            _react2.default.createElement(
+                                                                "select",
+                                                                {className: "form-control"},
+                                                                _react2.default.createElement(
+                                                                    "option",
+                                                                    null,
+                                                                    "24 pagine"
+                                                                ),
+                                                                _react2.default.createElement(
+                                                                    "option",
+                                                                    null,
+                                                                    "24 pagine"
+                                                                )
+                                                            )
+                                                        ),
+                                                        _react2.default.createElement(
+                                                            "span",
+                                                            null,
+                                                            "Brochure"
+                                                        ),
+                                                        _react2.default.createElement("span", {className: "fakeRadioBox"})
+                                                    )
+                                                )
+                                            )
+                                        )
+                                    ),
+                                    _react2.default.createElement(
+                                        "div",
+                                        {className: "row"},
+                                        _react2.default.createElement(
+                                            "div",
+                                            {className: "labelInputGroup col-md-6 col-sm-6 col-md-offset-1"},
+                                            _react2.default.createElement(
+                                                "div",
+                                                {className: "form-group inputSelectGroup"},
+                                                _react2.default.createElement(
+                                                    "div",
+                                                    {className: "checkbox"},
+                                                    _react2.default.createElement(
+                                                        "label",
+                                                        {className: "form-inline"},
+                                                        _react2.default.createElement("input", {
+                                                            type: "checkbox",
+                                                            value: ""
+                                                        }),
+                                                        _react2.default.createElement(
+                                                            "div",
+                                                            {className: "selectWrap"},
+                                                            _react2.default.createElement(
+                                                                "select",
+                                                                {className: "form-control"},
+                                                                _react2.default.createElement(
+                                                                    "option",
+                                                                    null,
+                                                                    "100 esemplari"
+                                                                ),
+                                                                _react2.default.createElement(
+                                                                    "option",
+                                                                    null,
+                                                                    "100 esemplari"
+                                                                )
+                                                            )
+                                                        ),
+                                                        _react2.default.createElement(
+                                                            "span",
+                                                            null,
+                                                            "Pieghevole"
+                                                        ),
+                                                        _react2.default.createElement("span", {className: "fakeRadioBox"})
+                                                    )
+                                                )
+                                            )
+                                        )
+                                    ),
+                                    _react2.default.createElement(
+                                        "div",
+                                        {className: "row"},
+                                        _react2.default.createElement(
+                                            "div",
+                                            {className: "labelInputGroup labelTextareaGroup col-md-6 col-sm-6 col-md-offset-1"},
+                                            _react2.default.createElement(
+                                                "div",
+                                                {className: "form-group "},
+                                                _react2.default.createElement(
+                                                    "div",
+                                                    {className: "checkbox"},
+                                                    _react2.default.createElement(
+                                                        "label",
+                                                        {className: ""},
+                                                        _react2.default.createElement("input", {
+                                                            type: "checkbox",
+                                                            value: ""
+                                                        }),
+                                                        _react2.default.createElement(
+                                                            "span",
+                                                            null,
+                                                            "Altro"
+                                                        ),
+                                                        _react2.default.createElement("textarea", {
+                                                            className: "form-control",
+                                                            rows: "3"
+                                                        }),
+                                                        _react2.default.createElement("span", {className: "fakeRadioBox"})
+                                                    )
+                                                )
+                                            )
+                                        )
+                                    ),
+                                    _react2.default.createElement(
+                                        "div",
+                                        {className: "row noBorder"},
+                                        _react2.default.createElement(
+                                            "div",
+                                            {className: "col-md-6 col-sm-6 col-md-offset-1"},
+                                            _react2.default.createElement(
+                                                "h1",
+                                                {className: "titleForm"},
+                                                "Grafica digitale"
+                                            )
+                                        )
+                                    ),
+                                    _react2.default.createElement(
+                                        "div",
+                                        {className: "row part1"},
+                                        _react2.default.createElement(
+                                            "div",
+                                            {className: "labelInputGroup col-md-6 col-sm-6 col-md-offset-1"},
+                                            _react2.default.createElement(
+                                                "div",
+                                                {className: "form-group"},
+                                                _react2.default.createElement(
+                                                    "div",
+                                                    {className: "checkbox"},
+                                                    _react2.default.createElement(
+                                                        "label",
+                                                        null,
+                                                        _react2.default.createElement("input", {
+                                                            type: "checkbox",
+                                                            value: ""
+                                                        }),
+                                                        _react2.default.createElement(
+                                                            "span",
+                                                            null,
+                                                            "Sito web"
+                                                        ),
+                                                        _react2.default.createElement("span", {className: "fakeRadioBox"})
+                                                    )
+                                                )
+                                            )
+                                        )
+                                    ),
+                                    _react2.default.createElement(
+                                        "div",
+                                        {className: "row part1"},
+                                        _react2.default.createElement(
+                                            "div",
+                                            {className: "labelInputGroup col-md-6 col-sm-6 col-md-offset-1"},
+                                            _react2.default.createElement(
+                                                "div",
+                                                {className: "form-group"},
+                                                _react2.default.createElement(
+                                                    "div",
+                                                    {className: "checkbox"},
+                                                    _react2.default.createElement(
+                                                        "label",
+                                                        null,
+                                                        _react2.default.createElement("input", {
+                                                            type: "checkbox",
+                                                            value: ""
+                                                        }),
+                                                        _react2.default.createElement(
+                                                            "span",
+                                                            null,
+                                                            "Applicazione per iPad o tablet"
+                                                        ),
+                                                        _react2.default.createElement("span", {className: "fakeRadioBox"})
+                                                    )
+                                                )
+                                            )
+                                        )
+                                    ),
+                                    _react2.default.createElement(
+                                        "div",
+                                        {className: "row part1"},
+                                        _react2.default.createElement(
+                                            "div",
+                                            {className: "labelInputGroup col-md-6 col-sm-6 col-md-offset-1"},
+                                            _react2.default.createElement(
+                                                "div",
+                                                {className: "form-group"},
+                                                _react2.default.createElement(
+                                                    "div",
+                                                    {className: "checkbox"},
+                                                    _react2.default.createElement(
+                                                        "label",
+                                                        null,
+                                                        _react2.default.createElement("input", {
+                                                            type: "checkbox",
+                                                            value: ""
+                                                        }),
+                                                        _react2.default.createElement(
+                                                            "span",
+                                                            null,
+                                                            "Applicazione per iPhone o Smartphone"
+                                                        ),
+                                                        _react2.default.createElement("span", {className: "fakeRadioBox"})
+                                                    )
+                                                )
+                                            )
+                                        )
+                                    ),
+                                    _react2.default.createElement(
+                                        "div",
+                                        {className: "row"},
+                                        _react2.default.createElement(
+                                            "div",
+                                            {className: "labelInputGroup col-md-6 col-sm-6 col-md-offset-1"},
+                                            _react2.default.createElement(
+                                                "div",
+                                                {className: "form-group inputSelectGroup"},
+                                                _react2.default.createElement(
+                                                    "div",
+                                                    {className: "checkbox"},
+                                                    _react2.default.createElement(
+                                                        "label",
+                                                        {className: "form-inline"},
+                                                        _react2.default.createElement("input", {
+                                                            type: "checkbox",
+                                                            value: ""
+                                                        }),
+                                                        _react2.default.createElement(
+                                                            "div",
+                                                            {className: "selectWrap"},
+                                                            _react2.default.createElement(
+                                                                "select",
+                                                                {className: "form-control"},
+                                                                _react2.default.createElement(
+                                                                    "option",
+                                                                    null,
+                                                                    "1 minuto"
+                                                                ),
+                                                                _react2.default.createElement(
+                                                                    "option",
+                                                                    null,
+                                                                    "1 minuto"
+                                                                )
+                                                            )
+                                                        ),
+                                                        _react2.default.createElement(
+                                                            "span",
+                                                            null,
+                                                            "Video"
+                                                        ),
+                                                        _react2.default.createElement("span", {className: "fakeRadioBox"})
+                                                    )
+                                                )
+                                            )
+                                        )
+                                    ),
+                                    _react2.default.createElement(
+                                        "div",
+                                        {className: "row"},
+                                        _react2.default.createElement(
+                                            "div",
+                                            {className: "labelInputGroup col-md-6 col-sm-6 col-md-offset-1"},
+                                            _react2.default.createElement(
+                                                "div",
+                                                {className: "form-group inputSelectGroup"},
+                                                _react2.default.createElement(
+                                                    "div",
+                                                    {className: "checkbox"},
+                                                    _react2.default.createElement(
+                                                        "label",
+                                                        {className: "form-inline"},
+                                                        _react2.default.createElement("input", {
+                                                            type: "checkbox",
+                                                            value: ""
+                                                        }),
+                                                        _react2.default.createElement(
+                                                            "div",
+                                                            {className: "selectWrap"},
+                                                            _react2.default.createElement(
+                                                                "select",
+                                                                {className: "form-control"},
+                                                                _react2.default.createElement(
+                                                                    "option",
+                                                                    null,
+                                                                    "1 minuto"
+                                                                ),
+                                                                _react2.default.createElement(
+                                                                    "option",
+                                                                    null,
+                                                                    "1 minuto"
+                                                                )
+                                                            )
+                                                        ),
+                                                        _react2.default.createElement(
+                                                            "span",
+                                                            null,
+                                                            "3D"
+                                                        ),
+                                                        _react2.default.createElement("span", {className: "fakeRadioBox"})
+                                                    )
+                                                )
+                                            )
+                                        )
+                                    ),
+                                    _react2.default.createElement(
+                                        "div",
+                                        {className: "row"},
+                                        _react2.default.createElement(
+                                            "div",
+                                            {className: "labelInputGroup labelTextareaGroup col-md-6 col-sm-6 col-md-offset-1"},
+                                            _react2.default.createElement(
+                                                "div",
+                                                {className: "form-group "},
+                                                _react2.default.createElement(
+                                                    "div",
+                                                    {className: "checkbox"},
+                                                    _react2.default.createElement(
+                                                        "label",
+                                                        {className: ""},
+                                                        _react2.default.createElement("input", {
+                                                            type: "checkbox",
+                                                            value: ""
+                                                        }),
+                                                        _react2.default.createElement(
+                                                            "span",
+                                                            null,
+                                                            "Altro"
+                                                        ),
+                                                        _react2.default.createElement("textarea", {
+                                                            className: "form-control",
+                                                            rows: "3"
+                                                        }),
+                                                        _react2.default.createElement("span", {className: "fakeRadioBox"})
+                                                    )
+                                                )
+                                            )
+                                        )
+                                    ),
+                                    _react2.default.createElement(
+                                        "div",
+                                        {className: "row noBorder"},
+                                        _react2.default.createElement(
+                                            "div",
+                                            {className: "col-md-6 col-sm-6 col-md-offset-1"},
+                                            _react2.default.createElement(
+                                                "h1",
+                                                {className: "titleForm"},
+                                                "Altri prodotti"
+                                            )
+                                        )
+                                    ),
+                                    _react2.default.createElement(
+                                        "div",
+                                        {className: "row part1"},
+                                        _react2.default.createElement(
+                                            "div",
+                                            {className: "labelInputGroup col-md-6 col-sm-6 col-md-offset-1"},
+                                            _react2.default.createElement(
+                                                "div",
+                                                {className: "form-group"},
+                                                _react2.default.createElement(
+                                                    "div",
+                                                    {className: "checkbox"},
+                                                    _react2.default.createElement(
+                                                        "label",
+                                                        null,
+                                                        _react2.default.createElement("input", {
+                                                            type: "checkbox",
+                                                            value: ""
+                                                        }),
+                                                        _react2.default.createElement(
+                                                            "span",
+                                                            null,
+                                                            "Packaging"
+                                                        ),
+                                                        _react2.default.createElement("span", {className: "fakeRadioBox"})
+                                                    )
+                                                )
+                                            )
+                                        )
+                                    ),
+                                    _react2.default.createElement(
+                                        "div",
+                                        {className: "row part1"},
+                                        _react2.default.createElement(
+                                            "div",
+                                            {className: "labelInputGroup col-md-6 col-sm-6 col-md-offset-1"},
+                                            _react2.default.createElement(
+                                                "div",
+                                                {className: "form-group"},
+                                                _react2.default.createElement(
+                                                    "div",
+                                                    {className: "checkbox"},
+                                                    _react2.default.createElement(
+                                                        "label",
+                                                        null,
+                                                        _react2.default.createElement("input", {
+                                                            type: "checkbox",
+                                                            value: ""
+                                                        }),
+                                                        _react2.default.createElement(
+                                                            "span",
+                                                            null,
+                                                            "Segnaletica"
+                                                        ),
+                                                        _react2.default.createElement("span", {className: "fakeRadioBox"})
+                                                    )
+                                                )
+                                            )
+                                        )
+                                    ),
+                                    _react2.default.createElement(
+                                        "div",
+                                        {className: "row part1"},
+                                        _react2.default.createElement(
+                                            "div",
+                                            {className: "labelInputGroup col-md-6 col-sm-6 col-md-offset-1"},
+                                            _react2.default.createElement(
+                                                "div",
+                                                {className: "form-group"},
+                                                _react2.default.createElement(
+                                                    "div",
+                                                    {className: "checkbox"},
+                                                    _react2.default.createElement(
+                                                        "label",
+                                                        null,
+                                                        _react2.default.createElement("input", {
+                                                            type: "checkbox",
+                                                            value: ""
+                                                        }),
+                                                        _react2.default.createElement(
+                                                            "span",
+                                                            null,
+                                                            "Posters"
+                                                        ),
+                                                        _react2.default.createElement("span", {className: "fakeRadioBox"})
+                                                    )
+                                                )
+                                            )
+                                        )
+                                    ),
+                                    _react2.default.createElement(
+                                        "div",
+                                        {className: "row"},
+                                        _react2.default.createElement(
+                                            "div",
+                                            {className: "col-md-6 col-sm-6 col-md-offset-1"},
+                                            _react2.default.createElement(
+                                                "h1",
+                                                {className: "titleForm contenuti"},
+                                                "Contenuti"
+                                            )
+                                        )
+                                    ),
+                                    _react2.default.createElement(
+                                        "div",
+                                        {className: "row part1"},
+                                        _react2.default.createElement(
+                                            "div",
+                                            {className: "col-md-6 col-sm-6 col-md-offset-1"},
+                                            _react2.default.createElement(
+                                                "div",
+                                                {className: "form-group"},
+                                                _react2.default.createElement(
+                                                    "div",
+                                                    {className: "form-group"},
+                                                    _react2.default.createElement(
+                                                        "div",
+                                                        {className: "form-group"},
+                                                        _react2.default.createElement(
+                                                            "label",
+                                                            {"for": ""},
+                                                            "Qual è lo stato attuale dei vostri contenuti?"
+                                                        )
+                                                    ),
+                                                    _react2.default.createElement(
+                                                        "div",
+                                                        {className: "selectWrap"},
+                                                        _react2.default.createElement(
+                                                            "select",
+                                                            {className: "form-control"},
+                                                            _react2.default.createElement(
+                                                                "option",
+                                                                null,
+                                                                "Selezionate la scelta"
+                                                            ),
+                                                            _react2.default.createElement(
+                                                                "option",
+                                                                null,
+                                                                "Selezionate la scelta"
+                                                            )
+                                                        )
+                                                    )
+                                                )
+                                            )
+                                        )
+                                    ),
+                                    _react2.default.createElement(
+                                        "div",
+                                        {className: "row"},
+                                        _react2.default.createElement(
+                                            "div",
+                                            {className: "col-md-6 col-sm-6 col-md-offset-1"},
+                                            _react2.default.createElement(
+                                                "h1",
+                                                {className: "titleForm commentFinal"},
+                                                "Commenti finali"
+                                            )
+                                        )
+                                    ),
+                                    _react2.default.createElement(
+                                        "div",
+                                        {className: "row noBorder "},
+                                        _react2.default.createElement(
+                                            "div",
+                                            {className: "col-md-6 col-sm-6 col-md-offset-1"},
+                                            _react2.default.createElement("textarea", {
+                                                className: "form-control finalComment",
+                                                rows: "3"
+                                            })
+                                        )
+                                    ),
+                                    _react2.default.createElement(
+                                        "div",
+                                        {className: "row noBorder nextBtn"},
+                                        _react2.default.createElement(
+                                            "div",
+                                            {className: "col-md-6 col-sm-6 col-md-offset-1"},
+                                            _react2.default.createElement(
+                                                "div",
+                                                {className: "nexButton"},
+                                                _react2.default.createElement(
+                                                    "span",
+                                                    null,
+                                                    "Invio"
+                                                )
+                                            )
+                                        )
+                                    )
+                                )
+                            )
+                        )
+                    );
+                }
+            }]);
+
+            return Formal;
+        }(_react.Component);
+
+        exports.default = Formal;
+
+        /***/
+    },
+    /* 242 */
+    /***/ function (module, exports, __webpack_require__) {
+
+        "use strict";
+
+        Object.defineProperty(exports, "__esModule", {
+            value: true
+        });
+
+        var _createClass = function () {
+            function defineProperties(target, props) {
+                for (var i = 0; i < props.length; i++) {
+                    var descriptor = props[i];
+                    descriptor.enumerable = descriptor.enumerable || false;
+                    descriptor.configurable = true;
+                    if ("value" in descriptor) descriptor.writable = true;
+                    Object.defineProperty(target, descriptor.key, descriptor);
+                }
+            }
+
+            return function (Constructor, protoProps, staticProps) {
+                if (protoProps) defineProperties(Constructor.prototype, protoProps);
+                if (staticProps) defineProperties(Constructor, staticProps);
+                return Constructor;
+            };
+        }();
+
+        var _react = __webpack_require__(2);
+
+        var _react2 = _interopRequireDefault(_react);
+
+        function _interopRequireDefault(obj) {
+            return obj && obj.__esModule ? obj : {default: obj};
+        }
+
+        function _classCallCheck(instance, Constructor) {
+            if (!(instance instanceof Constructor)) {
+                throw new TypeError("Cannot call a class as a function");
+            }
+        }
+
+        function _possibleConstructorReturn(self, call) {
+            if (!self) {
+                throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+            }
+            return call && (typeof call === "object" || typeof call === "function") ? call : self;
+        }
+
+        function _inherits(subClass, superClass) {
+            if (typeof superClass !== "function" && superClass !== null) {
+                throw new TypeError("Super expression must either be null or a function, not " + typeof superClass);
+            }
+            subClass.prototype = Object.create(superClass && superClass.prototype, {
+                constructor: {
+                    value: subClass,
+                    enumerable: false,
+                    writable: true,
+                    configurable: true
+                }
+            });
+            if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
+        }
+
+        var Home = function (_Component) {
+            _inherits(Home, _Component);
+
+            function Home() {
+                _classCallCheck(this, Home);
+
+                return _possibleConstructorReturn(this, (Home.__proto__ || Object.getPrototypeOf(Home)).apply(this, arguments));
+            }
+
+            _createClass(Home, [{
+                key: "render",
+                value: function render() {
+                    return _react2.default.createElement(
+                        "div",
+                        {className: "body home"},
+                        _react2.default.createElement(
+                            "div",
+                            {className: "homeSlider"},
+                            _react2.default.createElement(
+                                "div",
+                                {
+                                    id: "carousel-example-generic",
+                                    className: "carousel slide",
+                                    "data-ride": "carousel",
+                                    "data-interval": "50000000"
+                                },
+                                _react2.default.createElement(
+                                    "ol",
+                                    {className: "carousel-indicators"},
+                                    _react2.default.createElement("li", {
+                                        "data-target": "#carousel-example-generic",
+                                        "data-slide-to": "0",
+                                        className: "active"
+                                    }),
+                                    _react2.default.createElement("li", {
+                                        "data-target": "#carousel-example-generic",
+                                        "data-slide-to": "1"
+                                    })
+                                ),
+                                _react2.default.createElement(
+                                    "div",
+                                    {className: "carousel-inner", role: "listbox"},
+                                    _react2.default.createElement(
+                                        "div",
+                                        {className: "item active"},
+                                        _react2.default.createElement(
+                                            "div",
+                                            {className: "wrapSlider"},
+                                            _react2.default.createElement("img", {
+                                                src: "images/slides/_1-home page/svizzera.jpg",
+                                                alt: "Svizzera"
+                                            }),
+                                            _react2.default.createElement(
+                                                "div",
+                                                {className: "carousel-caption"},
+                                                _react2.default.createElement(
+                                                    "div",
+                                                    {className: "captionTitle"},
+                                                    "ESPERIENZA NEL CAMPO"
+                                                ),
+                                                _react2.default.createElement(
+                                                    "div",
+                                                    {className: "captionTitle"},
+                                                    "DELLA GRAFICA."
+                                                ),
+                                                _react2.default.createElement(
+                                                    "div",
+                                                    {className: "captionTitle"},
+                                                    "DALLA SVIZZERA..."
+                                                )
+                                            )
+                                        )
+                                    ),
+                                    _react2.default.createElement(
+                                        "div",
+                                        {className: "item"},
+                                        _react2.default.createElement(
+                                            "div",
+                                            {className: "wrapSlider"},
+                                            _react2.default.createElement("img", {
+                                                src: "images/slides/_1-home page/vietnam.jpg",
+                                                alt: "VN"
+                                            }),
+                                            _react2.default.createElement(
+                                                "div",
+                                                {className: "carousel-caption"},
+                                                _react2.default.createElement(
+                                                    "div",
+                                                    {className: "captionTitle"},
+                                                    "ESPERIENZA NEL CAMPO"
+                                                ),
+                                                _react2.default.createElement(
+                                                    "div",
+                                                    {className: "captionTitle"},
+                                                    "DELLA GRAFICA."
+                                                ),
+                                                _react2.default.createElement(
+                                                    "div",
+                                                    {className: "captionTitle"},
+                                                    "DALLA SVIZZERA..."
+                                                )
+                                            )
+                                        )
+                                    )
+                                ),
+                                _react2.default.createElement(
+                                    "a",
+                                    {
+                                        className: "left carousel-control",
+                                        href: "#carousel-example-generic",
+                                        role: "button",
+                                        "data-slide": "prev"
+                                    },
+                                    _react2.default.createElement("span", {
+                                        className: "glyphicon glyphicon-chevron-left",
+                                        "aria-hidden": "true"
+                                    }),
+                                    _react2.default.createElement(
+                                        "span",
+                                        {className: "sr-only"},
+                                        "Previous"
+                                    )
+                                ),
+                                _react2.default.createElement(
+                                    "a",
+                                    {
+                                        className: "right carousel-control",
+                                        href: "#carousel-example-generic",
+                                        role: "button",
+                                        "data-slide": "next"
+                                    },
+                                    _react2.default.createElement("span", {
+                                        className: "glyphicon glyphicon-chevron-right",
+                                        "aria-hidden": "true"
+                                    }),
+                                    _react2.default.createElement(
+                                        "span",
+                                        {className: "sr-only"},
+                                        "Next"
+                                    )
+                                )
+                            )
+                        )
+                    );
+                }
+            }]);
+
+            return Home;
+        }(_react.Component);
+
+        exports.default = Home;
+
+        /***/
+    },
+    /* 243 */
+    /***/ function (module, exports, __webpack_require__) {
+
+        "use strict";
+
+        Object.defineProperty(exports, "__esModule", {
+            value: true
+        });
+
+        var _createClass = function () {
+            function defineProperties(target, props) {
+                for (var i = 0; i < props.length; i++) {
+                    var descriptor = props[i];
+                    descriptor.enumerable = descriptor.enumerable || false;
+                    descriptor.configurable = true;
+                    if ("value" in descriptor) descriptor.writable = true;
+                    Object.defineProperty(target, descriptor.key, descriptor);
+                }
+            }
+
+            return function (Constructor, protoProps, staticProps) {
+                if (protoProps) defineProperties(Constructor.prototype, protoProps);
+                if (staticProps) defineProperties(Constructor, staticProps);
+                return Constructor;
+            };
+        }();
+
+        var _react = __webpack_require__(2);
+
+        var _react2 = _interopRequireDefault(_react);
+
+        function _interopRequireDefault(obj) {
+            return obj && obj.__esModule ? obj : {default: obj};
+        }
+
+        function _classCallCheck(instance, Constructor) {
+            if (!(instance instanceof Constructor)) {
+                throw new TypeError("Cannot call a class as a function");
+            }
+        }
+
+        function _possibleConstructorReturn(self, call) {
+            if (!self) {
+                throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+            }
+            return call && (typeof call === "object" || typeof call === "function") ? call : self;
+        }
+
+        function _inherits(subClass, superClass) {
+            if (typeof superClass !== "function" && superClass !== null) {
+                throw new TypeError("Super expression must either be null or a function, not " + typeof superClass);
+            }
+            subClass.prototype = Object.create(superClass && superClass.prototype, {
+                constructor: {
+                    value: subClass,
+                    enumerable: false,
+                    writable: true,
+                    configurable: true
+                }
+            });
+            if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
+        }
+
+        var Product = function (_Component) {
+            _inherits(Product, _Component);
+
+            function Product() {
+                _classCallCheck(this, Product);
+
+                return _possibleConstructorReturn(this, (Product.__proto__ || Object.getPrototypeOf(Product)).apply(this, arguments));
+            }
+
+            _createClass(Product, [{
+                key: "render",
+                value: function render() {
+                    return _react2.default.createElement(
+                        "div",
+                        {className: "body product"},
+                        _react2.default.createElement(
+                            "div",
+                            {className: "homeSlider showcaseSlider productSlider"},
+                            _react2.default.createElement(
+                                "div",
+                                {
+                                    id: "carousel-example-generic",
+                                    className: "carousel slide",
+                                    "data-ride": "carousel",
+                                    "data-interval": "5000"
+                                },
+                                _react2.default.createElement(
+                                    "ol",
+                                    {className: "carousel-indicators"},
+                                    _react2.default.createElement("li", {
+                                        "data-target": "#carousel-example-generic",
+                                        "data-slide-to": "0",
+                                        className: "active"
+                                    }),
+                                    _react2.default.createElement("li", {
+                                        "data-target": "#carousel-example-generic",
+                                        "data-slide-to": "1"
+                                    }),
+                                    _react2.default.createElement("li", {
+                                        "data-target": "#carousel-example-generic",
+                                        "data-slide-to": "2"
+                                    })
+                                ),
+                                _react2.default.createElement(
+                                    "div",
+                                    {className: "carousel-inner", role: "listbox"},
+                                    _react2.default.createElement(
+                                        "div",
+                                        {className: "item active"},
+                                        _react2.default.createElement(
+                                            "div",
+                                            {className: "wrapSlider"},
+                                            _react2.default.createElement("img", {
+                                                src: "images/slides/_4-prodotti/DSC_5182.jpg",
+                                                alt: "VN"
+                                            }),
+                                            _react2.default.createElement(
+                                                "div",
+                                                {className: "carousel-caption"},
+                                                _react2.default.createElement(
+                                                    "div",
+                                                    {className: "captionTitle"},
+                                                    "Metti la tua idea ovunque"
+                                                )
+                                            )
+                                        )
+                                    ),
+                                    _react2.default.createElement(
+                                        "div",
+                                        {className: "item"},
+                                        _react2.default.createElement(
+                                            "div",
+                                            {className: "wrapSlider"},
+                                            _react2.default.createElement("img", {
+                                                src: "images/slides/_4-prodotti/DSC_5206.jpg",
+                                                alt: "VN"
+                                            }),
+                                            _react2.default.createElement(
+                                                "div",
+                                                {className: "carousel-caption"},
+                                                _react2.default.createElement(
+                                                    "div",
+                                                    {className: "captionTitle"},
+                                                    "Metti la tua idea ovunque"
+                                                )
+                                            )
+                                        )
+                                    ),
+                                    _react2.default.createElement(
+                                        "div",
+                                        {className: "item"},
+                                        _react2.default.createElement(
+                                            "div",
+                                            {className: "wrapSlider"},
+                                            _react2.default.createElement("img", {
+                                                src: "images/slides/_4-prodotti/DSC_5211.jpg",
+                                                alt: "VN"
+                                            }),
+                                            _react2.default.createElement(
+                                                "div",
+                                                {className: "carousel-caption"},
+                                                _react2.default.createElement(
+                                                    "div",
+                                                    {className: "captionTitle"},
+                                                    "Metti la tua idea ovunque"
+                                                )
+                                            )
+                                        )
+                                    )
+                                ),
+                                _react2.default.createElement(
+                                    "a",
+                                    {
+                                        className: "left carousel-control",
+                                        href: "#carousel-example-generic",
+                                        role: "button",
+                                        "data-slide": "prev"
+                                    },
+                                    _react2.default.createElement("span", {
+                                        className: "glyphicon glyphicon-chevron-left",
+                                        "aria-hidden": "true"
+                                    }),
+                                    _react2.default.createElement(
+                                        "span",
+                                        {className: "sr-only"},
+                                        "Previous"
+                                    )
+                                ),
+                                _react2.default.createElement(
+                                    "a",
+                                    {
+                                        className: "right carousel-control",
+                                        href: "#carousel-example-generic",
+                                        role: "button",
+                                        "data-slide": "next"
+                                    },
+                                    _react2.default.createElement("span", {
+                                        className: "glyphicon glyphicon-chevron-right",
+                                        "aria-hidden": "true"
+                                    }),
+                                    _react2.default.createElement(
+                                        "span",
+                                        {className: "sr-only"},
+                                        "Next"
+                                    )
+                                )
+                            )
+                        )
+                    );
+                }
+            }]);
+
+            return Product;
+        }(_react.Component);
+
+        exports.default = Product;
+
+        /***/
+    },
+    /* 244 */
+    /***/ function (module, exports, __webpack_require__) {
+
+        "use strict";
+
+        Object.defineProperty(exports, "__esModule", {
+            value: true
+        });
+
+        var _createClass = function () {
+            function defineProperties(target, props) {
+                for (var i = 0; i < props.length; i++) {
+                    var descriptor = props[i];
+                    descriptor.enumerable = descriptor.enumerable || false;
+                    descriptor.configurable = true;
+                    if ("value" in descriptor) descriptor.writable = true;
+                    Object.defineProperty(target, descriptor.key, descriptor);
+                }
+            }
+
+            return function (Constructor, protoProps, staticProps) {
+                if (protoProps) defineProperties(Constructor.prototype, protoProps);
+                if (staticProps) defineProperties(Constructor, staticProps);
+                return Constructor;
+            };
+        }();
+
+        var _react = __webpack_require__(2);
+
+        var _react2 = _interopRequireDefault(_react);
+
+        function _interopRequireDefault(obj) {
+            return obj && obj.__esModule ? obj : {default: obj};
+        }
+
+        function _classCallCheck(instance, Constructor) {
+            if (!(instance instanceof Constructor)) {
+                throw new TypeError("Cannot call a class as a function");
+            }
+        }
+
+        function _possibleConstructorReturn(self, call) {
+            if (!self) {
+                throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+            }
+            return call && (typeof call === "object" || typeof call === "function") ? call : self;
+        }
+
+        function _inherits(subClass, superClass) {
+            if (typeof superClass !== "function" && superClass !== null) {
+                throw new TypeError("Super expression must either be null or a function, not " + typeof superClass);
+            }
+            subClass.prototype = Object.create(superClass && superClass.prototype, {
+                constructor: {
+                    value: subClass,
+                    enumerable: false,
+                    writable: true,
+                    configurable: true
+                }
+            });
+            if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
+        }
+
+        var ShowCases = function (_Component) {
+            _inherits(ShowCases, _Component);
+
+            function ShowCases() {
+                _classCallCheck(this, ShowCases);
+
+                return _possibleConstructorReturn(this, (ShowCases.__proto__ || Object.getPrototypeOf(ShowCases)).apply(this, arguments));
+            }
+
+            _createClass(ShowCases, [{
+                key: "render",
+                value: function render() {
+                    return _react2.default.createElement(
+                        "div",
+                        {className: "body showcase"},
+                        _react2.default.createElement(
+                            "div",
+                            {className: "homeSlider showcaseSlider"},
+                            _react2.default.createElement(
+                                "div",
+                                {
+                                    id: "carousel-example-generic",
+                                    className: "carousel slide",
+                                    "data-ride": "carousel",
+                                    "data-interval": "5000"
+                                },
+                                _react2.default.createElement(
+                                    "ol",
+                                    {className: "carousel-indicators"},
+                                    _react2.default.createElement("li", {
+                                        "data-target": "#carousel-example-generic",
+                                        "data-slide-to": "0",
+                                        className: "active"
+                                    }),
+                                    _react2.default.createElement("li", {
+                                        "data-target": "#carousel-example-generic",
+                                        "data-slide-to": "1"
+                                    }),
+                                    _react2.default.createElement("li", {
+                                        "data-target": "#carousel-example-generic",
+                                        "data-slide-to": "2"
+                                    })
+                                ),
+                                _react2.default.createElement(
+                                    "div",
+                                    {className: "carousel-inner", role: "listbox"},
+                                    _react2.default.createElement(
+                                        "div",
+                                        {className: "item active"},
+                                        _react2.default.createElement(
+                                            "div",
+                                            {className: "wrapSlider"},
+                                            _react2.default.createElement("img", {
+                                                src: "images/slides/_3-showcase/illustrazioni/illustrazioni_1.jpg",
+                                                alt: "VN"
+                                            }),
+                                            _react2.default.createElement(
+                                                "div",
+                                                {className: "carousel-caption"},
+                                                _react2.default.createElement(
+                                                    "div",
+                                                    {className: "captionTitle"},
+                                                    "Illustrazioni"
+                                                )
+                                            )
+                                        )
+                                    ),
+                                    _react2.default.createElement(
+                                        "div",
+                                        {className: "item"},
+                                        _react2.default.createElement(
+                                            "div",
+                                            {className: "wrapSlider"},
+                                            _react2.default.createElement("img", {
+                                                src: "images/slides/_3-showcase/illustrazioni/illustrazioni_2.jpg",
+                                                alt: "VN"
+                                            }),
+                                            _react2.default.createElement(
+                                                "div",
+                                                {className: "carousel-caption"},
+                                                _react2.default.createElement(
+                                                    "div",
+                                                    {className: "captionTitle"},
+                                                    "Illustrazioni"
+                                                )
+                                            )
+                                        )
+                                    ),
+                                    _react2.default.createElement(
+                                        "div",
+                                        {className: "item"},
+                                        _react2.default.createElement(
+                                            "div",
+                                            {className: "wrapSlider"},
+                                            _react2.default.createElement("img", {
+                                                src: "images/slides/_3-showcase/illustrazioni/illustrazioni_3.jpg",
+                                                alt: "VN"
+                                            }),
+                                            _react2.default.createElement(
+                                                "div",
+                                                {className: "carousel-caption"},
+                                                _react2.default.createElement(
+                                                    "div",
+                                                    {className: "captionTitle"},
+                                                    "Illustrazioni"
+                                                )
+                                            )
+                                        )
+                                    )
+                                ),
+                                _react2.default.createElement(
+                                    "a",
+                                    {
+                                        className: "left carousel-control",
+                                        href: "#carousel-example-generic",
+                                        role: "button",
+                                        "data-slide": "prev"
+                                    },
+                                    _react2.default.createElement("span", {
+                                        className: "glyphicon glyphicon-chevron-left",
+                                        "aria-hidden": "true"
+                                    }),
+                                    _react2.default.createElement(
+                                        "span",
+                                        {className: "sr-only"},
+                                        "Previous"
+                                    )
+                                ),
+                                _react2.default.createElement(
+                                    "a",
+                                    {
+                                        className: "right carousel-control",
+                                        href: "#carousel-example-generic",
+                                        role: "button",
+                                        "data-slide": "next"
+                                    },
+                                    _react2.default.createElement("span", {
+                                        className: "glyphicon glyphicon-chevron-right",
+                                        "aria-hidden": "true"
+                                    }),
+                                    _react2.default.createElement(
+                                        "span",
+                                        {className: "sr-only"},
+                                        "Next"
+                                    )
+                                )
+                            )
+                        )
+                    );
+                }
+            }]);
+
+            return ShowCases;
+        }(_react.Component);
+
+        exports.default = ShowCases;
 
 /***/ }
 /******/ ]);
