@@ -445,6 +445,8 @@ class Formal extends Component {
                         </form>
                     </div>
                 </div>
+
+                {/*finish for formal*/}
             </div>
         );
     }
