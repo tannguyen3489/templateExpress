@@ -125,7 +125,7 @@ body {
 }
 
 #root .formInfo {
-    padding-top: 120px;
+    padding-top: 35px;
     padding-bottom: 160px;
 }
 
@@ -628,6 +628,7 @@ div.body {
     margin-bottom: 0px;
     font-size: 24px;
     color: #999999;
+    line-height: 36px;
     /*max-width: 860px;*/
 }
 
