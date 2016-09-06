@@ -135,7 +135,7 @@ body {
     }
 }
 
-#root .formInfo .container-fluid form > div.row:before {
+#root .formInfo .container-fluid form > div.row > div:before {
     content: '';
     display: block;
     height: 1px;
@@ -143,7 +143,7 @@ body {
     border-bottom: 1px dashed #008cd2;
 }
 
-#root .formInfo .container-fluid form > div.row.bottomBorder:after {
+#root .formInfo .container-fluid form > div.row.bottomBorder > div:after {
     content: '';
     display: block;
     height: 1px;
@@ -151,7 +151,7 @@ body {
     border-bottom: 1px dashed #008cd2;
 }
 
-#root .formInfo .container-fluid form > div.row.noBorder:before {
+#root .formInfo .container-fluid form > div.row.noBorder > div:before {
     border-bottom: none;
 }
 
@@ -167,7 +167,7 @@ body {
 }
 
 #root .formInfo .container-fluid span.select2.select2-container span.select2-selection .select2-selection__arrow {
-    background: url('../images/1280_formulario.png');
+    background: url('../images/selectBoxIcon_1280.png');
     width: 30px;
     height: 30px;
     right: 0;
@@ -237,7 +237,7 @@ body {
     width: 30px;
     height: 30px;
     cursor: pointer;
-    background: url('../images/1280_formulario.png');
+    background: url('../images/selectBoxIcon_1280.png');
 }
 
 /*#root .formInfo .container-fluid div.selectWrap > select{*/
@@ -248,10 +248,14 @@ body {
 
 /*}*/
 
+input[type=checkbox] {
+    /*opacity: 0;*/
+}
+
 input[type=checkbox]:before {
     opacity: 1;
     content: '';
-    background: url('../images/Dot_9_not_active.jpg') center no-repeat transparent;
+    background: url('../images/radio.png') center no-repeat transparent;
     width: 18px;
     height: 18px;
     display: inline-block;
@@ -260,7 +264,7 @@ input[type=checkbox]:before {
 input[type=checkbox]:checked:before {
     opacity: 1;
     content: '';
-    background: url('../images/Dot_9.jpg') center no-repeat transparent;
+    background: url('../images/radio_active.png') center no-repeat transparent;
     width: 18px;
     height: 18px;
     display: inline-block;
@@ -297,7 +301,7 @@ input[type=checkbox]:checked:before {
 }
 
 #root .formInfo .container-fluid form div.form-group div.checkbox label > span {
-    margin-left: 18px;
+    margin-left: 35px;
 }
 
 #root .formInfo .container-fluid form div.form-group input[type=checkbox] {
@@ -309,12 +313,12 @@ input[type=checkbox]:checked:before {
 }
 
 #root .formInfo .container-fluid form > div.row > div.labelInputGroup {
-    padding-left: 12px;
-    max-width: 500px;
+    /*padding-left: 12px;*/
+    /*max-width: 500px;*/
 }
 
 #root .formInfo .container-fluid form > div.row > div.labelInputGroup label {
-    width: calc(100% - 4px);
+    /*width: calc(100% - 4px);*/
 }
 
 #root .formInfo form .part1 div.labelInputGroup > div.form-group {
@@ -327,7 +331,7 @@ input[type=checkbox]:checked:before {
 }
 
 #root .formInfo .container-fluid .labelInputGroup .selectWrap {
-    margin-left: 19px;
+    margin-left: 35px;
     display: inline-block;
 }
 
@@ -351,13 +355,14 @@ input[type=checkbox]:checked:before {
 
 #root .formInfo .container-fluid form .labelTextareaGroup textarea {
     margin-top: 20px;
-    margin-left: 18px;
+    margin-left: 0px;
     height: 120px;
     max-height: 160px;
     border: #008cd2 1px solid;
     border-radius: 0;
     font-size: 16px;
     color: #008cd2;
+    max-width: 400px;
 }
 
 #root .formInfo .container-fluid form textarea {
@@ -623,7 +628,7 @@ div.body {
     margin-bottom: 0px;
     font-size: 24px;
     color: #999999;
-    max-width: 860px;
+    /*max-width: 860px;*/
 }
 
 .contact .container-fluid .row.ownerInfo {
@@ -891,4 +896,66 @@ div.body {
 #rootApp .body.about .contact .container-fluid .row.ownerInfo > div:first-child {
     min-width: 300px;
     /*max-width: 300px;*/
+}
+
+#rootApp .body.formal .container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#rootApp .body.formal .container-fluid form > div.row {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#root .formInfo .container-fluid form > div.row > div.labelInputGroup label {
+    position: relative;
+    padding-left: 0;
+    width: 100%;
+}
+
+#root .formInfo .container-fluid form > div.row > div.labelInputGroup label > textarea {
+    width: 100%;
+}
+
+#root .formInfo .container-fluid form > div.row > div.labelInputGroup label > input {
+    visibility: hidden;
+}
+
+#root .formInfo .container-fluid form > div.row > div.labelInputGroup div.inputSelectGroup label > input ~ .fakeRadioBox {
+    top: 11px;
+}
+
+#root .formInfo .container-fluid form > div.row > div.labelInputGroup label > input ~ .fakeRadioBox {
+    position: absolute;
+    display: inline;
+    width: 18px;
+    height: 18px;
+    left: 0;
+    top: 0;
+    margin-left: 0;
+    /*transform: translateY(-50%);*/
+    border-radius: 8px;
+    background: url('../images/radio.png') #fff;
+}
+
+#root .formInfo .container-fluid form > div.row > div.labelInputGroup label > input:checked ~ .fakeRadioBox {
+    background: url('../images/radio_active.png');
+}
+
+#rootApp .body.formal form > div.row > div {
+    /*margin-left: 0;*/
+    /*margin-right: 0;*/
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#root .body.formal .formInfo h1 {
+    margin-top: 45px;
+}
+
+#root .body.formal div.infoPart > div > div.form-group:last-child {
+    margin-bottom: 0;
 }

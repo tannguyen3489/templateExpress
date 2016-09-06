@@ -44,7 +44,7 @@
 
     #root .formInfo .container-fluid form > div.row:before,
     #root .formInfo .container-fluid form > div.row.bottomBorder:after {
-        max-width: 550px;
+        /*max-width: 550px;*/
     }
 
     #root .formInfo .container-fluid div.selectWrap {
@@ -52,7 +52,7 @@
     }
 
     #root .formInfo .container-fluid form > div.row > div {
-        padding-left: 50px;
+        /*padding-left: 50px;*/
     }
 
     #root .formInfo .container-fluid form textarea.finalComment {
@@ -64,7 +64,7 @@
 
     #root .formInfo .container-fluid form .labelTextareaGroup textarea {
         margin-top: 20px;
-        margin-left: 18px;
+        margin-left: 0px;
         width: 300px;
         max-width: 500px;
         height: 120px;
@@ -76,6 +76,7 @@
     .contact .container-fluid {
         padding-left: 145px;
     }
+
 }
 
 @media (min-width: 1920px) {
@@ -128,9 +129,9 @@
     }
 
     #root .formInfo .container-fluid div.selectWrap:before {
-        width: 45px;
+        width: 46px;
         height: 46px;
-        background: url('../images/1920_formulario.png');
+        background: url('../images/selectBoxIcon_1920.png');
     }
 
     #root .formInfo .container-fluid .labelInputGroup .selectWrap select {
@@ -268,5 +269,9 @@
 
     .contact .container-fluid .infos .viewProfile {
         width: 260px;
+    }
+
+    #root .formInfo .container-fluid form > div.row > div.labelInputGroup div.inputSelectGroup label > input ~ .fakeRadioBox {
+        top: 16px;
     }
 }
