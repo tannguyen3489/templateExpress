@@ -63,31 +63,31 @@
 
 	var _reactRouter = __webpack_require__(173);
 
-        var _leftPanel = __webpack_require__(238);
+        var _leftPanel = __webpack_require__(236);
 
         var _leftPanel2 = _interopRequireDefault(_leftPanel);
 
-        var _about = __webpack_require__(239);
+        var _about = __webpack_require__(237);
 
         var _about2 = _interopRequireDefault(_about);
 
-        var _contact = __webpack_require__(240);
+        var _contact = __webpack_require__(238);
 
         var _contact2 = _interopRequireDefault(_contact);
 
-        var _formal = __webpack_require__(241);
+        var _formal = __webpack_require__(239);
 
         var _formal2 = _interopRequireDefault(_formal);
 
-        var _home = __webpack_require__(242);
+        var _home = __webpack_require__(240);
 
         var _home2 = _interopRequireDefault(_home);
 
-        var _product = __webpack_require__(243);
+        var _product = __webpack_require__(241);
 
         var _product2 = _interopRequireDefault(_product);
 
-        var _showcases = __webpack_require__(244);
+        var _showcases = __webpack_require__(242);
 
         var _showcases2 = _interopRequireDefault(_showcases);
 
@@ -146,8 +146,8 @@
                                             })
                                         ),
                                         _react2.default.createElement(
-                                            "a",
-                                            {className: "navbar-brand logo", href: "/home"},
+                                            _reactRouter.Link,
+                                            {className: "navbar-brand logo", to: '/home'},
                                             _react2.default.createElement("img", {alt: "Logo", src: "/images/Logo.png"})
                                         ),
                                         _react2.default.createElement(
@@ -190,11 +190,7 @@
 	                            )
 	                        )
                         ),
-	                    _react2.default.createElement(
-                            "div",
-                            {className: "body <%= fileName %>"},
-                            this.props.children
-	                    )
+                        this.props.children
                     )
 	            );
 	        }
@@ -27547,9 +27543,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-    /* 236 */,
-    /* 237 */,
-    /* 238 */
+    /* 236 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -27687,7 +27681,9 @@
                                         {onClick: this.closeLeftPanel.bind(this), className: "gotoLink"},
                                         _react2.default.createElement(
                                             _reactRouter.Link,
-                                            {to: '/showcase'},
+                                            {
+                                                to: '/showcase'
+                                            },
                                             "Showcase"
                                         )
                                     ),
@@ -27696,7 +27692,9 @@
                                         {onClick: this.closeLeftPanel.bind(this), className: "gotoLink"},
                                         _react2.default.createElement(
                                             _reactRouter.Link,
-                                            {to: '/product'},
+                                            {
+                                                to: '/product'
+                                            },
                                             "La nostra marca"
                                         )
                                     ),
@@ -27705,7 +27703,9 @@
                                         {onClick: this.closeLeftPanel.bind(this), className: "gotoLink"},
                                         _react2.default.createElement(
                                             _reactRouter.Link,
-                                            {to: '/contact'},
+                                            {
+                                                to: '/contact'
+                                            },
                                             "Contatti"
                                         )
                                     )
@@ -27723,7 +27723,7 @@
         exports.default = LeftPanel;
 
 /***/ },
-    /* 239 */
+    /* 237 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -27999,10 +27999,7 @@
                         _react2.default.createElement(
                             "div",
                             {
-                                className: "modal fade userInfoModal",
-                                id: "miloModal",
-                                tabIndex: "-1",
-                                role: "dialog",
+                                className: "modal fade userInfoModal", id: "miloModal", tabIndex: "-1", role: "dialog",
                                 "aria-labelledby": "myModalLabel"
                             },
                             _react2.default.createElement(
@@ -28076,10 +28073,7 @@
                         _react2.default.createElement(
                             "div",
                             {
-                                className: "modal fade userInfoModal",
-                                id: "huyModal",
-                                tabIndex: "-s",
-                                role: "dialog",
+                                className: "modal fade userInfoModal", id: "huyModal", tabIndex: "-s", role: "dialog",
                                 "aria-labelledby": "myModalLabel"
                             },
                             _react2.default.createElement(
@@ -28153,10 +28147,7 @@
                         _react2.default.createElement(
                             "div",
                             {
-                                className: "modal fade userInfoModal",
-                                id: "ericModal",
-                                tabIndex: "-1",
-                                role: "dialog",
+                                className: "modal fade userInfoModal", id: "ericModal", tabIndex: "-1", role: "dialog",
                                 "aria-labelledby": "myModalLabel"
                             },
                             _react2.default.createElement(
@@ -28239,7 +28230,7 @@
 
         /***/
     },
-    /* 240 */
+    /* 238 */
     /***/ function (module, exports, __webpack_require__) {
 
         "use strict";
@@ -28474,7 +28465,7 @@
 
         /***/
     },
-    /* 241 */
+    /* 239 */
     /***/ function (module, exports, __webpack_require__) {
 
         "use strict";
@@ -28598,7 +28589,7 @@
                                                 {className: "form-group"},
                                                 _react2.default.createElement(
                                                     "label",
-                                                    {"for": "name"},
+                                                    {htmlFor: "name"},
                                                     "NOME E COGNOME"
                                                 ),
                                                 _react2.default.createElement("input", {
@@ -28611,7 +28602,7 @@
                                                 {className: "form-group"},
                                                 _react2.default.createElement(
                                                     "label",
-                                                    {"for": "email"},
+                                                    {htmlFor: "email"},
                                                     "E-Mail"
                                                 ),
                                                 _react2.default.createElement("input", {
@@ -28624,7 +28615,7 @@
                                                 {className: "form-group"},
                                                 _react2.default.createElement(
                                                     "label",
-                                                    {"for": "phone"},
+                                                    {htmlFor: "phone"},
                                                     "TELEFONO"
                                                 ),
                                                 _react2.default.createElement("input", {
@@ -28637,7 +28628,7 @@
                                                 {className: "form-group"},
                                                 _react2.default.createElement(
                                                     "label",
-                                                    {"for": "country"},
+                                                    {htmlFor: "country"},
                                                     "PAESE"
                                                 ),
                                                 _react2.default.createElement("input", {
@@ -28674,7 +28665,7 @@
                                                     {className: "form-group"},
                                                     _react2.default.createElement(
                                                         "label",
-                                                        {"for": ""},
+                                                        {htmlFor: ""},
                                                         "Si tratta di un nuovo progetto o di un rebrand ?"
                                                     )
                                                 ),
@@ -28713,7 +28704,7 @@
                                                     {className: "form-group"},
                                                     _react2.default.createElement(
                                                         "label",
-                                                        {"for": ""},
+                                                        {htmlFor: ""},
                                                         "In quanto tempo volete che sia terminato ?"
                                                     )
                                                 ),
@@ -28755,7 +28746,7 @@
                                                         {className: "form-group"},
                                                         _react2.default.createElement(
                                                             "label",
-                                                            {"for": ""},
+                                                            {htmlFor: ""},
                                                             "Quanto intendete investire ?"
                                                         )
                                                     ),
@@ -29446,7 +29437,7 @@
                                                         {className: "form-group"},
                                                         _react2.default.createElement(
                                                             "label",
-                                                            {"for": ""},
+                                                            {htmlFor: ""},
                                                             "Qual è lo stato attuale dei vostri contenuti?"
                                                         )
                                                     ),
@@ -29528,7 +29519,7 @@
 
         /***/
     },
-    /* 242 */
+    /* 240 */
     /***/ function (module, exports, __webpack_require__) {
 
         "use strict";
@@ -29745,7 +29736,7 @@
 
         /***/
     },
-    /* 243 */
+    /* 241 */
     /***/ function (module, exports, __webpack_require__) {
 
         "use strict";
@@ -29967,7 +29958,7 @@
 
         /***/
     },
-    /* 244 */
+    /* 242 */
     /***/ function (module, exports, __webpack_require__) {
 
         "use strict";

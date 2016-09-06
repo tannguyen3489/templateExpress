@@ -30,9 +30,8 @@ class App extends Component {
                                 <a className="navbar-brand menu" href="#">
                                     <img alt="Menu" src="/images/Menu_mobile.png"/>
                                 </a>
-                                <a className="navbar-brand logo" href="/home">
-                                    <img alt="Logo" src="/images/Logo.png"/>
-                                </a>
+                                <Link className="navbar-brand logo" to={'/home'}><img alt="Logo"
+                                                                                      src="/images/Logo.png"/></Link>
 
                                 <div className="collapsed navbar-toggle">
                                     <p className="navbar-text rightMenu">
@@ -54,9 +53,7 @@ class App extends Component {
 
                     </nav>
                 </div>
-                    <div className="body <%= fileName %>">
-                        {this.props.children}
-                    </div>
+                    {this.props.children}
             </div>
 
             </div>
