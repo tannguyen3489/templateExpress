@@ -183,38 +183,38 @@ body {
     line-height: 16px;
 }
 
-#root .formInfo .container-fluid .bootstrap-select {
-    /*border: #008cd2 solid 1px;*/
-    color: #008cd2;
-    font-size: 16px;
-    height: 30px;
-    cursor: pointer;
-}
+/*#root .formInfo .container-fluid .bootstrap-select {*/
+/*!*border: #008cd2 solid 1px;*!*/
+/*color: #008cd2;*/
+/*font-size: 16px;*/
+/*height: 30px;*/
+/*cursor: pointer;*/
+/*}*/
 
-#root .formInfo .container-fluid .bootstrap-select > button:after {
-    width: 30px;
-    height: 30px;
-    content: '';
-    position: absolute;
-    right: -1px;
-    top: -1px;
-    background: url('../images/1280_formulario.png');
-}
+/*#root .formInfo .container-fluid .bootstrap-select > button:after {*/
+/*width: 30px;*/
+/*height: 30px;*/
+/*content: '';*/
+/*position: absolute;*/
+/*right: -1px;*/
+/*top: -1px;*/
+/*background: url('../images/1280_formulario.png');*/
+/*}*/
 
 #root .formInfo .container-fluid .bootstrap-select > button {
-    height: 30px;
+    /*height: 30px;*/
     border: #008cd2 solid 1px;
     background: #fff;
     box-shadow: none;
     outline: none !important;
-
-}
-
-#root .formInfo .container-fluid .bootstrap-select > button span {
     color: #008cd2;
-    font-size: 16px;
-    line-height: 16px;
 }
+
+/*#root .formInfo .container-fluid .bootstrap-select > button span {*/
+/*color: #008cd2;*/
+/*font-size: 16px;*/
+/*line-height: 16px;*/
+/*}*/
 
 #root .formInfo .container-fluid select {
     border-color: #008cd2;
@@ -229,17 +229,17 @@ body {
     position: relative;
 }
 
-#root .formInfo .container-fluid div.selectWrap:before {
-    content: '';
-    position: absolute;
-    right: 0;
-    pointer-events: none;
-    top: 0;
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-    background: url('../images/selectBoxIcon_1280.png');
-}
+/*#root .formInfo .container-fluid div.selectWrap:before {*/
+/*content: '';*/
+/*position: absolute;*/
+/*right: 0;*/
+/*pointer-events: none;*/
+/*top: 0;*/
+/*width: 30px;*/
+/*height: 30px;*/
+/*cursor: pointer;*/
+/*background: url('../images/selectBoxIcon_1280.png');*/
+/*}*/
 
 /*#root .formInfo .container-fluid div.selectWrap > select{*/
 /*width: calc(100% - 30px);*/
@@ -606,7 +606,6 @@ input[type=checkbox]:checked:before {
 
 #rootApp .homeSlider .carousel .carousel-inner .item .carousel-caption {
     bottom: auto;
-    text-align: left;
     font-size: 54px;
     /*font-size: 3vw;*/
     font-weight: bold;
@@ -614,10 +613,12 @@ input[type=checkbox]:checked:before {
     color: #fff;
     top: 30px;
     left: 50%;
-    transform: translate(-68%, 0%);
+    transform: translate(-50%, 0%);
     padding: 0;
     margin: 0;
     position: fixed;
+    width: auto;
+    text-align: center;
 }
 
 #rootApp .homeSlider .carousel .carousel-control {
@@ -797,14 +798,14 @@ div.body {
 }
 
 #rootApp .homeSlider.showcaseSlider .carousel .carousel-inner .item .carousel-caption {
-    transform: translate(-150%, 0);
+    /*transform: translate(-150%, 0);*/
     font-weight: bold;
     background-color: rgba(0, 0, 0, 0.4);
     padding: 0 15px;
 }
 
 #rootApp .homeSlider.showcaseSlider.productSlider .carousel .carousel-inner .item .carousel-caption {
-    transform: translate(-72%, 0);
+    /*transform: translate(-72%, 0);*/
 }
 
 #rootApp .homeSlider.showcaseSlider .carousel .carousel-control > span:first-child:before {
@@ -987,6 +988,6 @@ div.body {
     margin-bottom: 0;
 }
 
-#rootApp .homeSlider .carousel .carousel-inner .item:last-child .carousel-caption {
-    transform: translate(-62%, 0%);
-}
+/*#rootApp .homeSlider .carousel .carousel-inner .item:last-child .carousel-caption {*/
+/*transform: translate(-62%, 0%);*/
+/*}*/

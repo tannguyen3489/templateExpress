@@ -1,9 +1,22 @@
 import React, {Component} from "react";
 
 class Formal extends Component {
+    componentDidMount() {
+        console.info('Formal................');
+        console.info("Refs", this.refs);
+        console.info("Refs contextElement", this.refs["contextElement"]);
+        this.contextElement = this.refs["contextElement"];
+
+        $(this.contextElement).find('select').selectpicker({
+            size: 4,
+            maxOptions: 1
+        });
+
+    }
+
     render() {
         return (
-            <div className="body formal">
+            <div className="body formal" ref="contextElement">
                 <div className="formInfo">
                     <div className="container-fluid">
                         <form>
@@ -60,8 +73,8 @@ class Formal extends Component {
                                                 ?</label>
                                         </div>
                                         <div className="selectWrap">
-                                            <select className="form-control">
-                                                <option>Selezionate la scelta</option>
+                                            <select className="form-control" multiple>
+                                                <option selected>Selezionate la scelta</option>
                                                 <option>Selezionate la scelta</option>
                                             </select>
                                         </div>
@@ -78,8 +91,8 @@ class Formal extends Component {
                                                 ?</label>
                                         </div>
                                         <div className="selectWrap">
-                                            <select className="form-control">
-                                                <option>Selezionate la scelta</option>
+                                            <select className="form-control" multiple>
+                                                <option selected>Selezionate la scelta</option>
                                                 <option>Selezionate la scelta</option>
                                             </select>
                                         </div>
@@ -96,8 +109,8 @@ class Formal extends Component {
                                                 <label htmlFor="">Quanto intendete investire ?</label>
                                             </div>
                                             <div className="selectWrap">
-                                                <select className="form-control">
-                                                    <option>Selezionate la scelta</option>
+                                                <select className="form-control" multiple>
+                                                    <option selected>Selezionate la scelta</option>
                                                     <option>Selezionate la scelta</option>
                                                 </select>
                                             </div>
@@ -151,8 +164,8 @@ class Formal extends Component {
                                             <label className="form-inline">
                                                 <input type="checkbox" value=""/>
                                                 <div className="selectWrap">
-                                                    <select className="form-control">
-                                                        <option>500 esemplari</option>
+                                                    <select className="form-control" multiple>
+                                                        <option selected>500 esemplari</option>
                                                         <option>500 esemplari</option>
                                                     </select>
                                                 </div>
@@ -171,8 +184,8 @@ class Formal extends Component {
                                             <label className="form-inline">
                                                 <input type="checkbox" value=""/>
                                                 <div className="selectWrap">
-                                                    <select className="form-control">
-                                                        <option>100 esemplari</option>
+                                                    <select className="form-control" multiple>
+                                                        <option selected>100 esemplari</option>
                                                         <option>100 esemplari</option>
                                                     </select>
                                                 </div>
@@ -191,8 +204,8 @@ class Formal extends Component {
                                             <label className="form-inline">
                                                 <input type="checkbox" value=""/>
                                                 <div className="selectWrap">
-                                                    <select className="form-control">
-                                                        <option>24 pagine</option>
+                                                    <select className="form-control" multiple>
+                                                        <option selected>24 pagine</option>
                                                         <option>24 pagine</option>
                                                     </select>
                                                 </div>
@@ -211,8 +224,8 @@ class Formal extends Component {
                                             <label className="form-inline">
                                                 <input type="checkbox" value=""/>
                                                 <div className="selectWrap">
-                                                    <select className="form-control">
-                                                        <option>100 esemplari</option>
+                                                    <select className="form-control" multiple>
+                                                        <option selected>100 esemplari</option>
                                                         <option>100 esemplari</option>
                                                     </select>
                                                 </div>
@@ -297,8 +310,8 @@ class Formal extends Component {
                                             <label className="form-inline">
                                                 <input type="checkbox" value=""/>
                                                 <div className="selectWrap">
-                                                    <select className="form-control">
-                                                        <option>1 minuto</option>
+                                                    <select className="form-control" multiple>
+                                                        <option selected>1 minuto</option>
                                                         <option>1 minuto</option>
                                                     </select>
                                                 </div>
@@ -317,8 +330,8 @@ class Formal extends Component {
                                             <label className="form-inline">
                                                 <input type="checkbox" value=""/>
                                                 <div className="selectWrap">
-                                                    <select className="form-control">
-                                                        <option>1 minuto</option>
+                                                    <select className="form-control" multiple>
+                                                        <option selected="true">1 minuto</option>
                                                         <option>1 minuto</option>
                                                     </select>
                                                 </div>
@@ -411,8 +424,8 @@ class Formal extends Component {
                                                 <label htmlFor="">Qual è lo stato attuale dei vostri contenuti?</label>
                                             </div>
                                             <div className="selectWrap">
-                                                <select className="form-control">
-                                                    <option>Selezionate la scelta</option>
+                                                <select className="form-control" multiple="true">
+                                                    <option selected>Selezionate la scelta</option>
                                                     <option>Selezionate la scelta</option>
                                                 </select>
                                             </div>

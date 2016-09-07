@@ -33,9 +33,9 @@
         max-width: 300px;
     }
 
-    #root .formInfo .container-fluid form div.row.part1 .bootstrap-select {
-        max-width: 250px;
-    }
+    /*#root .formInfo .container-fluid form div.row.part1 .bootstrap-select {*/
+    /*max-width: 250px;*/
+    /*}*/
 
     #root .formInfo .container-fluid form > div.row{
         padding-left: 50px;
@@ -49,6 +49,7 @@
 
     #root .formInfo .container-fluid div.selectWrap {
         max-width: 250px;
+        min-width: 180px;
     }
 
     #root .formInfo .container-fluid form > div.row > div {
@@ -128,17 +129,38 @@
         transform: translateY(5px);
     }
 
-    #root .formInfo .container-fluid div.selectWrap:before {
-        width: 45px;
-        height: 46px;
-        background: url('../images/selectBoxIcon_1920.png');
-    }
+    /*#root .formInfo .container-fluid div.selectWrap:before {*/
+    /*width: 45px;*/
+    /*height: 46px;*/
+    /*background: url('../images/selectBoxIcon_1920.png');*/
+    /*}*/
 
     #root .formInfo .container-fluid .labelInputGroup .selectWrap select {
         width: 270px;
     }
     #root .formInfo .container-fluid div.selectWrap {
         max-width: 370px;
+    }
+
+    /*#root .formInfo .container-fluid .labelInputGroup .selectWrap button span {*/
+    /*font-size: 24px !important;*/
+    /*}*/
+    .btn-group.bootstrap-select .dropdown-menu ul li a span {
+        font-size: 24px;
+    }
+
+    .btn-group.bootstrap-select button {
+        height: 46px;
+        min-width: 270px;
+    }
+
+    .btn-group.bootstrap-select button > span {
+        font-size: 24px;
+    }
+
+    .inputSelectGroup .btn-group.bootstrap-select button {
+        margin-top: -11px;
+        position: relative;
     }
 
     #root .formInfo .container-fluid input[type=text],
@@ -272,7 +294,7 @@
     }
 
     #root .formInfo .container-fluid form > div.row > div.labelInputGroup div.inputSelectGroup label > input ~ .fakeRadioBox {
-        top: 16px;
+        top: 12px;
     }
 
     #root .formInfo .container-fluid form > div.row > div.labelInputGroup label > input ~ .fakeRadioBox {

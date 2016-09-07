@@ -28402,11 +28402,24 @@
 	    }
 
 	    _createClass(Formal, [{
+            key: "componentDidMount",
+            value: function componentDidMount() {
+                console.info('Formal................');
+                console.info("Refs", this.refs);
+                console.info("Refs contextElement", this.refs["contextElement"]);
+                this.contextElement = this.refs["contextElement"];
+
+                $(this.contextElement).find('select').selectpicker({
+                    size: 4,
+                    maxOptions: 1
+                });
+            }
+        }, {
 	        key: "render",
 	        value: function render() {
 	            return _react2.default.createElement(
 	                "div",
-	                { className: "body formal" },
+                    {className: "body formal", ref: "contextElement"},
 	                _react2.default.createElement(
 	                    "div",
 	                    { className: "formInfo" },
@@ -28530,10 +28543,10 @@
 	                                            { className: "selectWrap" },
 	                                            _react2.default.createElement(
 	                                                "select",
-	                                                { className: "form-control" },
+                                                    {className: "form-control", multiple: true},
 	                                                _react2.default.createElement(
 	                                                    "option",
-	                                                    null,
+                                                        {selected: true},
 	                                                    "Selezionate la scelta"
 	                                                ),
 	                                                _react2.default.createElement(
@@ -28569,10 +28582,10 @@
 	                                            { className: "selectWrap" },
 	                                            _react2.default.createElement(
 	                                                "select",
-	                                                { className: "form-control" },
+                                                    {className: "form-control", multiple: true},
 	                                                _react2.default.createElement(
 	                                                    "option",
-	                                                    null,
+                                                        {selected: true},
 	                                                    "Selezionate la scelta"
 	                                                ),
 	                                                _react2.default.createElement(
@@ -28611,10 +28624,10 @@
 	                                                { className: "selectWrap" },
 	                                                _react2.default.createElement(
 	                                                    "select",
-	                                                    { className: "form-control" },
+                                                        {className: "form-control", multiple: true},
 	                                                    _react2.default.createElement(
 	                                                        "option",
-	                                                        null,
+                                                            {selected: true},
 	                                                        "Selezionate la scelta"
 	                                                    ),
 	                                                    _react2.default.createElement(
@@ -28716,10 +28729,10 @@
 	                                                    { className: "selectWrap" },
 	                                                    _react2.default.createElement(
 	                                                        "select",
-	                                                        { className: "form-control" },
+                                                            {className: "form-control", multiple: true},
 	                                                        _react2.default.createElement(
 	                                                            "option",
-	                                                            null,
+                                                                {selected: true},
 	                                                            "500 esemplari"
 	                                                        ),
 	                                                        _react2.default.createElement(
@@ -28761,10 +28774,10 @@
 	                                                    { className: "selectWrap" },
 	                                                    _react2.default.createElement(
 	                                                        "select",
-	                                                        { className: "form-control" },
+                                                            {className: "form-control", multiple: true},
 	                                                        _react2.default.createElement(
 	                                                            "option",
-	                                                            null,
+                                                                {selected: true},
 	                                                            "100 esemplari"
 	                                                        ),
 	                                                        _react2.default.createElement(
@@ -28806,10 +28819,10 @@
 	                                                    { className: "selectWrap" },
 	                                                    _react2.default.createElement(
 	                                                        "select",
-	                                                        { className: "form-control" },
+                                                            {className: "form-control", multiple: true},
 	                                                        _react2.default.createElement(
 	                                                            "option",
-	                                                            null,
+                                                                {selected: true},
 	                                                            "24 pagine"
 	                                                        ),
 	                                                        _react2.default.createElement(
@@ -28851,10 +28864,10 @@
 	                                                    { className: "selectWrap" },
 	                                                    _react2.default.createElement(
 	                                                        "select",
-	                                                        { className: "form-control" },
+                                                            {className: "form-control", multiple: true},
 	                                                        _react2.default.createElement(
 	                                                            "option",
-	                                                            null,
+                                                                {selected: true},
 	                                                            "100 esemplari"
 	                                                        ),
 	                                                        _react2.default.createElement(
@@ -29018,10 +29031,10 @@
 	                                                    { className: "selectWrap" },
 	                                                    _react2.default.createElement(
 	                                                        "select",
-	                                                        { className: "form-control" },
+                                                            {className: "form-control", multiple: true},
 	                                                        _react2.default.createElement(
 	                                                            "option",
-	                                                            null,
+                                                                {selected: true},
 	                                                            "1 minuto"
 	                                                        ),
 	                                                        _react2.default.createElement(
@@ -29063,10 +29076,10 @@
 	                                                    { className: "selectWrap" },
 	                                                    _react2.default.createElement(
 	                                                        "select",
-	                                                        { className: "form-control" },
+                                                            {className: "form-control", multiple: true},
 	                                                        _react2.default.createElement(
 	                                                            "option",
-	                                                            null,
+                                                                {selected: "true"},
 	                                                            "1 minuto"
 	                                                        ),
 	                                                        _react2.default.createElement(
@@ -29248,10 +29261,10 @@
 	                                                { className: "selectWrap" },
 	                                                _react2.default.createElement(
 	                                                    "select",
-	                                                    { className: "form-control" },
+                                                        {className: "form-control", multiple: "true"},
 	                                                    _react2.default.createElement(
 	                                                        "option",
-	                                                        null,
+                                                            {selected: true},
 	                                                        "Selezionate la scelta"
 	                                                    ),
 	                                                    _react2.default.createElement(
