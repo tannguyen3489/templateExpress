@@ -57,9 +57,7 @@ class Contact extends Component {
                                         <label htmlFor="phone">CONTENUTO DELLA LETTERA</label>
                                         <textarea className="form-control finalComment" rows="3"></textarea>
                                     </div>
-                                    <div className="btn myBtn">
-                                        Invio
-                                    </div>
+                                    <div className="nexButton"><span>Invio</span></div>
                                 </div>
                             </div>
 

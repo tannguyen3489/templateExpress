@@ -222,6 +222,7 @@ body {
     font-size: 16px;
     height: 30px;
     cursor: pointer;
+    box-shadow: none;
 }
 
 #root .formInfo .container-fluid div.selectWrap {
@@ -421,9 +422,15 @@ input[type=checkbox]:checked:before {
 
 #leftMenu .modal-dialog .btnArea {
     text-align: right;
+
 }
 
-#leftMenu .modal-dialog .btnArea > span:first-child {
+#leftMenu .modal-dialog .btnArea > div {
+    display: inline-block;
+    cursor: pointer;
+}
+
+#leftMenu .modal-dialog .btnArea span:first-child {
     margin-right: 15px;
     color: #fff;
     font-size: 16px;
@@ -458,6 +465,11 @@ input[type=checkbox]:checked:before {
     cursor: pointer;
 }
 
+#leftMenu .modal-dialog .locale:hover {
+    border: #ffff00 1px solid;
+    color: #ffff00;
+}
+
 #leftMenu .modal-dialog .locale.active {
     background-color: #ffff00;
     border: none;
@@ -469,7 +481,7 @@ input[type=checkbox]:checked:before {
     margin-top: 50px;
 }
 
-#leftMenu .modal-dialog .menuLinksArea .gotoLink a:hover {
+#leftMenu .modal-dialog .menuLinksArea .gotoLink:hover a {
     text-decoration: none;
     color: #ffff00;
 }
@@ -681,7 +693,12 @@ div.body {
     height: 36px;
     margin-top: 30px;
     font-size: 16px;
+    border: none;
+    border-radius: 0;
     color: #008cd2;
+    background: url('../images/btn1.png');
+    background-size: 180px 36px;
+    text-align: left;
 }
 
 .myBtn {

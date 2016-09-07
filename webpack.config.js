@@ -1,4 +1,4 @@
-var path = require("path");
+var path = require("path"), webpack = require('webpack');
 var I18nPlugin = require("i18n-webpack-plugin");
 var languages = {
     "en": require("./locales/en.json"),
@@ -24,7 +24,8 @@ module.exports = Object.keys(languages).map(function(language) {
         plugins: [
             new I18nPlugin(
                 languages[language]
-            )
+            ),
+            // new webpack.optimize.UglifyJsPlugin()
         ]
     }
 

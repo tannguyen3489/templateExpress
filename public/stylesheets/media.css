@@ -109,7 +109,7 @@
     #root .formInfo .container-fluid select {
         height: 46px;
         border-radius: 7px;
-        box-shadow: inset 0 0 4px #84c7e9;
+        /*box-shadow: inset 0 0 4px #84c7e9;*/
     }
 
     #root .formInfo .container-fluid form > div.row > div.labelInputGroup {
@@ -273,5 +273,9 @@
 
     #root .formInfo .container-fluid form > div.row > div.labelInputGroup div.inputSelectGroup label > input ~ .fakeRadioBox {
         top: 16px;
+    }
+
+    #root .formInfo .container-fluid form > div.row > div.labelInputGroup label > input ~ .fakeRadioBox {
+        top: 5px;
     }
 }

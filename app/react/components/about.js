@@ -50,7 +50,7 @@ class About extends Component {
                                     <div className="info">
                                         078 933 24 53
                                     </div>
-                                    <div className="btn viewProfile myBtn" data-toggle="modal" data-target="#miloModal">
+                                    <div className="btn viewProfile" data-toggle="modal" data-target="#miloModal">
                                         Per saperne di più
                                     </div>
                                 </div>
@@ -78,7 +78,7 @@ class About extends Component {
                                     <div className="info">
                                         078 933 24 53
                                     </div>
-                                    <div className="btn viewProfile myBtn" data-toggle="modal" data-target="#huyModal">
+                                    <div className="btn viewProfile" data-toggle="modal" data-target="#huyModal">
                                         Per saperne di più
                                     </div>
                                 </div>
@@ -106,7 +106,7 @@ class About extends Component {
                                     <div className="info">
                                         078 933 24 53
                                     </div>
-                                    <div className="btn viewProfile myBtn" data-toggle="modal" data-target="#ericModal">
+                                    <div className="btn viewProfile" data-toggle="modal" data-target="#ericModal">
                                         Per saperne di più
                                     </div>
                                 </div>
