@@ -129,7 +129,7 @@
     }
 
     #root .formInfo .container-fluid div.selectWrap:before {
-        width: 46px;
+        width: 45px;
         height: 46px;
         background: url('../images/selectBoxIcon_1920.png');
     }
