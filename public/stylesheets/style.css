@@ -607,7 +607,7 @@ input[type=checkbox]:checked:before {
 #rootApp .homeSlider .carousel .carousel-inner .item .carousel-caption {
     bottom: auto;
     text-align: left;
-    font-size: 60px;
+    font-size: 54px;
     /*font-size: 3vw;*/
     font-weight: bold;
     right: auto;
@@ -985,4 +985,8 @@ div.body {
 
 #root .body.formal div.infoPart > div > div.form-group:last-child {
     margin-bottom: 0;
+}
+
+#rootApp .homeSlider .carousel .carousel-inner .item:last-child .carousel-caption {
+    transform: translate(-62%, 0%);
 }

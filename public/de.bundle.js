@@ -29361,7 +29361,8 @@
 	                    _react2.default.createElement(
 	                        "div",
 	                        { id: "carousel-example-generic", className: "carousel slide", "data-ride": "carousel",
-	                            "data-interval": "50000000" },
+                                "data-interval": "5000"
+                            },
 	                        _react2.default.createElement(
 	                            "ol",
 	                            { className: "carousel-indicators" },
@@ -29384,17 +29385,12 @@
 	                                        _react2.default.createElement(
 	                                            "div",
 	                                            { className: "captionTitle" },
-	                                            "ESPERIENZA NEL CAMPO"
+                                                "ESPERIENZA INTERNAZIONALE"
 	                                        ),
 	                                        _react2.default.createElement(
 	                                            "div",
 	                                            { className: "captionTitle" },
-	                                            "DELLA GRAFICA."
-	                                        ),
-	                                        _react2.default.createElement(
-	                                            "div",
-	                                            { className: "captionTitle" },
-	                                            "DALLA SVIZZERA..."
+                                                "NEL SETTORE DELLA GRAFICA"
 	                                        )
 	                                    )
 	                                )
@@ -29412,17 +29408,12 @@
 	                                        _react2.default.createElement(
 	                                            "div",
 	                                            { className: "captionTitle" },
-	                                            "ESPERIENZA NEL CAMPO"
+                                                "VASTA GAMMA DI SERVIZI"
 	                                        ),
 	                                        _react2.default.createElement(
 	                                            "div",
 	                                            { className: "captionTitle" },
-	                                            "DELLA GRAFICA."
-	                                        ),
-	                                        _react2.default.createElement(
-	                                            "div",
-	                                            { className: "captionTitle" },
-	                                            "DALLA SVIZZERA..."
+                                                "E PRODOTTI DI COMUNICAZIONE"
 	                                        )
 	                                    )
 	                                )

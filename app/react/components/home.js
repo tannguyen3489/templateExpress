@@ -6,7 +6,7 @@ class Home extends Component {
             <div className="body home">
                 <div className="homeSlider">
                     <div id="carousel-example-generic" className="carousel slide" data-ride="carousel"
-                         data-interval="50000000">
+                         data-interval="5000">
                         {/*<!-- Indicators -->*/}
                         <ol className="carousel-indicators">
                             <li data-target="#carousel-example-generic" data-slide-to="0" className="active"></li>
@@ -21,9 +21,8 @@ class Home extends Component {
                                     </img>
 
                                     <div className="carousel-caption">
-                                        <div className="captionTitle">ESPERIENZA NEL CAMPO</div>
-                                        <div className="captionTitle">DELLA GRAFICA.</div>
-                                        <div className="captionTitle">DALLA SVIZZERA...</div>
+                                        <div className="captionTitle">ESPERIENZA INTERNAZIONALE</div>
+                                        <div className="captionTitle">NEL SETTORE DELLA GRAFICA</div>
                                     </div>
                                 </div>
                             </div>
@@ -33,9 +32,8 @@ class Home extends Component {
                                     </img>
 
                                     <div className="carousel-caption">
-                                        <div className="captionTitle">ESPERIENZA NEL CAMPO</div>
-                                        <div className="captionTitle">DELLA GRAFICA.</div>
-                                        <div className="captionTitle">DALLA SVIZZERA...</div>
+                                        <div className="captionTitle">VASTA GAMMA DI SERVIZI</div>
+                                        <div className="captionTitle">E PRODOTTI DI COMUNICAZIONE</div>
                                     </div>
                                 </div>
                             </div>
