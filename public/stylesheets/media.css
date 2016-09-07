@@ -255,9 +255,9 @@
         font-size: 24px;
     }
 
-    #root .formInfo.contact .formHeaderTitle > div:last-child {
-        padding-left: 34px;
-    }
+    /*#root .formInfo.contact .formHeaderTitle > div:last-child {*/
+    /*padding-left: 34px;*/
+    /*}*/
 
     #root .myBtn {
         height: 56px;
