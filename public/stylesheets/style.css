@@ -696,7 +696,7 @@ div.body {
     border: none;
     border-radius: 0;
     color: #008cd2;
-    background: url('../images/btn1.png');
+    background: url('../images/btn1.png') no-repeat;
     background-size: 180px 36px;
     text-align: left;
 }

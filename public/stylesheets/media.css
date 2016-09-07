@@ -268,7 +268,7 @@
     }
 
     .contact .container-fluid .infos .viewProfile {
-        width: 260px;
+        /*width: 260px;*/
     }
 
     #root .formInfo .container-fluid form > div.row > div.labelInputGroup div.inputSelectGroup label > input ~ .fakeRadioBox {
