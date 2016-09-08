@@ -136,7 +136,7 @@ body {
 }
 
 #root .formInfo .container-fluid form > div.row > div:before {
-    content: '';
+    /*content: '';*/
     display: block;
     height: 1px;
     width: 100%;
@@ -144,7 +144,7 @@ body {
 }
 
 #root .formInfo .container-fluid form > div.row.bottomBorder > div:after {
-    content: '';
+    /*content: '';*/
     display: block;
     height: 1px;
     width: 100%;
