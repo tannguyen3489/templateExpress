@@ -631,13 +631,13 @@ input[type=checkbox]:checked:before {
     font-weight: bold;
     right: auto;
     color: #fff;
-    top: 30px;
+    top: 80px;
     left: 50%;
     transform: translate(-50%, 0%);
     padding: 0;
     margin: 0;
     position: fixed;
-    width: auto;
+    width: 100vw;
     text-align: center;
 }
 
@@ -1045,4 +1045,6 @@ div.body.about .container-fluid > .row {
     padding-right: 0px;
 }
 
-
+#rootApp .homeSlider .carousel .carousel-inner .item .carousel-caption .captionTitle {
+    white-space: nowrap;
+}

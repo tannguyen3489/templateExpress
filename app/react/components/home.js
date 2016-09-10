@@ -1,6 +1,19 @@
 import React, {Component} from "react";
 
 class Home extends Component {
+
+    componentDidMount() {
+        this.fitText();
+        var me = this;
+        $('.carousel').on('slid.bs.carousel', function () {
+            me.fitText();
+        })
+    }
+
+    fitText() {
+        jQuery(".captionTitle").fitText(2, {maxFontSize: '54px'});
+    }
+
     render() {
         return (
             <div className="body home">
