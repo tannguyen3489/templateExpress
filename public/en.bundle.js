@@ -27775,7 +27775,7 @@
 	                            { className: "row ownerInfo" },
 	                            _react2.default.createElement(
 	                                "div",
-	                                { className: "col-md-3 col-sm-3 col-md-offset-1 " },
+                                    {className: "col-md-4 col-sm-4 col-md-offset-1 "},
 	                                _react2.default.createElement(
 	                                    "div",
 	                                    { className: "userImage" },
@@ -27810,7 +27810,11 @@
 	                                    ),
 	                                    _react2.default.createElement(
 	                                        "div",
-	                                        { className: "btn viewProfile", "data-toggle": "modal", "data-target": "#miloModal" },
+                                            {
+                                                className: "btn viewProfile myBtn",
+                                                "data-toggle": "modal",
+                                                "data-target": "#miloModal"
+                                            },
 	                                        "Per saperne di più"
 	                                    )
 	                                )
@@ -27821,7 +27825,7 @@
 	                            { className: "row ownerInfo" },
 	                            _react2.default.createElement(
 	                                "div",
-	                                { className: "col-md-3 col-sm-3 col-md-offset-1 " },
+                                    {className: "col-md-4 col-sm-4 col-md-offset-1 "},
 	                                _react2.default.createElement(
 	                                    "div",
 	                                    { className: "userImage" },
@@ -27856,7 +27860,11 @@
 	                                    ),
 	                                    _react2.default.createElement(
 	                                        "div",
-	                                        { className: "btn viewProfile", "data-toggle": "modal", "data-target": "#huyModal" },
+                                            {
+                                                className: "btn viewProfile myBtn",
+                                                "data-toggle": "modal",
+                                                "data-target": "#huyModal"
+                                            },
 	                                        "Per saperne di più"
 	                                    )
 	                                )
@@ -27867,7 +27875,7 @@
 	                            { className: "row ownerInfo" },
 	                            _react2.default.createElement(
 	                                "div",
-	                                { className: "col-md-3 col-sm-3 col-md-offset-1 " },
+                                    {className: "col-md-4 col-sm-4 col-md-offset-1 "},
 	                                _react2.default.createElement(
 	                                    "div",
 	                                    { className: "userImage" },
@@ -27902,7 +27910,11 @@
 	                                    ),
 	                                    _react2.default.createElement(
 	                                        "div",
-	                                        { className: "btn viewProfile", "data-toggle": "modal", "data-target": "#ericModal" },
+                                            {
+                                                className: "btn viewProfile myBtn",
+                                                "data-toggle": "modal",
+                                                "data-target": "#ericModal"
+                                            },
 	                                        "Per saperne di più"
 	                                    )
 	                                )
@@ -27959,7 +27971,12 @@
 	                    ),
 	                    _react2.default.createElement(
 	                        "div",
-	                        { className: "modal fade userInfoModal", id: "miloModal", tabIndex: "-1", role: "dialog",
+                            {
+                                className: "modal fade userInfoModal",
+                                id: "miloModal",
+                                tabIndex: "-1",
+                                role: "dialog",
+                                "data-backdrop": "static",
 	                            "aria-labelledby": "myModalLabel" },
 	                        _react2.default.createElement(
 	                            "div",
@@ -28031,7 +28048,12 @@
 	                    ),
 	                    _react2.default.createElement(
 	                        "div",
-	                        { className: "modal fade userInfoModal", id: "huyModal", tabIndex: "-s", role: "dialog",
+                            {
+                                className: "modal fade userInfoModal",
+                                id: "huyModal",
+                                tabIndex: "-s",
+                                role: "dialog",
+                                "data-backdrop": "static",
 	                            "aria-labelledby": "myModalLabel" },
 	                        _react2.default.createElement(
 	                            "div",
@@ -28103,7 +28125,12 @@
 	                    ),
 	                    _react2.default.createElement(
 	                        "div",
-	                        { className: "modal fade userInfoModal", id: "ericModal", tabIndex: "-1", role: "dialog",
+                            {
+                                className: "modal fade userInfoModal",
+                                id: "ericModal",
+                                tabIndex: "-1",
+                                role: "dialog",
+                                "data-backdrop": "static",
 	                            "aria-labelledby": "myModalLabel" },
 	                        _react2.default.createElement(
 	                            "div",
@@ -28236,7 +28263,7 @@
 	                                { className: "row formHeaderTitle noBorder" },
 	                                _react2.default.createElement(
 	                                    "div",
-	                                    { className: "col-md-4 col-sm-4" },
+                                        {className: "col-md-4 col-sm-4 col-md-offset-1"},
 	                                    _react2.default.createElement(
 	                                        "h1",
 	                                        { className: "titleForm" },
@@ -28245,7 +28272,7 @@
 	                                ),
 	                                _react2.default.createElement(
 	                                    "div",
-	                                    { className: "col-md-8 col-sm-8" },
+                                        {className: "col-md-7 col-sm-7"},
 	                                    _react2.default.createElement(
 	                                        "div",
 	                                        { className: "phoneNumber" },
@@ -28263,7 +28290,7 @@
 	                                { className: "row infoPart noBorder" },
 	                                _react2.default.createElement(
 	                                    "div",
-	                                    { className: "col-md-4 col-sm-4" },
+                                        {className: "col-md-4 col-sm-4 col-md-offset-1"},
 	                                    _react2.default.createElement(
 	                                        "div",
 	                                        { className: "form-group" },
@@ -28278,7 +28305,7 @@
 	                                ),
 	                                _react2.default.createElement(
 	                                    "div",
-	                                    { className: "col-md-8 col-sm-8" },
+                                        {className: "col-md-7 col-sm-7"},
 	                                    _react2.default.createElement(
 	                                        "div",
 	                                        { className: "form-group" },
@@ -28297,7 +28324,7 @@
 	                                { className: "row infoPart noBorder" },
 	                                _react2.default.createElement(
 	                                    "div",
-	                                    { className: "col-md-4 col-sm-4" },
+                                        {className: "col-md-4 col-sm-4 col-md-offset-1"},
 	                                    _react2.default.createElement(
 	                                        "div",
 	                                        { className: "form-group" },
@@ -28334,7 +28361,7 @@
 	                                ),
 	                                _react2.default.createElement(
 	                                    "div",
-	                                    { className: "col-md-8 col-sm-8" },
+                                        {className: "col-md-7 col-sm-7"},
 	                                    _react2.default.createElement(
 	                                        "div",
 	                                        { className: "form-group" },
@@ -28347,7 +28374,7 @@
 	                                    ),
 	                                    _react2.default.createElement(
 	                                        "div",
-	                                        { className: "nexButton" },
+                                            {className: "nexButton btn myBtn"},
 	                                        _react2.default.createElement(
 	                                            "span",
 	                                            null,
@@ -29308,7 +29335,7 @@
 	                                    { className: "col-md-6 col-sm-6 col-md-offset-1" },
 	                                    _react2.default.createElement(
 	                                        "div",
-	                                        { className: "nexButton" },
+                                            {className: "nexButton btn myBtn"},
 	                                        _react2.default.createElement(
 	                                            "span",
 	                                            null,

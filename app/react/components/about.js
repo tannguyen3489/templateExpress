@@ -30,7 +30,7 @@ class About extends Component {
                     </div>
                     <div className="container-fluid">
                         <div className="row ownerInfo">
-                            <div className="col-md-3 col-sm-3 col-md-offset-1 ">
+                            <div className="col-md-4 col-sm-4 col-md-offset-1 ">
                                 <div className="userImage">
                                     <img src="images/slides/_2-team/Milo.png"/>
                                 </div>
@@ -50,7 +50,7 @@ class About extends Component {
                                     <div className="info">
                                         078 933 24 53
                                     </div>
-                                    <div className="btn viewProfile" data-toggle="modal" data-target="#miloModal">
+                                    <div className="btn viewProfile myBtn" data-toggle="modal" data-target="#miloModal">
                                         Per saperne di più
                                     </div>
                                 </div>
@@ -58,7 +58,7 @@ class About extends Component {
                         </div>
 
                         <div className="row ownerInfo">
-                            <div className="col-md-3 col-sm-3 col-md-offset-1 ">
+                            <div className="col-md-4 col-sm-4 col-md-offset-1 ">
                                 <div className="userImage">
                                     <img src="images/slides/_2-team/Huy.png"/>
                                 </div>
@@ -78,7 +78,7 @@ class About extends Component {
                                     <div className="info">
                                         078 933 24 53
                                     </div>
-                                    <div className="btn viewProfile" data-toggle="modal" data-target="#huyModal">
+                                    <div className="btn viewProfile myBtn" data-toggle="modal" data-target="#huyModal">
                                         Per saperne di più
                                     </div>
                                 </div>
@@ -86,7 +86,7 @@ class About extends Component {
                         </div>
 
                         <div className="row ownerInfo">
-                            <div className="col-md-3 col-sm-3 col-md-offset-1 ">
+                            <div className="col-md-4 col-sm-4 col-md-offset-1 ">
                                 <div className="userImage">
                                     <img src="images/slides/_2-team/Eric.png"/>
                                 </div>
@@ -106,7 +106,7 @@ class About extends Component {
                                     <div className="info">
                                         078 933 24 53
                                     </div>
-                                    <div className="btn viewProfile" data-toggle="modal" data-target="#ericModal">
+                                    <div className="btn viewProfile myBtn" data-toggle="modal" data-target="#ericModal">
                                         Per saperne di più
                                     </div>
                                 </div>
@@ -150,6 +150,7 @@ class About extends Component {
                     </div>
 
                     <div className="modal fade userInfoModal" id="miloModal" tabIndex="-1" role="dialog"
+                         data-backdrop="static"
                          aria-labelledby="myModalLabel">
                         <div className="modal-dialog" role="document">
                             <div className="modal-content">
@@ -199,6 +200,7 @@ class About extends Component {
                     </div>
 
                     <div className="modal fade userInfoModal" id="huyModal" tabIndex="-s" role="dialog"
+                         data-backdrop="static"
                          aria-labelledby="myModalLabel">
                         <div className="modal-dialog" role="document">
                             <div className="modal-content">
@@ -248,6 +250,7 @@ class About extends Component {
                     </div>
 
                     <div className="modal fade userInfoModal" id="ericModal" tabIndex="-1" role="dialog"
+                         data-backdrop="static"
                          aria-labelledby="myModalLabel">
                         <div className="modal-dialog" role="document">
                             <div className="modal-content">

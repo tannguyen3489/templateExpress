@@ -91,7 +91,7 @@ body {
 }
 
 #root .body div.nexButton span {
-    color: #008cd2;
+    /*color: #008cd2;*/
     font-size: 16px;
     top: 50%;
     transform: translateY(-50%);
@@ -104,8 +104,8 @@ body {
     height: 40px;
     position: relative;
     cursor: pointer;
-    background: url('../images/Invio_bg.png');
-    background-size: 124px 40px;
+    /*background: url('../images/Invio_bg.png');*/
+    /*background-size: 124px 40px;*/
 }
 
 #root .formInfo div.row > h2.titleForm {
@@ -690,39 +690,43 @@ div.body {
 }
 
 .contact .container-fluid .infos .viewProfile {
-    width: 180px;
+    /*width: 180px;*/
     height: 36px;
     margin-top: 30px;
     font-size: 16px;
-    border: none;
-    border-radius: 0;
-    color: #008cd2;
-    background: url('../images/btn1.png') no-repeat;
-    background-size: 180px 36px;
     text-align: left;
 }
 
 .myBtn {
-    background: url('../images/nextBtn.png') center right 7px no-repeat #fff;
+    background: url('../images/Harrow.png') center right 7px no-repeat #fff;
     background-size: 20px 17px;
-    border: 2px #ffff00 solid;
+    border: 2px #dee428 solid;
+    border-radius: 0;
     text-align: left;
-    color: #008cd2;
+    /*color: #008cd2;*/
+    color: #000;
     padding-right: 50px;
     height: 36px;
 }
 
-.myBtn.closeBtn {
-    background-image: url('../images/closeIcon.png');
-    background-size: 15px 15px;
-    height: 40px;
-    font-size: 16px;
-    padding-top: 9px;
-    cursor: pointer;
+.myBtn:hover {
+    color: #000;
+    background-color: #dee428;
 }
 
-.myBtn:hover {
-    color: #008cd2;
+.myBtn:active {
+    box-shadow: none;
+    background: url('../images/Harrow.png') center right 7px no-repeat #fff;
+}
+
+.myBtn.closeBtn {
+    background-image: url('../images/closeIcon.png');
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+    /*height: 40px;*/
+    font-size: 16px;
+    /*padding-top: 9px;*/
+    cursor: pointer;
 }
 
 .contact .chiSite {
@@ -865,11 +869,11 @@ div.body {
 }
 
 #root .formInfo.contact div.row > div:first-child {
-    min-width: 368px;
+    /*min-width: 368px;*/
 }
 
 #root .formInfo.contact .formHeaderTitle > div:last-child {
-    padding-left: 12px;
+    padding-left: 0px;
 }
 
 #root .formInfo.contact {
@@ -995,4 +999,24 @@ div.body {
 div.body.about .container-fluid .row.ownerInfo {
     margin-left: 0;
     margin-right: 0;
+}
+
+div.body.about .container-fluid > .row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#root .formInfo.contact .container-fluid {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#root .formInfo.contact form > .row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#root .formInfo.contact form > .row > div {
+    padding-left: 0px;
+    padding-right: 0px;
 }

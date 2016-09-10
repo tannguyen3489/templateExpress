@@ -448,7 +448,7 @@ class Formal extends Component {
 
                             <div className="row noBorder nextBtn">
                                 <div className="col-md-6 col-sm-6 col-md-offset-1">
-                                    <div className="nexButton">
+                                    <div className="nexButton btn myBtn">
                                         <span>Invio</span>
                                     </div>
                                 </div>

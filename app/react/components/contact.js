@@ -8,23 +8,23 @@ class Contact extends Component {
                     <div className="container-fluid">
                         <form>
                             <div className="row formHeaderTitle noBorder">
-                                <div className="col-md-4 col-sm-4">
+                                <div className="col-md-4 col-sm-4 col-md-offset-1">
                                     <h1 className="titleForm">Contatti</h1>
                                 </div>
-                                <div className="col-md-8 col-sm-8">
+                                <div className="col-md-7 col-sm-7">
                                     <div className="phoneNumber">0041 78 933 24 53</div>
                                     <div className="contactEmail">jeanmarie.balogh@gmail.com</div>
                                 </div>
                             </div>
                             <div className="row infoPart noBorder">
-                                <div className="col-md-4 col-sm-4">
+                                <div className="col-md-4 col-sm-4 col-md-offset-1">
                                     <div className="form-group">
                                         <label htmlFor="name">NOME COGNOME</label>
                                         <input value="" type="text" className="form-control"
                                                id="name" placeholder="Name"/>
                                     </div>
                                 </div>
-                                <div className="col-md-8 col-sm-8">
+                                <div className="col-md-7 col-sm-7">
                                     <div className="form-group">
                                         <label htmlFor="name">SOGGETTO DELLA LETTERA</label>
                                         <input value="" type="text" className="form-control"
@@ -35,7 +35,7 @@ class Contact extends Component {
 
 
                             <div className="row infoPart noBorder">
-                                <div className="col-md-4 col-sm-4">
+                                <div className="col-md-4 col-sm-4 col-md-offset-1">
                                     <div className="form-group">
                                         <label htmlFor="email">E-Mail</label>
                                         <input value="" type="email" className="form-control"
@@ -52,12 +52,12 @@ class Contact extends Component {
                                                id="country" placeholder="Country"/>
                                     </div>
                                 </div>
-                                <div className="col-md-8 col-sm-8">
+                                <div className="col-md-7 col-sm-7">
                                     <div className="form-group">
                                         <label htmlFor="phone">CONTENUTO DELLA LETTERA</label>
                                         <textarea className="form-control finalComment" rows="3"></textarea>
                                     </div>
-                                    <div className="nexButton"><span>Invio</span></div>
+                                    <div className="nexButton btn myBtn"><span>Invio</span></div>
                                 </div>
                             </div>
 

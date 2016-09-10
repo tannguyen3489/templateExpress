@@ -5,6 +5,11 @@
     }
 }
 
+@media (min-width: 962px) {
+    #root .formInfo.contact .formHeaderTitle > div:last-child {
+        transform: translateX(-40px);
+    }
+}
 @media (max-width: 1070px) {
     #rootApp .homeSlider.showcaseSlider .carousel .carousel-inner .item .carousel-caption {
         left: 10%;
@@ -25,12 +30,13 @@
 
 
 @media (min-width: 768px) {
-    #root .formInfo .container-fluid {
-        padding-left: 100px;
-    }
+    /*#root .formInfo .container-fluid {*/
+    /*padding-left: 100px;*/
+    /*}*/
 
     #root .formInfo .container-fluid form div.row.infoPart input{
         max-width: 300px;
+        width: calc(100% - 10px);
     }
 
     /*#root .formInfo .container-fluid form div.row.part1 .bootstrap-select {*/
@@ -228,8 +234,8 @@
     #root .body div.nexButton {
         width: 178px;
         height: 61px;
-        background: url('../images/Invio_bg.png');
-        background-size: 178px 61px;
+        /*background: url('../images/Invio_bg.png');*/
+        /*background-size: 178px 61px;*/
 
     }
     #root .body div.nexButton span {
