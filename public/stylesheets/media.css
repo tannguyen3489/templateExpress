@@ -221,7 +221,7 @@
 
     #root .navbar .container-fluid .navbar-header .navbar-brand.logo img {
         width: auto;
-        height: auto;
+        height: 70px;
     }
 
     #root .navbar .navbar-brand.logo {
