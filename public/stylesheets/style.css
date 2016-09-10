@@ -69,8 +69,9 @@ body {
 
 #root p.navbar-text {
     margin-right: 5px;
-    font-size: 16px;
-    color: #008cd2;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
     cursor: pointer;
     margin-top: 8px;
     margin-bottom: 0;
@@ -412,7 +413,8 @@ input[type=checkbox]:checked:before {
     bottom: 0;
     border-radius: 0;
     width: 320px;
-    background-color: #999999;
+    /*background-color: #999999;*/
+    background: url('../images/Pattern_detail.png') repeat #dee428;
     height: 100vh;
 }
 
@@ -432,7 +434,7 @@ input[type=checkbox]:checked:before {
 
 #leftMenu .modal-dialog .btnArea span:first-child {
     margin-right: 15px;
-    color: #fff;
+    color: #000;
     font-size: 16px;
     position: relative;
     top: -12px;
@@ -457,12 +459,13 @@ input[type=checkbox]:checked:before {
     display: inline-block;
     width: 32px;
     height: 32px;
-    border: #fff 1px solid;
+    border: #000 1px solid;
     border-radius: 4px;
     padding-top: 6px;
-    color: #fff;
+    color: #000;
     margin: 0 10px;
     cursor: pointer;
+    font-size: 12px;
 }
 
 #leftMenu .modal-dialog .locale:hover {
@@ -471,10 +474,10 @@ input[type=checkbox]:checked:before {
 }
 
 #leftMenu .modal-dialog .locale.active {
-    background-color: #ffff00;
+    background-color: #fff;
     border: none;
     color: #000;
-    border: #ffff00 1px solid;
+    border: #000 1px solid;
 }
 
 #leftMenu .modal-dialog .menuLinksArea {
@@ -483,15 +486,32 @@ input[type=checkbox]:checked:before {
 
 #leftMenu .modal-dialog .menuLinksArea .gotoLink:hover a {
     text-decoration: none;
-    color: #ffff00;
+    /*color: #ffff00;*/
 }
 
 #leftMenu .modal-dialog .menuLinksArea .gotoLink {
     padding-bottom: 18px;
     padding-top: 18px;
-    border-bottom: #b3b3b3 solid 1px;
+    /*border-bottom: #b3b3b3 solid 1px;*/
     padding-left: 10px;
     cursor: pointer;
+    position: relative;
+}
+
+#leftMenu .modal-dialog .menuLinksArea .gotoLink:after {
+    border-bottom: #000 solid 1px;
+    display: block;
+    width: 70px;
+    height: 0px;
+    background-color: #000;
+    content: ' ';
+    position: absolute;
+    bottom: 0;
+    left: -15px;
+}
+
+#leftMenu .modal-dialog .menuLinksArea .gotoLink:hover:after {
+    border-bottom: #000 solid 3px;
 }
 
 #leftMenu .modal-dialog .menuLinksArea .gotoLink.active a {
@@ -500,8 +520,8 @@ input[type=checkbox]:checked:before {
 
 #leftMenu .modal-dialog .menuLinksArea .gotoLink a {
     font-size: 24px;
-    color: #fff;
-    font-weight: bold;
+    color: #000;
+    /*font-weight: bold;*/
 }
 
 .headerArea {
@@ -512,7 +532,7 @@ input[type=checkbox]:checked:before {
 }
 
 .headerArea > nav {
-    background-color: #fff;
+    background: url('../images/Pattern_detail.png') repeat #dee428;
 }
 
 #rootApp .homeSlider {

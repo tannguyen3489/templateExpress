@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import ReactUpdate from 'react-addons-update';
 import {render} from "react-dom";
 import {browserHistory, Router, Route, IndexRoute, Link} from "react-router";
 import LeftPanel from "./components/leftPanel";
@@ -13,6 +14,24 @@ import Showcase from "./components/showcases";
 // first we import some components
 
 class App extends Component {
+
+    constructor() {
+        super();
+        this.state = {
+            nextBtnTitle: "Chi siamo"
+        };
+    }
+
+    updateNextBtnTitle(title) {
+
+        var newState = ReactUpdate(this.state, {
+            nextBtnTitle: title
+        });
+
+        this.setState(newState);
+    }
+
+
     render() {
 
         var divStyle = {
@@ -35,7 +54,7 @@ class App extends Component {
 
                                 <div className="collapsed navbar-toggle">
                                     <p className="navbar-text rightMenu">
-                                        <span>Contatti</span>
+                                        <span>{this.state.nextBtnTitle}</span>
                                         <a href="#" className="navbar-link"/>
                                     </p>
                                 </div>
@@ -44,13 +63,12 @@ class App extends Component {
                             <div className="navbar-collapse collapse navbar-right" id="navbar" aria-expanded="false"
                                  style={divStyle}>
                                 <p className="navbar-text rightMenu ">
-                                    <span>Contatti</span>
+                                    <span>{this.state.nextBtnTitle}</span>
                                     <a href="#" className="navbar-link"/>
                                 </p>
                             </div>
 
                         </div>
-
                     </nav>
                 </div>
                     {this.props.children}
