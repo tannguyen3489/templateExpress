@@ -631,7 +631,7 @@ input[type=checkbox]:checked:before {
     font-weight: bold;
     right: auto;
     color: #fff;
-    top: 80px;
+    top: 35px;
     left: 50%;
     transform: translate(-50%, 0%);
     padding: 0;
