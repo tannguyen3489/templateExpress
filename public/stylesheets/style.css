@@ -1048,3 +1048,8 @@ div.body.about .container-fluid > .row {
 #rootApp .homeSlider .carousel .carousel-inner .item .carousel-caption .captionTitle {
     white-space: nowrap;
 }
+
+#rootApp div.body.product .carousel .carousel-inner .item .carousel-caption,
+#rootApp div.body.showcase .carousel .carousel-inner .item .carousel-caption {
+    width: auto !important;
+}
