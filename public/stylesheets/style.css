@@ -1054,3 +1054,8 @@ div.body.about .container-fluid > .row {
 #rootApp div.body.showcase .carousel .carousel-inner .item .carousel-caption {
     width: auto !important;
 }
+
+.contact .container-fluid .userImage img {
+    width: 100%;
+    height: 100%;
+}
