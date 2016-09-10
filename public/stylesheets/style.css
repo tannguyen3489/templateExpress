@@ -991,3 +991,8 @@ div.body {
 /*#rootApp .homeSlider .carousel .carousel-inner .item:last-child .carousel-caption {*/
 /*transform: translate(-62%, 0%);*/
 /*}*/
+
+div.body.about .container-fluid .row.ownerInfo {
+    margin-left: 0;
+    margin-right: 0;
+}
