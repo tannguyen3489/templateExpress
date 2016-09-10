@@ -394,7 +394,8 @@ input[type=checkbox]:checked:before {
 
 #root .formInfo div.formHeaderTitle h1 {
     font-size: 60px;
-    color: #008cd2;
+    /*color: #008cd2;*/
+    color: rgba(0, 0, 0, 0.7);
     margin-top: 0;
     margin-bottom: 70px;
 }
