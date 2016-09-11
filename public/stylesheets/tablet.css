@@ -24,7 +24,7 @@
     margin-top: 54px;
 }
 
-#root .formInfo.portraitView .container-fluid form div.row.infoPart input {
+#root .formInfo.portraitView.contact .container-fluid form div.row.infoPart input {
     max-width: none;
     width: 100%;
 }
