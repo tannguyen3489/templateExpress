@@ -48,7 +48,7 @@ exports.contact = function(req, res) {
 };
 
 exports.react = function(req, res) {
-    let md = new MobileDetect(req.headers['user-agent']);
+    var md = new MobileDetect(req.headers['user-agent']);
     console.log("check", md.mobile());
     console.log("check", md.phone());
     console.log("check", md.tablet());
