@@ -13,11 +13,26 @@
     <link rel='stylesheet' href='/stylesheets/animate.css'/>
     <link rel='stylesheet' href='/stylesheets/style.css'/>
     <link rel='stylesheet' href='/stylesheets/media.css'/>
+
+    <% if (isMobile && isPhone) { %>
+    <% } else if (isMobile && isTablet) { %>
+    <link rel='stylesheet' href='/stylesheets/tablet.css'/>
+    <% } %>
+
+
 </head>
 <body>
 <div id="root">
 
 </div>
-</body>
+
+<% if (isMobile && isPhone) { %>
+<script src="/mobile/<%= locale %>.mobile.bundle.js"></script>
+<% } else if (isMobile && isTablet) { %>
+<script src="/mobile/<%= locale %>.tablet.bundle.js"></script>
+<% } else { %>
 <script src="/<%= locale %>.bundle.js"></script>
+<% } %>
+
+</body>
 </html>

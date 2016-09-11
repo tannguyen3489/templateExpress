@@ -1,3 +1,4 @@
+var MobileDetect = require('mobile-detect');
 exports.home = function(req, res) {
     res.render('homeindex', {
         title: 'Express',
@@ -47,9 +48,17 @@ exports.contact = function(req, res) {
 };
 
 exports.react = function(req, res) {
+    let md = new MobileDetect(req.headers['user-agent']);
+    console.log("check", md.mobile());
+    console.log("check", md.phone());
+    console.log("check", md.tablet());
+
     res.render('index', {
         title: 'Express',
-        locale: 'en'
+        locale: 'en',
+        isMobile: md.mobile(),
+        isPhone: md.phone(),
+        isTablet: md.tablet()
     });
 };
 

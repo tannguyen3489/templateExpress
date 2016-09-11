@@ -11,10 +11,10 @@
     }
 }
 @media (max-width: 1070px) {
-    #rootApp .homeSlider.showcaseSlider .carousel .carousel-inner .item .carousel-caption {
-        left: 10%;
-        transform: translate(0, 0) !important;
-    }
+    /*#rootApp .homeSlider.showcaseSlider .carousel .carousel-inner .item .carousel-caption {*/
+    /*left: 10%;*/
+    /*transform: translate(0, 0) !important;*/
+    /*}*/
 
     #rootApp .homeSlider .carousel .carousel-inner .item .wrapSlider {
         position: static;
