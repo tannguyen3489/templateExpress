@@ -42,27 +42,24 @@
         display: block;
     }
 
-    #root #rootApp.mobile.modal.userInfoModal .modal-dialog {
-        max-width: none;
-    }
-
-    #root #rootApp.mobile .modal.userInfoModal .modal-content {
-        width: calc(100vw - 100px);
-        height: 590px;
-        max-width: none;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    #root #rootApp.mobile .modal.userInfoModal .modal-content .modal-body .ownerInfo .userImage {
-        width: 144px;
-        height: 174px;
-        margin-right: 56px;
-    }
-
-    #root #rootApp.mobile .modal.userInfoModal .modal-content .modal-body .ownerInfo p {
-        font-size: 23px;
-    }
+    /*#root #rootApp.mobile.modal.userInfoModal .modal-dialog {*/
+    /*max-width: none;*/
+    /*}*/
+    /*#root #rootApp.mobile .modal.userInfoModal .modal-content {*/
+    /*width: calc(100vw - 100px);*/
+    /*height: 590px;*/
+    /*max-width: none;*/
+    /*left: 50%;*/
+    /*transform: translateX(-50%);*/
+    /*}*/
+    /*#root #rootApp.mobile .modal.userInfoModal .modal-content .modal-body .ownerInfo .userImage {*/
+    /*width: 144px;*/
+    /*height: 174px;*/
+    /*margin-right: 56px;*/
+    /*}*/
+    /*#root #rootApp.mobile .modal.userInfoModal .modal-content .modal-body .ownerInfo p {*/
+    /*font-size: 23px;*/
+    /*}*/
 }
 
 @media only screen and (orientation: landscape) {
