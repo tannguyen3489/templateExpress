@@ -39,11 +39,11 @@
     overflow: hidden;
     /*width: 100vw;*/
     background-color: #000;
-    position: absolute;
+    /*position: absolute;*/
+    position: fixed;
     left: 0;
     right: -1px;
     bottom: 0;
-
 }
 
 .carousel-indicators {
