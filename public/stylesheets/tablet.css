@@ -33,6 +33,18 @@
     max-width: none;
 }
 
+#rootApp div.body.home,
+#rootApp div.body.product,
+#rootApp div.body.showcase {
+    overflow: hidden;
+    width: 100vw;
+}
+
+.carousel-indicators {
+    position: fixed;
+    top: calc(100% - 50px);
+}
+
 @media only screen and (orientation: portrait) {
     #root #rootApp.mobile div.lanscapseView {
         display: none;
