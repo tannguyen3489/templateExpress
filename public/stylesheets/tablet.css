@@ -51,6 +51,9 @@
     top: calc(100% - 50px);
 }
 
+.right.carousel-control > span {
+    margin-right: 0px !important;
+}
 
 @media only screen and (orientation: portrait) {
     #root #rootApp.mobile div.lanscapseView {
