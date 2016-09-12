@@ -37,13 +37,20 @@
 #rootApp div.body.product,
 #rootApp div.body.showcase {
     overflow: hidden;
-    width: 100vw;
+    /*width: 100vw;*/
+    background-color: #000;
+    position: absolute;
+    left: 0;
+    right: -1px;
+    bottom: 0;
+
 }
 
 .carousel-indicators {
     position: fixed;
     top: calc(100% - 50px);
 }
+
 
 @media only screen and (orientation: portrait) {
     #root #rootApp.mobile div.lanscapseView {
@@ -78,6 +85,9 @@
 }
 
 @media only screen and (orientation: landscape) {
+    #rootApp.mobile .homeSlider .carousel .carousel-control {
+        width: 15%;
+    }
     #root #rootApp.mobile div.lanscapseView {
         display: block;
     }
