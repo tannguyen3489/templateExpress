@@ -59,6 +59,12 @@
     top: 80px;
 }
 
+#rootApp .homeSlider {
+    position: fixed;
+    top: 50px;
+
+}
+
 @media only screen and (orientation: portrait) {
     #root #rootApp.mobile div.lanscapseView {
         display: none;
