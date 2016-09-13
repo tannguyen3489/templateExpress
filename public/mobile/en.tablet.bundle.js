@@ -34250,7 +34250,7 @@
                                     id: "carousel-example-generic",
                                     className: "carousel slide",
                                     "data-ride": "carousel",
-                                    "data-interval": "5000"
+                                    "data-interval": "false"
                                 },
                                 _react2.default.createElement(
                                     "ol",
