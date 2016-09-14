@@ -4,7 +4,7 @@ import About from "../components/about";
 class AboutMobile extends About {
     render() {
         return (
-            <div className="body about phone">
+            <div className="body about">
                 <div className="contact lanscapseView">
                     <div className="container-fluid">
                         <div className="row">
@@ -150,167 +150,19 @@ class AboutMobile extends About {
                         </div>
                     </div>
 
-                    <div className="modal fade userInfoModal" id="miloModal" tabIndex="-1" role="dialog"
-                         data-backdrop="static"
-                         aria-labelledby="myModalLabel">
-                        <div className="modal-dialog" role="document">
-                            <div className="modal-content">
-                                <div className="modal-body">
-                                    <div className="btnArea">
-                                        <div className="btn myBtn closeBtn" data-dismiss="modal">Chiudi</div>
-                                    </div>
-                                    <div className="row ownerInfo">
-                                        <div className="col-md-12 col-sm-12">
-                                            <div className="userImage">
-                                                <img src="images/slides/_2-team/Milo.png"/>
-                                            </div>
 
-                                            <div className="infos">
-                                                <div className="info">
-                                                    Jean–Marie Balogh
-                                                </div>
-                                                <div className="info">
-                                                    Grafico, web designer e illustratore
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div className="row ownerInfo">
-                                        <div className="col-md-12 col-sm-12">
-                                            <p>
-                                                Nato a Locarno nel 1980, mi sono diplomato come grafico illustratore
-                                                alla Scuola del Fumetto di Milano, grafico federale al CSIA di Lugano e
-                                                web design presso la SAE Institute di Ginevra.
-                                                <br/>
-                                                <br/>
-                                                Sono in grado di rispondere alle vostre esigenze concezione di prodotti
-                                                grafici, qualsiasi prodotto stampato.
-                                                <br/>
-                                                <br/>
-                                                Le mie qualita principali vanno dal disegno, conoscenze tipografiche,
-                                                storia dell’arte, arricchite da numerosi viaggi ed esperienze svolte
-                                                all’estero.
-                                            </p>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="modal fade userInfoModal" id="huyModal" tabIndex="-s" role="dialog"
-                         data-backdrop="static"
-                         aria-labelledby="myModalLabel">
-                        <div className="modal-dialog" role="document">
-                            <div className="modal-content">
-                                <div className="modal-body">
-                                    <div className="btnArea">
-                                        <div className="btn myBtn closeBtn" data-dismiss="modal">Chiudi</div>
-                                    </div>
-                                    <div className="row ownerInfo">
-                                        <div className="col-md-12 col-sm-12">
-                                            <div className="userImage">
-                                                <img src="images/slides/_2-team/Huy.png"/>
-                                            </div>
-
-                                            <div className="infos">
-                                                <div className="info">
-                                                    Nguyen Thi Minh Huy
-                                                </div>
-                                                <div className="info">
-                                                    Architetto, architetto urbanista e 3D designer
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div className="row ownerInfo">
-                                        <div className="col-md-12 col-sm-12">
-                                            <p>
-                                                Nato a Locarno nel 1980, mi sono diplomato come grafico illustratore
-                                                alla Scuola del Fumetto di Milano, grafico federale al CSIA di Lugano e
-                                                web design presso la SAE Institute di Ginevra.
-                                                <br/>
-                                                <br/>
-                                                Sono in grado di rispondere alle vostre esigenze concezione di prodotti
-                                                grafici, qualsiasi prodotto stampato.
-                                                <br/>
-                                                <br/>
-                                                Le mie qualita principali vanno dal disegno, conoscenze tipografiche,
-                                                storia dell’arte, arricchite da numerosi viaggi ed esperienze svolte
-                                                all’estero.
-                                            </p>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="modal fade userInfoModal" id="ericModal" tabIndex="-1" role="dialog"
-                         data-backdrop="static"
-                         aria-labelledby="myModalLabel">
-                        <div className="modal-dialog" role="document">
-                            <div className="modal-content">
-                                <div className="modal-body">
-                                    <div className="btnArea">
-                                        <div className="btn myBtn closeBtn" data-dismiss="modal">Chiudi</div>
-                                    </div>
-                                    <div className="row ownerInfo">
-                                        <div className="col-md-12 col-sm-12">
-                                            <div className="userImage">
-                                                <img src="images/slides/_2-team/Eric.png"/>
-                                            </div>
-
-                                            <div className="infos">
-                                                <div className="info">
-                                                    Eric Spichiger
-                                                </div>
-                                                <div className="info">
-                                                    Web Master
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div className="row ownerInfo">
-                                        <div className="col-md-12 col-sm-12">
-                                            <p>
-                                                Nato a Locarno nel 1980, mi sono diplomato come grafico illustratore
-                                                alla Scuola del Fumetto di Milano, grafico federale al CSIA di Lugano e
-                                                web design presso la SAE Institute di Ginevra.
-                                                <br/>
-                                                <br/>
-                                                Sono in grado di rispondere alle vostre esigenze concezione di prodotti
-                                                grafici, qualsiasi prodotto stampato.
-                                                <br/>
-                                                <br/>
-                                                Le mie qualita principali vanno dal disegno, conoscenze tipografiche,
-                                                storia dell’arte, arricchite da numerosi viaggi ed esperienze svolte
-                                                all’estero.
-                                            </p>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
 
                 <div className="contact portraitView">
                     <div className="container-fluid">
                         <div className="row">
-                            <div className="col-md-10 col-sm-10 col-sm-offset-1 ">
+                            <div className="col-md-12 col-sm-12 ">
                                 <h1 className="titleForm">Chi siamo</h1>
                             </div>
                         </div>
 
                         <div className="row">
-                            <div className="col-md-10 col-sm-10 col-sm-offset-1 ">
+                            <div className="col-md-12 col-sm-12 ">
                                 <p>
                                     Siamo un team con delle competenze specifiche che spaziano dalla grafica, la
                                     programmazione per siti
@@ -327,12 +179,12 @@ class AboutMobile extends About {
                     </div>
                     <div className="container-fluid">
                         <div className="row ownerInfo">
-                            <div className="col-md-4 col-sm-4 col-sm-offset-1 ">
+                            <div className="col-md-12 col-sm-12">
                                 <div className="userImage">
                                     <img src="images/slides/_2-team/Milo.png"/>
                                 </div>
                             </div>
-                            <div className="col-md-6 col-sm-6">
+                            <div className="col-md-12 col-sm-12">
 
                                 <div className="infos">
                                     <div className="info">
@@ -355,12 +207,12 @@ class AboutMobile extends About {
                         </div>
 
                         <div className="row ownerInfo">
-                            <div className="col-md-4 col-sm-4 col-sm-offset-1 ">
+                            <div className="col-md-12 col-sm-12">
                                 <div className="userImage">
                                     <img src="images/slides/_2-team/Huy.png"/>
                                 </div>
                             </div>
-                            <div className="col-md-6 col-sm-6">
+                            <div className="col-md-12 col-sm-12">
 
                                 <div className="infos">
                                     <div className="info">
@@ -383,12 +235,12 @@ class AboutMobile extends About {
                         </div>
 
                         <div className="row ownerInfo">
-                            <div className="col-md-4 col-sm-4 col-sm-offset-1 ">
+                            <div className="col-md-12 col-sm-12">
                                 <div className="userImage">
                                     <img src="images/slides/_2-team/Eric.png"/>
                                 </div>
                             </div>
-                            <div className="col-md-6 col-sm-6">
+                            <div className="col-md-12 col-sm-12">
 
                                 <div className="infos">
                                     <div className="info">
@@ -413,13 +265,13 @@ class AboutMobile extends About {
 
                     <div className="container-fluid">
                         <div className="row chiSite">
-                            <div className="col-md-10 col-sm-10 col-sm-offset-1">
+                            <div className="col-md-12 col-sm-12">
                                 <h1 className="titleForm">Chi siete ?</h1>
                             </div>
                         </div>
 
                         <div className="row">
-                            <div className="col-md-10 col-sm-10 col-sm-offset-1">
+                            <div className="col-md-12 col-sm-12">
                                 <p>
                                     Ora che avete dato uno sguardo ai nostri profili e avete visto le nostre competenze,
                                     vorremmo anche
@@ -440,158 +292,159 @@ class AboutMobile extends About {
                         </div>
 
                         <div className="row">
-                            <div className="col-md-10 col-sm-10 col-sm-offset-1">
+                            <div className="col-md-12 col-sm-12">
                                 <div className="btn nextPage myBtn">Parlaci della tua idea</div>
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <div className="modal fade userInfoModal" id="miloModal" tabIndex="-1" role="dialog"
-                         data-backdrop="static"
-                         aria-labelledby="myModalLabel">
-                        <div className="modal-dialog" role="document">
-                            <div className="modal-content">
-                                <div className="modal-body">
-                                    <div className="btnArea">
-                                        <div className="btn myBtn closeBtn" data-dismiss="modal">Chiudi</div>
-                                    </div>
-                                    <div className="row ownerInfo">
-                                        <div className="col-md-12 col-sm-12">
-                                            <div className="userImage">
-                                                <img src="images/slides/_2-team/Milo.png"/>
-                                            </div>
 
-                                            <div className="infos">
-                                                <div className="info">
-                                                    Jean–Marie Balogh
-                                                </div>
-                                                <div className="info">
-                                                    Grafico, web designer e illustratore
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div className="row ownerInfo">
-                                        <div className="col-md-12 col-sm-12">
-                                            <p>
-                                                Nato a Locarno nel 1980, mi sono diplomato come grafico illustratore
-                                                alla Scuola del Fumetto di Milano, grafico federale al CSIA di Lugano e
-                                                web design presso la SAE Institute di Ginevra.
-                                                <br/>
-                                                <br/>
-                                                Sono in grado di rispondere alle vostre esigenze concezione di prodotti
-                                                grafici, qualsiasi prodotto stampato.
-                                                <br/>
-                                                <br/>
-                                                Le mie qualita principali vanno dal disegno, conoscenze tipografiche,
-                                                storia dell’arte, arricchite da numerosi viaggi ed esperienze svolte
-                                                all’estero.
-                                            </p>
-                                        </div>
-                                    </div>
-
+                <div className="modal fade userInfoModal" id="miloModal" tabIndex="-1" role="dialog"
+                     data-backdrop="static"
+                     aria-labelledby="myModalLabel">
+                    <div className="modal-dialog" role="document">
+                        <div className="modal-content">
+                            <div className="modal-body">
+                                <div className="btnArea">
+                                    <div className="btn myBtn closeBtn" data-dismiss="modal">Chiudi</div>
                                 </div>
+                                <div className="row ownerInfo">
+                                    <div className="col-md-12 col-sm-12">
+                                        <div className="userImage">
+                                            <img src="images/slides/_2-team/Milo.png"/>
+                                        </div>
+
+                                        <div className="infos">
+                                            <div className="info">
+                                                Jean–Marie Balogh
+                                            </div>
+                                            <div className="info">
+                                                Grafico, web designer e illustratore
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="row ownerInfo">
+                                    <div className="col-md-12 col-sm-12">
+                                        <p>
+                                            Nato a Locarno nel 1980, mi sono diplomato come grafico illustratore
+                                            alla Scuola del Fumetto di Milano, grafico federale al CSIA di Lugano e
+                                            web design presso la SAE Institute di Ginevra.
+                                            <br/>
+                                            <br/>
+                                            Sono in grado di rispondere alle vostre esigenze concezione di prodotti
+                                            grafici, qualsiasi prodotto stampato.
+                                            <br/>
+                                            <br/>
+                                            Le mie qualita principali vanno dal disegno, conoscenze tipografiche,
+                                            storia dell’arte, arricchite da numerosi viaggi ed esperienze svolte
+                                            all’estero.
+                                        </p>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <div className="modal fade userInfoModal" id="huyModal" tabIndex="-s" role="dialog"
-                         data-backdrop="static"
-                         aria-labelledby="myModalLabel">
-                        <div className="modal-dialog" role="document">
-                            <div className="modal-content">
-                                <div className="modal-body">
-                                    <div className="btnArea">
-                                        <div className="btn myBtn closeBtn" data-dismiss="modal">Chiudi</div>
-                                    </div>
-                                    <div className="row ownerInfo">
-                                        <div className="col-md-12 col-sm-12">
-                                            <div className="userImage">
-                                                <img src="images/slides/_2-team/Huy.png"/>
-                                            </div>
-
-                                            <div className="infos">
-                                                <div className="info">
-                                                    Nguyen Thi Minh Huy
-                                                </div>
-                                                <div className="info">
-                                                    Architetto, architetto urbanista e 3D designer
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div className="row ownerInfo">
-                                        <div className="col-md-12 col-sm-12">
-                                            <p>
-                                                Nato a Locarno nel 1980, mi sono diplomato come grafico illustratore
-                                                alla Scuola del Fumetto di Milano, grafico federale al CSIA di Lugano e
-                                                web design presso la SAE Institute di Ginevra.
-                                                <br/>
-                                                <br/>
-                                                Sono in grado di rispondere alle vostre esigenze concezione di prodotti
-                                                grafici, qualsiasi prodotto stampato.
-                                                <br/>
-                                                <br/>
-                                                Le mie qualita principali vanno dal disegno, conoscenze tipografiche,
-                                                storia dell’arte, arricchite da numerosi viaggi ed esperienze svolte
-                                                all’estero.
-                                            </p>
-                                        </div>
-                                    </div>
-
+                <div className="modal fade userInfoModal" id="huyModal" tabIndex="-s" role="dialog"
+                     data-backdrop="static"
+                     aria-labelledby="myModalLabel">
+                    <div className="modal-dialog" role="document">
+                        <div className="modal-content">
+                            <div className="modal-body">
+                                <div className="btnArea">
+                                    <div className="btn myBtn closeBtn" data-dismiss="modal">Chiudi</div>
                                 </div>
+                                <div className="row ownerInfo">
+                                    <div className="col-md-12 col-sm-12">
+                                        <div className="userImage">
+                                            <img src="images/slides/_2-team/Huy.png"/>
+                                        </div>
+
+                                        <div className="infos">
+                                            <div className="info">
+                                                Nguyen Thi Minh Huy
+                                            </div>
+                                            <div className="info">
+                                                Architetto, architetto urbanista e 3D designer
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="row ownerInfo">
+                                    <div className="col-md-12 col-sm-12">
+                                        <p>
+                                            Nato a Locarno nel 1980, mi sono diplomato come grafico illustratore
+                                            alla Scuola del Fumetto di Milano, grafico federale al CSIA di Lugano e
+                                            web design presso la SAE Institute di Ginevra.
+                                            <br/>
+                                            <br/>
+                                            Sono in grado di rispondere alle vostre esigenze concezione di prodotti
+                                            grafici, qualsiasi prodotto stampato.
+                                            <br/>
+                                            <br/>
+                                            Le mie qualita principali vanno dal disegno, conoscenze tipografiche,
+                                            storia dell’arte, arricchite da numerosi viaggi ed esperienze svolte
+                                            all’estero.
+                                        </p>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <div className="modal fade userInfoModal" id="ericModal" tabIndex="-1" role="dialog"
-                         data-backdrop="static"
-                         aria-labelledby="myModalLabel">
-                        <div className="modal-dialog" role="document">
-                            <div className="modal-content">
-                                <div className="modal-body">
-                                    <div className="btnArea">
-                                        <div className="btn myBtn closeBtn" data-dismiss="modal">Chiudi</div>
-                                    </div>
-                                    <div className="row ownerInfo">
-                                        <div className="col-md-12 col-sm-12">
-                                            <div className="userImage">
-                                                <img src="images/slides/_2-team/Eric.png"/>
-                                            </div>
-
-                                            <div className="infos">
-                                                <div className="info">
-                                                    Eric Spichiger
-                                                </div>
-                                                <div className="info">
-                                                    Web Master
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div className="row ownerInfo">
-                                        <div className="col-md-12 col-sm-12">
-                                            <p>
-                                                Nato a Locarno nel 1980, mi sono diplomato come grafico illustratore
-                                                alla Scuola del Fumetto di Milano, grafico federale al CSIA di Lugano e
-                                                web design presso la SAE Institute di Ginevra.
-                                                <br/>
-                                                <br/>
-                                                Sono in grado di rispondere alle vostre esigenze concezione di prodotti
-                                                grafici, qualsiasi prodotto stampato.
-                                                <br/>
-                                                <br/>
-                                                Le mie qualita principali vanno dal disegno, conoscenze tipografiche,
-                                                storia dell’arte, arricchite da numerosi viaggi ed esperienze svolte
-                                                all’estero.
-                                            </p>
-                                        </div>
-                                    </div>
-
+                <div className="modal fade userInfoModal" id="ericModal" tabIndex="-1" role="dialog"
+                     data-backdrop="static"
+                     aria-labelledby="myModalLabel">
+                    <div className="modal-dialog" role="document">
+                        <div className="modal-content">
+                            <div className="modal-body">
+                                <div className="btnArea">
+                                    <div className="btn myBtn closeBtn" data-dismiss="modal">Chiudi</div>
                                 </div>
+                                <div className="row ownerInfo">
+                                    <div className="col-md-12 col-sm-12">
+                                        <div className="userImage">
+                                            <img src="images/slides/_2-team/Eric.png"/>
+                                        </div>
+
+                                        <div className="infos">
+                                            <div className="info">
+                                                Eric Spichiger
+                                            </div>
+                                            <div className="info">
+                                                Web Master
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="row ownerInfo">
+                                    <div className="col-md-12 col-sm-12">
+                                        <p>
+                                            Nato a Locarno nel 1980, mi sono diplomato come grafico illustratore
+                                            alla Scuola del Fumetto di Milano, grafico federale al CSIA di Lugano e
+                                            web design presso la SAE Institute di Ginevra.
+                                            <br/>
+                                            <br/>
+                                            Sono in grado di rispondere alle vostre esigenze concezione di prodotti
+                                            grafici, qualsiasi prodotto stampato.
+                                            <br/>
+                                            <br/>
+                                            Le mie qualita principali vanno dal disegno, conoscenze tipografiche,
+                                            storia dell’arte, arricchite da numerosi viaggi ed esperienze svolte
+                                            all’estero.
+                                        </p>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                     </div>

@@ -49,15 +49,22 @@ exports.contact = function(req, res) {
 
 exports.react = function(req, res) {
     var md = new MobileDetect(req.headers['user-agent']);
-    console.log("check", md.mobile());
-    console.log("check", md.phone());
+    console.log("aaaaaaaaaaaaaa", req.headers['user-agent']);
+    var isMobile = md.mobile();
+    var isPhone = md.phone();
+    console.log("check", isMobile);
+    console.log("check", isPhone);
     console.log("check", md.tablet());
+
+    if (isMobile === "UnknownMobile") {
+        isPhone = true;
+    }
 
     res.render('index', {
         title: 'Express',
         locale: 'en',
-        isMobile: md.mobile(),
-        isPhone: md.phone(),
+        isMobile: isMobile,
+        isPhone: isPhone,
         isTablet: md.tablet()
     });
 };

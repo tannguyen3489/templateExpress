@@ -85,7 +85,7 @@ let mobile = Object.keys(languages).map(function (language) {
 
 
 result = result.concat(desktop);
-// result = result.concat(mobile);
+result = result.concat(mobile);
 result = result.concat(tablet);
 
 module.exports = result;

@@ -157,7 +157,7 @@ class AboutMobile extends About {
                     <div className="container-fluid">
                         <div className="row">
                             <div className="col-md-12 col-sm-12 ">
-                                <h1 className="titleForm">Chi siamo portraitView</h1>
+                                <h1 className="titleForm">Chi siamo</h1>
                             </div>
                         </div>
 

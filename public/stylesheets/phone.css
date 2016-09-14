@@ -1,0 +1,143 @@
+
+#root #rootApp.mobile .navbar {
+    height: 50px
+}
+
+#root #rootApp.mobile .formInfo.contact .container-fluid form textarea.finalComment {
+    width: 100%;
+}
+
+#root #rootApp.mobile .navbar .container-fluid .navbar-header .navbar-brand.logo img {
+    height: 50px;
+}
+
+#root #rootApp.mobile p.navbar-text {
+    margin-top: 10px;
+}
+
+.contact.portraitView .container-fluid .userImage {
+    width: 346px;
+    height: 400px;
+}
+
+.contact.portraitView .container-fluid .infos .info:nth-child(1) {
+    margin-top: 54px;
+}
+
+#root .formInfo.portraitView.contact .container-fluid form div.row.infoPart input {
+    max-width: none;
+    width: 100%;
+}
+
+#root #rootApp.mobile .formInfo.contact.portraitView .container-fluid form textarea.finalComment {
+    max-width: none;
+}
+
+#rootApp div.body.home,
+#rootApp div.body.product,
+#rootApp div.body.showcase {
+    overflow: hidden;
+    /*width: 100vw;*/
+    background-color: #000;
+    /*position: absolute;*/
+    position: fixed;
+    left: 0;
+    right: -1px;
+    bottom: -1px;
+}
+
+.carousel-indicators {
+    position: fixed;
+    top: calc(100% - 50px);
+}
+
+.right.carousel-control > span {
+    margin-right: 0px !important;
+}
+
+#rootApp .homeSlider .carousel .carousel-inner .item .carousel-caption {
+    /*top: 80px;*/
+}
+
+#rootApp .homeSlider {
+    position: fixed;
+    top: 50px;
+
+}
+
+@media only screen and (orientation: portrait) {
+    #root #rootApp.mobile .navbar {
+        /*height: 8vh;*/
+    }
+
+    #rootApp.mobile .body.about div.contact > div.container-fluid {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #rootApp.mobile .contact .container-fluid .infos .info:nth-child(1) {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    #rootApp.mobile .contact .container-fluid .infos .info:nth-child(1) {
+        /*font-size: 60px;*/
+    }
+
+    #rootApp.mobile .contact.portraitView .container-fluid .userImage {
+        width: 100%;
+        height: auto;
+    }
+
+    #root .navbar .navbar-brand.logo {
+        display: none;
+    }
+
+    #root #rootApp.mobile div.lanscapseView {
+        display: none;
+    }
+
+    #root #rootApp.mobile div.portraitView {
+        display: block;
+    }
+
+    #root #rootApp.mobile.modal.userInfoModal .modal-dialog {
+        max-width: none;
+    }
+
+    #root #rootApp.mobile .modal.userInfoModal .modal-content {
+        width: calc(100vw - 100px);
+        height: 590px;
+        max-width: none;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #root #rootApp.mobile .modal.userInfoModal .modal-content .modal-body .ownerInfo .userImage {
+        width: 144px;
+        height: 174px;
+        margin-right: 56px;
+    }
+
+    #root #rootApp.mobile .modal.userInfoModal .modal-content .modal-body .ownerInfo p {
+        font-size: 23px;
+    }
+}
+
+@media only screen and (orientation: landscape) {
+    #rootApp.mobile .homeSlider .carousel .carousel-control {
+        width: 15%;
+    }
+
+    #root #rootApp.mobile div.lanscapseView {
+        display: block;
+    }
+
+    #root #rootApp.mobile div.portraitView {
+        display: none;
+    }
+
+    #root .navbar {
+
+    }
+}

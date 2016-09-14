@@ -29408,7 +29408,7 @@
                                         _react2.default.createElement(
                                             "h1",
                                             {className: "titleForm"},
-                                            "Chi siamo portraitView"
+                                            "Chi siamo"
                                         )
                                     )
                                 ),
