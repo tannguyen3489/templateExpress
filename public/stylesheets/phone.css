@@ -66,13 +66,51 @@
 }
 
 @media only screen and (orientation: portrait) {
-    #root #rootApp.mobile .navbar {
-        /*height: 8vh;*/
+    #rootApp.mobile .navbar .container-fluid .navbar-header {
+        height: 100px;
     }
 
+    #root p.navbar-text span {
+        font-size: 50px;
+    }
+
+    #root p.navbar-text a {
+        width: 70px;
+        height: 56px;
+        background: url(../images/Main_button.png) no-repeat;
+        background-size: 70px 56px;
+    }
+
+    #root #rootApp.mobile p.navbar-text {
+        height: 100px;
+        margin: 0;
+    }
+
+    #root #rootApp.mobile p.navbar-text > * {
+        top: 50%;
+        position: relative;
+        transform: translateY(-50%);
+    }
+
+    #root #rootApp.mobile p.navbar-text > span {
+        top: 12px;
+    }
+
+    #rootApp.mobile .navbar .navbar-brand.menu {
+        height: 100px;
+        width: 100px;
+    }
+    #root #rootApp.mobile .navbar {
+        height: 100px;
+    }
+
+    #rootApp.mobile .navbar .container-fluid .navbar-header .navbar-brand.menu img {
+        height: 60px;
+        width: 90px;
+    }
     #rootApp.mobile .body.about div.contact > div.container-fluid {
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
     }
 
     #rootApp.mobile .contact .container-fluid .infos .info:nth-child(1) {
