@@ -29619,10 +29619,10 @@
                                     {className: "row"},
                                     _react2.default.createElement(
                                         "div",
-                                        {className: "col-md-12 col-sm-12"},
+                                        {className: "col-md-12 col-sm-12 infos"},
                                         _react2.default.createElement(
                                             "div",
-                                            {className: "btn nextPage myBtn"},
+                                            {className: "btn viewProfile myBtn"},
                                             "Parlaci della tua idea"
                                         )
                                     )

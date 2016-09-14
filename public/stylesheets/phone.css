@@ -66,6 +66,64 @@
 }
 
 @media only screen and (orientation: portrait) {
+    .modal.userInfoModal .modal-content .modal-body .ownerInfo .infos .info:first-child {
+        font-size: 60px;
+    }
+
+    .modal.userInfoModal .modal-content .modal-body .ownerInfo .infos .info:last-child {
+        font-size: 32px;
+    }
+
+    #rootApp .body.about div.contact > div.container-fluid:nth-child(2) {
+        padding-bottom: 160px;
+    }
+
+    #leftMenu .modal-dialog .menuLinksArea .gotoLink:after {
+        width: 210px;
+    }
+
+    #leftMenu .modal-dialog .menuLinksArea .gotoLink a {
+        font-size: 72px;
+        line-height: 160px;
+    }
+
+    div.body {
+        margin-top: 100px;
+        position: relative;
+    }
+
+    #rootApp .homeSlider .carousel .carousel-inner .item .carousel-caption {
+        top: 105px;
+    }
+
+    #leftMenu .modal-dialog .btnClose {
+        width: 70px;
+        height: 70px;
+        background: url(../images/X.png) no-repeat;
+        background-size: 70px;
+    }
+
+    #leftMenu .modal-dialog .locale {
+        width: 96px;
+        height: 96px;
+        padding-top: 25px;
+        color: #000;
+        margin: 0 10px;
+        cursor: pointer;
+        font-size: 36px;
+    }
+
+    #leftMenu .modal-dialog .btnArea span:first-child {
+        font-size: 48px;
+    }
+
+    #leftMenu .modal-dialog .modal-content {
+        width: 100vw;
+    }
+
+    .container-fluid > .navbar-collapse, .container-fluid > .navbar-header, .container > .navbar-collapse, .container > .navbar-header {
+        margin-right: 30px;
+    }
     #rootApp.mobile .navbar .container-fluid .navbar-header {
         height: 100px;
     }
@@ -113,18 +171,58 @@
         padding-right: 30px;
     }
 
+    #rootApp.mobile .body.about div.contact > div.container-fluid:first-child {
+        background: #fff;
+    }
+
+    #rootApp.mobile .body.about div.contact > div.container-fluid:last-child {
+        background: rgba(235, 235, 235, 0.8);
+    }
+
+    #rootApp.mobile .body.about div.contact > div.container-fluid:nth-child(2) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #rootApp.mobile .body.about div.contact > div.container-fluid:nth-child(2) div.row.ownerInfo > div:last-child {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+
     #rootApp.mobile .contact .container-fluid .infos .info:nth-child(1) {
         padding-left: 0px;
         padding-right: 0px;
     }
 
     #rootApp.mobile .contact .container-fluid .infos .info:nth-child(1) {
-        /*font-size: 60px;*/
+        font-size: 60px;
+    }
+
+    .contact .container-fluid .infos .info:nth-child(2) {
+        font-size: 32px;
+    }
+
+    .contact .container-fluid .infos .info:nth-child(3) {
+        font-size: 32px;
+    }
+
+    .contact .container-fluid .infos .info:nth-child(4) {
+        font-size: 32px;
     }
 
     #rootApp.mobile .contact.portraitView .container-fluid .userImage {
         width: 100%;
         height: auto;
+    }
+
+    #rootApp.mobile .contact .container-fluid h1.titleForm {
+        font-size: 120px;
+    }
+
+    #rootApp.mobile .contact .container-fluid p {
+        font-size: 50px;
+        line-height: 72px;
     }
 
     #root .navbar .navbar-brand.logo {
@@ -137,6 +235,7 @@
 
     #root #rootApp.mobile div.portraitView {
         display: block;
+        background: #fff;
     }
 
     #root #rootApp.mobile.modal.userInfoModal .modal-dialog {
@@ -144,21 +243,49 @@
     }
 
     #root #rootApp.mobile .modal.userInfoModal .modal-content {
-        width: calc(100vw - 100px);
-        height: 590px;
+        width: calc(100vw - 60px);
+        /*height: 590px;*/
         max-width: none;
         left: 50%;
         transform: translateX(-50%);
     }
 
     #root #rootApp.mobile .modal.userInfoModal .modal-content .modal-body .ownerInfo .userImage {
-        width: 144px;
-        height: 174px;
-        margin-right: 56px;
+        width: 288px;
+        height: 348px;
+        margin-right: 34px;
     }
 
     #root #rootApp.mobile .modal.userInfoModal .modal-content .modal-body .ownerInfo p {
         font-size: 23px;
+    }
+
+    .contact .container-fluid .infos .viewProfile {
+        /* width: 180px; */
+        height: 72px;
+        margin-top: 60px;
+        font-size: 32px;
+        text-align: left;
+        line-height: 60px;
+    }
+
+    .myBtn {
+        background: url(../images/Harrow.png) center right 14px no-repeat #fff;
+        background-size: 40px 34px;
+        padding-right: 100px;
+        padding-left: 30px;
+    }
+
+    .contact.portraitView .container-fluid .infos .info:nth-child(1) {
+        padding-top: 40px;
+    }
+
+    #rootApp.mobile .body.about div.contact > div.container-fluid:first-child {
+        padding-bottom: 0;
+    }
+
+    #rootApp.mobile .contact .container-fluid .row.ownerInfo {
+        margin-top: 160px;
     }
 }
 

@@ -258,6 +258,7 @@ class AboutMobile extends About {
                                     <div className="btn viewProfile myBtn" data-toggle="modal" data-target="#ericModal">
                                         Per saperne di più
                                     </div>
+
                                 </div>
                             </div>
                         </div>
@@ -292,8 +293,8 @@ class AboutMobile extends About {
                         </div>
 
                         <div className="row">
-                            <div className="col-md-12 col-sm-12">
-                                <div className="btn nextPage myBtn">Parlaci della tua idea</div>
+                            <div className="col-md-12 col-sm-12 infos">
+                                <div className="btn viewProfile myBtn">Parlaci della tua idea</div>
                             </div>
                         </div>
                     </div>
