@@ -32130,7 +32130,7 @@
                                         {className: "row formHeaderTitle noBorder"},
                                         _react2.default.createElement(
                                             "div",
-                                            {className: "col-md-10 col-sm-10"},
+                                            {className: "col-md-12 col-sm-12"},
                                             _react2.default.createElement(
                                                 "h1",
                                                 {className: "titleForm"},
@@ -32143,7 +32143,7 @@
                                         {className: "row noBorder"},
                                         _react2.default.createElement(
                                             "div",
-                                            {className: "col-md-10 col-sm-10"},
+                                            {className: "col-md-12 col-sm-12"},
                                             _react2.default.createElement(
                                                 "h1",
                                                 {className: "titleForm"},
@@ -32156,7 +32156,7 @@
                                         {className: "row infoPart noBorder"},
                                         _react2.default.createElement(
                                             "div",
-                                            {className: "col-md-10 col-sm-10"},
+                                            {className: "col-md-12 col-sm-12"},
                                             _react2.default.createElement(
                                                 "div",
                                                 {className: "form-group"},
@@ -32216,7 +32216,7 @@
                                         {className: "row noBorder"},
                                         _react2.default.createElement(
                                             "div",
-                                            {className: "col-md-10 col-sm-10"},
+                                            {className: "col-md-12 col-sm-12"},
                                             _react2.default.createElement(
                                                 "h1",
                                                 {className: "titleForm"},
@@ -32229,7 +32229,7 @@
                                         {className: "row part1"},
                                         _react2.default.createElement(
                                             "div",
-                                            {className: "col-md-10 col-sm-10"},
+                                            {className: "col-md-12 col-sm-12"},
                                             _react2.default.createElement(
                                                 "div",
                                                 {className: "form-group"},
@@ -32268,7 +32268,7 @@
                                         {className: "row part1"},
                                         _react2.default.createElement(
                                             "div",
-                                            {className: "col-md-10 col-sm-10"},
+                                            {className: "col-md-12 col-sm-12"},
                                             _react2.default.createElement(
                                                 "div",
                                                 {className: "form-group"},
@@ -32307,7 +32307,7 @@
                                         {className: "row part1"},
                                         _react2.default.createElement(
                                             "div",
-                                            {className: "col-md-10 col-sm-10"},
+                                            {className: "col-md-12 col-sm-12"},
                                             _react2.default.createElement(
                                                 "div",
                                                 {className: "form-group"},
@@ -32350,7 +32350,7 @@
                                         {className: "row part1"},
                                         _react2.default.createElement(
                                             "div",
-                                            {className: "labelInputGroup col-md-10 col-sm-10"},
+                                            {className: "labelInputGroup col-md-12 col-sm-12"},
                                             _react2.default.createElement(
                                                 "div",
                                                 {className: "form-group"},
@@ -32380,7 +32380,7 @@
                                         {className: "row part1 bottomBorder"},
                                         _react2.default.createElement(
                                             "div",
-                                            {className: "labelInputGroup col-md-10 col-sm-10"},
+                                            {className: "labelInputGroup col-md-12 col-sm-12"},
                                             _react2.default.createElement(
                                                 "div",
                                                 {className: "form-group"},
@@ -32410,7 +32410,7 @@
                                         {className: "row stampati noBorder"},
                                         _react2.default.createElement(
                                             "div",
-                                            {className: "col-md-10 col-sm-10"},
+                                            {className: "col-md-12 col-sm-12"},
                                             _react2.default.createElement(
                                                 "h1",
                                                 {className: "titleForm"},
@@ -32423,7 +32423,7 @@
                                         {className: "row"},
                                         _react2.default.createElement(
                                             "div",
-                                            {className: "labelInputGroup col-md-10 col-sm-10"},
+                                            {className: "labelInputGroup col-md-12 col-sm-12"},
                                             _react2.default.createElement(
                                                 "div",
                                                 {className: "form-group inputSelectGroup"},
@@ -32471,7 +32471,7 @@
                                         {className: "row"},
                                         _react2.default.createElement(
                                             "div",
-                                            {className: "labelInputGroup col-md-10 col-sm-10"},
+                                            {className: "labelInputGroup col-md-12 col-sm-12"},
                                             _react2.default.createElement(
                                                 "div",
                                                 {className: "form-group inputSelectGroup"},
@@ -32519,7 +32519,7 @@
                                         {className: "row"},
                                         _react2.default.createElement(
                                             "div",
-                                            {className: "labelInputGroup col-md-10 col-sm-10"},
+                                            {className: "labelInputGroup col-md-12 col-sm-12"},
                                             _react2.default.createElement(
                                                 "div",
                                                 {className: "form-group inputSelectGroup"},
@@ -32567,7 +32567,7 @@
                                         {className: "row"},
                                         _react2.default.createElement(
                                             "div",
-                                            {className: "labelInputGroup col-md-10 col-sm-10"},
+                                            {className: "labelInputGroup col-md-12 col-sm-12"},
                                             _react2.default.createElement(
                                                 "div",
                                                 {className: "form-group inputSelectGroup"},
@@ -32615,7 +32615,7 @@
                                         {className: "row"},
                                         _react2.default.createElement(
                                             "div",
-                                            {className: "labelInputGroup labelTextareaGroup col-md-10 col-sm-10"},
+                                            {className: "labelInputGroup labelTextareaGroup col-md-12 col-sm-12"},
                                             _react2.default.createElement(
                                                 "div",
                                                 {className: "form-group "},
@@ -32649,7 +32649,7 @@
                                         {className: "row noBorder"},
                                         _react2.default.createElement(
                                             "div",
-                                            {className: "col-md-10 col-sm-10"},
+                                            {className: "col-md-12 col-sm-12"},
                                             _react2.default.createElement(
                                                 "h1",
                                                 {className: "titleForm"},
@@ -32662,7 +32662,7 @@
                                         {className: "row part1"},
                                         _react2.default.createElement(
                                             "div",
-                                            {className: "labelInputGroup col-md-10 col-sm-10"},
+                                            {className: "labelInputGroup col-md-12 col-sm-12"},
                                             _react2.default.createElement(
                                                 "div",
                                                 {className: "form-group"},
@@ -32692,7 +32692,7 @@
                                         {className: "row part1"},
                                         _react2.default.createElement(
                                             "div",
-                                            {className: "labelInputGroup col-md-10 col-sm-10"},
+                                            {className: "labelInputGroup col-md-12 col-sm-12"},
                                             _react2.default.createElement(
                                                 "div",
                                                 {className: "form-group"},
@@ -32722,7 +32722,7 @@
                                         {className: "row part1"},
                                         _react2.default.createElement(
                                             "div",
-                                            {className: "labelInputGroup col-md-10 col-sm-10"},
+                                            {className: "labelInputGroup col-md-12 col-sm-12"},
                                             _react2.default.createElement(
                                                 "div",
                                                 {className: "form-group"},
@@ -32752,7 +32752,7 @@
                                         {className: "row"},
                                         _react2.default.createElement(
                                             "div",
-                                            {className: "labelInputGroup col-md-10 col-sm-10"},
+                                            {className: "labelInputGroup col-md-12 col-sm-12"},
                                             _react2.default.createElement(
                                                 "div",
                                                 {className: "form-group inputSelectGroup"},
@@ -32800,7 +32800,7 @@
                                         {className: "row"},
                                         _react2.default.createElement(
                                             "div",
-                                            {className: "labelInputGroup col-md-10 col-sm-10"},
+                                            {className: "labelInputGroup col-md-12 col-sm-12"},
                                             _react2.default.createElement(
                                                 "div",
                                                 {className: "form-group inputSelectGroup"},
@@ -32848,7 +32848,7 @@
                                         {className: "row"},
                                         _react2.default.createElement(
                                             "div",
-                                            {className: "labelInputGroup labelTextareaGroup col-md-10 col-sm-10"},
+                                            {className: "labelInputGroup labelTextareaGroup col-md-12 col-sm-12"},
                                             _react2.default.createElement(
                                                 "div",
                                                 {className: "form-group "},
@@ -32882,7 +32882,7 @@
                                         {className: "row noBorder"},
                                         _react2.default.createElement(
                                             "div",
-                                            {className: "col-md-10 col-sm-10"},
+                                            {className: "col-md-12 col-sm-12"},
                                             _react2.default.createElement(
                                                 "h1",
                                                 {className: "titleForm"},
@@ -32895,7 +32895,7 @@
                                         {className: "row part1"},
                                         _react2.default.createElement(
                                             "div",
-                                            {className: "labelInputGroup col-md-10 col-sm-10"},
+                                            {className: "labelInputGroup col-md-12 col-sm-12"},
                                             _react2.default.createElement(
                                                 "div",
                                                 {className: "form-group"},
@@ -32925,7 +32925,7 @@
                                         {className: "row part1"},
                                         _react2.default.createElement(
                                             "div",
-                                            {className: "labelInputGroup col-md-10 col-sm-10"},
+                                            {className: "labelInputGroup col-md-12 col-sm-12"},
                                             _react2.default.createElement(
                                                 "div",
                                                 {className: "form-group"},
@@ -32955,7 +32955,7 @@
                                         {className: "row part1"},
                                         _react2.default.createElement(
                                             "div",
-                                            {className: "labelInputGroup col-md-10 col-sm-10"},
+                                            {className: "labelInputGroup col-md-12 col-sm-12"},
                                             _react2.default.createElement(
                                                 "div",
                                                 {className: "form-group"},
@@ -32985,7 +32985,7 @@
                                         {className: "row"},
                                         _react2.default.createElement(
                                             "div",
-                                            {className: "col-md-10 col-sm-10"},
+                                            {className: "col-md-12 col-sm-12"},
                                             _react2.default.createElement(
                                                 "h1",
                                                 {className: "titleForm contenuti"},
@@ -32998,7 +32998,7 @@
                                         {className: "row part1"},
                                         _react2.default.createElement(
                                             "div",
-                                            {className: "col-md-10 col-sm-10"},
+                                            {className: "col-md-12 col-sm-12"},
                                             _react2.default.createElement(
                                                 "div",
                                                 {className: "form-group"},
@@ -33041,7 +33041,7 @@
                                         {className: "row"},
                                         _react2.default.createElement(
                                             "div",
-                                            {className: "col-md-10 col-sm-10"},
+                                            {className: "col-md-12 col-sm-12"},
                                             _react2.default.createElement(
                                                 "h1",
                                                 {className: "titleForm commentFinal"},
@@ -33054,7 +33054,7 @@
                                         {className: "row noBorder "},
                                         _react2.default.createElement(
                                             "div",
-                                            {className: "col-md-10 col-sm-10"},
+                                            {className: "col-md-12 col-sm-12"},
                                             _react2.default.createElement("textarea", {
                                                 className: "form-control finalComment",
                                                 rows: "3"
@@ -33066,7 +33066,7 @@
                                         {className: "row noBorder nextBtn"},
                                         _react2.default.createElement(
                                             "div",
-                                            {className: "col-md-10 col-sm-10"},
+                                            {className: "col-md-12 col-sm-12"},
                                             _react2.default.createElement(
                                                 "div",
                                                 {className: "nexButton btn myBtn"},
@@ -34236,6 +34236,20 @@
             }
 
             _createClass(MobileHome, [{
+                key: "componentDidMount",
+                value: function componentDidMount() {
+                    this.fitText();
+                    var me = this;
+                    $('.carousel').on('slid.bs.carousel', function () {
+                        me.fitText();
+                    });
+                }
+            }, {
+                key: "fitText",
+                value: function fitText() {
+                    jQuery(".captionTitle").fitText(1.2, {maxFontSize: '60px'});
+                }
+            }, {
                 key: "render",
                 value: function render() {
                     return _react2.default.createElement(

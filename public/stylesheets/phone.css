@@ -66,6 +66,93 @@
 }
 
 @media only screen and (orientation: portrait) {
+    #root .formInfo {
+        padding-top: 70px;
+    }
+
+    #root .formInfo .container-fluid form > div.row > div.labelInputGroup {
+        margin-top: 30px;
+    }
+
+    #root .formInfo form .part1 > div > :nth-child(1) {
+        margin-top: 30px;
+    }
+
+    #root .formInfo .container-fluid form > div.row > div.labelInputGroup label > input ~ .fakeRadioBox {
+        width: 36px;
+        height: 36px;
+        background-size: 36px;
+    }
+
+    #root .formInfo .bootstrap-select.btn-group .dropdown-toggle .caret {
+        border-top: 8px dashed;
+        border-right: 8px solid transparent;
+        border-left: 8px solid transparent;
+    }
+
+    #root .formInfo .container-fluid div.selectWrap {
+        max-width: 85%;
+    }
+
+    .bootstrap-select.btn-group .dropdown-menu.inner {
+        font-size: 32px;
+    }
+
+    #root .formInfo .container-fluid .bootstrap-select > button {
+        font-size: 32px;
+    }
+
+    #root .formInfo .container-fluid select {
+        height: 60px;
+    }
+
+    #root .formInfo .container-fluid select {
+        font-size: 32px;
+    }
+
+    #root .formInfo .form-group label {
+        font-size: 32px;
+    }
+
+    #root .formInfo .container-fluid input[type=text], #root .formInfo .container-fluid input[type=email], #root .formInfo .container-fluid input[type=tel], #root .formInfo .container-fluid input[type=number] {
+        font-size: 32px;
+    }
+
+    #root .formInfo .container-fluid form div.row.infoPart input {
+        max-width: none;
+    }
+
+    #root .formInfo .container-fluid input[type=text], #root .formInfo .container-fluid input[type=email], #root .formInfo .container-fluid input[type=tel], #root .formInfo .container-fluid input[type=number] {
+        height: 80px;
+    }
+
+    #root .formInfo .container-fluid form div.row.infoPart .form-group label {
+        font-size: 24px;
+    }
+
+    #rootApp .body.formal .container-fluid form > div.row {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    #root .formInfo h1 {
+        font-size: 60px;
+    }
+
+    #root .formInfo div.formHeaderTitle h1 {
+        font-size: 120px;
+    }
+    .modal.userInfoModal .modal-content .modal-body .ownerInfo .infos .info:first-child {
+        margin-top: 70px;
+    }
+
+    .modal.userInfoModal .myBtn {
+        font-size: 36px;
+        height: 72px;
+        line-height: 60px;
+        background-size: 50px 50px;
+    }
+
     .modal.userInfoModal .modal-content .modal-body .ownerInfo .infos .info:first-child {
         font-size: 60px;
     }
@@ -253,7 +340,7 @@
     #root #rootApp.mobile .modal.userInfoModal .modal-content .modal-body .ownerInfo .userImage {
         width: 288px;
         height: 348px;
-        margin-right: 34px;
+        margin-right: 30px;
     }
 
     #root #rootApp.mobile .modal.userInfoModal .modal-content .modal-body .ownerInfo p {

@@ -2,6 +2,18 @@ import React, {Component} from "react";
 import Home from "../components/home";
 class MobileHome extends Home {
 
+    componentDidMount() {
+        this.fitText();
+        var me = this;
+        $('.carousel').on('slid.bs.carousel', function () {
+            me.fitText();
+        })
+    }
+
+    fitText() {
+        jQuery(".captionTitle").fitText(1.2, {maxFontSize: '60px'});
+    }
+
     render() {
         return (
             <div className="body home">

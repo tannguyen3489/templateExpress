@@ -463,19 +463,19 @@ class MobileFormal extends Formal {
                     <div className="container-fluid">
                         <form>
                             <div className="row formHeaderTitle noBorder">
-                                <div className="col-md-10 col-sm-10">
+                                <div className="col-md-12 col-sm-12">
                                     <h1 className="titleForm">Parlaci della tua idea</h1>
                                 </div>
                             </div>
 
                             <div className="row noBorder">
-                                <div className="col-md-10 col-sm-10">
+                                <div className="col-md-12 col-sm-12">
                                     <h1 className="titleForm">Informazioni personali</h1>
                                 </div>
                             </div>
 
                             <div className="row infoPart noBorder">
-                                <div className="col-md-10 col-sm-10">
+                                <div className="col-md-12 col-sm-12">
                                     <div className="form-group">
                                         <label htmlFor="name">NOME E COGNOME</label>
                                         <input value="" type="text" className="form-control"
@@ -501,13 +501,13 @@ class MobileFormal extends Formal {
                             </div>
 
                             <div className="row noBorder">
-                                <div className="col-md-10 col-sm-10">
+                                <div className="col-md-12 col-sm-12">
                                     <h1 className="titleForm">A proposito del mio progetto</h1>
                                 </div>
                             </div>
 
                             <div className="row part1">
-                                <div className="col-md-10 col-sm-10">
+                                <div className="col-md-12 col-sm-12">
 
                                     <div className="form-group">
                                         <div className="form-group">
@@ -525,7 +525,7 @@ class MobileFormal extends Formal {
                             </div>
 
                             <div className="row part1">
-                                <div className="col-md-10 col-sm-10">
+                                <div className="col-md-12 col-sm-12">
 
                                     <div className="form-group">
                                         <div className="form-group">
@@ -543,7 +543,7 @@ class MobileFormal extends Formal {
                             </div>
 
                             <div className="row part1">
-                                <div className="col-md-10 col-sm-10">
+                                <div className="col-md-12 col-sm-12">
 
                                     <div className="form-group">
                                         <div className="form-group">
@@ -562,7 +562,7 @@ class MobileFormal extends Formal {
                             </div>
 
                             <div className="row part1">
-                                <div className="labelInputGroup col-md-10 col-sm-10">
+                                <div className="labelInputGroup col-md-12 col-sm-12">
                                     <div className="form-group">
                                         <div className="checkbox">
                                             <label>
@@ -577,7 +577,7 @@ class MobileFormal extends Formal {
                             </div>
 
                             <div className="row part1 bottomBorder">
-                                <div className="labelInputGroup col-md-10 col-sm-10">
+                                <div className="labelInputGroup col-md-12 col-sm-12">
 
                                     <div className="form-group">
                                         <div className="checkbox">
@@ -594,13 +594,13 @@ class MobileFormal extends Formal {
 
 
                             <div className="row stampati noBorder">
-                                <div className="col-md-10 col-sm-10">
+                                <div className="col-md-12 col-sm-12">
                                     <h1 className="titleForm">Stampati commerciali</h1>
                                 </div>
                             </div>
 
                             <div className="row">
-                                <div className="labelInputGroup col-md-10 col-sm-10">
+                                <div className="labelInputGroup col-md-12 col-sm-12">
                                     <div className="form-group inputSelectGroup">
                                         <div className="checkbox">
                                             <label className="form-inline">
@@ -620,7 +620,7 @@ class MobileFormal extends Formal {
                             </div>
 
                             <div className="row">
-                                <div className="labelInputGroup col-md-10 col-sm-10">
+                                <div className="labelInputGroup col-md-12 col-sm-12">
                                     <div className="form-group inputSelectGroup">
                                         <div className="checkbox">
                                             <label className="form-inline">
@@ -640,7 +640,7 @@ class MobileFormal extends Formal {
                             </div>
 
                             <div className="row">
-                                <div className="labelInputGroup col-md-10 col-sm-10">
+                                <div className="labelInputGroup col-md-12 col-sm-12">
                                     <div className="form-group inputSelectGroup">
                                         <div className="checkbox">
                                             <label className="form-inline">
@@ -660,7 +660,7 @@ class MobileFormal extends Formal {
                             </div>
 
                             <div className="row">
-                                <div className="labelInputGroup col-md-10 col-sm-10">
+                                <div className="labelInputGroup col-md-12 col-sm-12">
                                     <div className="form-group inputSelectGroup">
                                         <div className="checkbox">
                                             <label className="form-inline">
@@ -680,7 +680,7 @@ class MobileFormal extends Formal {
                             </div>
 
                             <div className="row">
-                                <div className="labelInputGroup labelTextareaGroup col-md-10 col-sm-10">
+                                <div className="labelInputGroup labelTextareaGroup col-md-12 col-sm-12">
                                     <div className="form-group ">
                                         <div className="checkbox">
                                             <label className="">
@@ -695,13 +695,13 @@ class MobileFormal extends Formal {
                             </div>
 
                             <div className="row noBorder">
-                                <div className="col-md-10 col-sm-10">
+                                <div className="col-md-12 col-sm-12">
                                     <h1 className="titleForm">Grafica digitale</h1>
                                 </div>
                             </div>
 
                             <div className="row part1">
-                                <div className="labelInputGroup col-md-10 col-sm-10">
+                                <div className="labelInputGroup col-md-12 col-sm-12">
                                     <div className="form-group">
                                         <div className="checkbox">
                                             <label>
@@ -716,7 +716,7 @@ class MobileFormal extends Formal {
                             </div>
 
                             <div className="row part1">
-                                <div className="labelInputGroup col-md-10 col-sm-10">
+                                <div className="labelInputGroup col-md-12 col-sm-12">
                                     <div className="form-group">
                                         <div className="checkbox">
                                             <label>
@@ -731,7 +731,7 @@ class MobileFormal extends Formal {
                             </div>
 
                             <div className="row part1">
-                                <div className="labelInputGroup col-md-10 col-sm-10">
+                                <div className="labelInputGroup col-md-12 col-sm-12">
                                     <div className="form-group">
                                         <div className="checkbox">
                                             <label>
@@ -746,7 +746,7 @@ class MobileFormal extends Formal {
                             </div>
 
                             <div className="row">
-                                <div className="labelInputGroup col-md-10 col-sm-10">
+                                <div className="labelInputGroup col-md-12 col-sm-12">
                                     <div className="form-group inputSelectGroup">
                                         <div className="checkbox">
                                             <label className="form-inline">
@@ -766,7 +766,7 @@ class MobileFormal extends Formal {
                             </div>
 
                             <div className="row">
-                                <div className="labelInputGroup col-md-10 col-sm-10">
+                                <div className="labelInputGroup col-md-12 col-sm-12">
                                     <div className="form-group inputSelectGroup">
                                         <div className="checkbox">
                                             <label className="form-inline">
@@ -786,7 +786,7 @@ class MobileFormal extends Formal {
                             </div>
 
                             <div className="row">
-                                <div className="labelInputGroup labelTextareaGroup col-md-10 col-sm-10">
+                                <div className="labelInputGroup labelTextareaGroup col-md-12 col-sm-12">
                                     <div className="form-group ">
                                         <div className="checkbox">
                                             <label className="">
@@ -801,13 +801,13 @@ class MobileFormal extends Formal {
                             </div>
 
                             <div className="row noBorder">
-                                <div className="col-md-10 col-sm-10">
+                                <div className="col-md-12 col-sm-12">
                                     <h1 className="titleForm">Altri prodotti</h1>
                                 </div>
                             </div>
 
                             <div className="row part1">
-                                <div className="labelInputGroup col-md-10 col-sm-10">
+                                <div className="labelInputGroup col-md-12 col-sm-12">
                                     <div className="form-group">
                                         <div className="checkbox">
                                             <label>
@@ -822,7 +822,7 @@ class MobileFormal extends Formal {
                             </div>
 
                             <div className="row part1">
-                                <div className="labelInputGroup col-md-10 col-sm-10">
+                                <div className="labelInputGroup col-md-12 col-sm-12">
                                     <div className="form-group">
                                         <div className="checkbox">
                                             <label>
@@ -837,7 +837,7 @@ class MobileFormal extends Formal {
                             </div>
 
                             <div className="row part1">
-                                <div className="labelInputGroup col-md-10 col-sm-10">
+                                <div className="labelInputGroup col-md-12 col-sm-12">
                                     <div className="form-group">
                                         <div className="checkbox">
                                             <label>
@@ -852,13 +852,13 @@ class MobileFormal extends Formal {
                             </div>
 
                             <div className="row">
-                                <div className="col-md-10 col-sm-10">
+                                <div className="col-md-12 col-sm-12">
                                     <h1 className="titleForm contenuti">Contenuti</h1>
                                 </div>
                             </div>
 
                             <div className="row part1">
-                                <div className="col-md-10 col-sm-10">
+                                <div className="col-md-12 col-sm-12">
 
                                     <div className="form-group">
                                         <div className="form-group">
@@ -877,19 +877,19 @@ class MobileFormal extends Formal {
                             </div>
 
                             <div className="row">
-                                <div className="col-md-10 col-sm-10">
+                                <div className="col-md-12 col-sm-12">
                                     <h1 className="titleForm commentFinal">Commenti finali</h1>
                                 </div>
                             </div>
 
                             <div className="row noBorder ">
-                                <div className="col-md-10 col-sm-10">
+                                <div className="col-md-12 col-sm-12">
                                     <textarea className="form-control finalComment" rows="3"></textarea>
                                 </div>
                             </div>
 
                             <div className="row noBorder nextBtn">
-                                <div className="col-md-10 col-sm-10">
+                                <div className="col-md-12 col-sm-12">
                                     <div className="nexButton btn myBtn">
                                         <span>Invio</span>
                                     </div>

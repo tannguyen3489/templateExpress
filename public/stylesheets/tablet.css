@@ -1,6 +1,11 @@
+#root .navbar {
+    min-height: 35px;
+    height: 35px;
+}
+
 
 #root #rootApp.mobile .navbar {
-    height: 50px
+    height: 40px;
 }
 
 #root #rootApp.mobile .formInfo.contact .container-fluid form textarea.finalComment {
@@ -8,11 +13,11 @@
 }
 
 #root #rootApp.mobile .navbar .container-fluid .navbar-header .navbar-brand.logo img {
-    height: 49px;
+    height: 39px;
 }
 
 #root #rootApp.mobile p.navbar-text {
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 .contact.portraitView .container-fluid .userImage {
@@ -61,9 +66,25 @@
 
 #rootApp .homeSlider {
     position: fixed;
-    top: 50px;
-
+    top: 40px;
 }
+
+#root .navbar .container-fluid .navbar-header .navbar-brand.menu img {
+    margin-top: -3px;
+}
+
+#root div.body {
+    min-height: calc(100vh - 39px);
+}
+
+#root .navbar .container-fluid .navbar-header {
+    height: 40px;
+}
+
+#root .navbar-brand {
+    height: 40px;
+}
+
 
 @media only screen and (orientation: portrait) {
     #root #rootApp.mobile div.lanscapseView {
