@@ -64,6 +64,11 @@
     /*top: 80px;*/
 }
 
+div.body {
+    margin-top: 40px;
+    position: relative;
+}
+
 #rootApp .homeSlider {
     position: fixed;
     top: 40px;
