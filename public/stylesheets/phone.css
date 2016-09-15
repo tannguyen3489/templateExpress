@@ -369,4 +369,8 @@
     #rootApp .homeSlider .carousel .carousel-inner .item .carousel-caption {
         font-size: 6vw;
     }
+
+    #rootApp .homeSlider {
+        top: 45px;
+    }
 }
