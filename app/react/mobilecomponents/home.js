@@ -3,15 +3,15 @@ import Home from "../components/home";
 class MobileHome extends Home {
 
     componentDidMount() {
-        this.fitText();
-        var me = this;
-        $('.carousel').on('slid.bs.carousel', function () {
-            me.fitText();
-        })
+        // this.fitText();
+        // var me = this;
+        // $('.carousel').on('slid.bs.carousel', function () {
+        //     me.fitText();
+        // })
     }
 
     fitText() {
-        jQuery(".captionTitle").fitText(1.2, {maxFontSize: '60px'});
+        // jQuery(".captionTitle").fitText(1.2, {maxFontSize: '18px'});
     }
 
     render() {

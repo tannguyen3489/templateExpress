@@ -30670,7 +30670,7 @@
                                         {className: "row formHeaderTitle noBorder"},
                                         _react2.default.createElement(
                                             "div",
-                                            {className: "col-md-6 col-sm-6"},
+                                            {className: "col-md-12 col-sm-12"},
                                             _react2.default.createElement(
                                                 "h1",
                                                 {className: "titleForm"},
@@ -30679,7 +30679,7 @@
                                         ),
                                         _react2.default.createElement(
                                             "div",
-                                            {className: "col-md-5 col-sm-5"},
+                                            {className: "col-md-12 col-sm-12"},
                                             _react2.default.createElement(
                                                 "div",
                                                 {className: "phoneNumber"},
@@ -30697,7 +30697,7 @@
                                         {className: "row infoPart noBorder"},
                                         _react2.default.createElement(
                                             "div",
-                                            {className: "col-md-9 col-sm-9"},
+                                            {className: "col-md-12 col-sm-12"},
                                             _react2.default.createElement(
                                                 "div",
                                                 {className: "form-group"},
@@ -30714,7 +30714,7 @@
                                         ),
                                         _react2.default.createElement(
                                             "div",
-                                            {className: "col-md-9 col-sm-9"},
+                                            {className: "col-md-12 col-sm-12"},
                                             _react2.default.createElement(
                                                 "div",
                                                 {className: "form-group"},
@@ -30735,7 +30735,7 @@
                                         {className: "row infoPart noBorder"},
                                         _react2.default.createElement(
                                             "div",
-                                            {className: "col-md-9 col-sm-9"},
+                                            {className: "col-md-12 col-sm-12"},
                                             _react2.default.createElement(
                                                 "div",
                                                 {className: "form-group"},
@@ -30778,7 +30778,7 @@
                                         ),
                                         _react2.default.createElement(
                                             "div",
-                                            {className: "col-md-9 col-sm-9"},
+                                            {className: "col-md-12 col-sm-12"},
                                             _react2.default.createElement(
                                                 "div",
                                                 {className: "form-group"},
@@ -32438,6 +32438,11 @@
                                                             value: ""
                                                         }),
                                                         _react2.default.createElement(
+                                                            "span",
+                                                            null,
+                                                            "Biglietto da visita"
+                                                        ),
+                                                        _react2.default.createElement(
                                                             "div",
                                                             {className: "selectWrap"},
                                                             _react2.default.createElement(
@@ -32454,11 +32459,6 @@
                                                                     "500 esemplari"
                                                                 )
                                                             )
-                                                        ),
-                                                        _react2.default.createElement(
-                                                            "span",
-                                                            null,
-                                                            "Biglietto da visita"
                                                         ),
                                                         _react2.default.createElement("span", {className: "fakeRadioBox"})
                                                     )
@@ -32485,29 +32485,29 @@
                                                             type: "checkbox",
                                                             value: ""
                                                         }),
-                                                        _react2.default.createElement(
-                                                            "div",
-                                                            {className: "selectWrap"},
-                                                            _react2.default.createElement(
-                                                                "select",
-                                                                {className: "form-control", multiple: true},
-                                                                _react2.default.createElement(
-                                                                    "option",
-                                                                    {selected: true},
-                                                                    "100 esemplari"
-                                                                ),
-                                                                _react2.default.createElement(
-                                                                    "option",
-                                                                    null,
-                                                                    "100 esemplari"
-                                                                )
-                                                            )
-                                                        ),
                                                         _react2.default.createElement(
                                                             "span",
                                                             null,
                                                             "Busta con carta intestata"
                                                         ),
+                                                        _react2.default.createElement(
+                                                            "div",
+                                                            {className: "selectWrap"},
+                                                            _react2.default.createElement(
+                                                                "select",
+                                                                {className: "form-control", multiple: true},
+                                                                _react2.default.createElement(
+                                                                    "option",
+                                                                    {selected: true},
+                                                                    "100 esemplari"
+                                                                ),
+                                                                _react2.default.createElement(
+                                                                    "option",
+                                                                    null,
+                                                                    "100 esemplari"
+                                                                )
+                                                            )
+                                                        ),
                                                         _react2.default.createElement("span", {className: "fakeRadioBox"})
                                                     )
                                                 )
@@ -32533,29 +32533,29 @@
                                                             type: "checkbox",
                                                             value: ""
                                                         }),
-                                                        _react2.default.createElement(
-                                                            "div",
-                                                            {className: "selectWrap"},
-                                                            _react2.default.createElement(
-                                                                "select",
-                                                                {className: "form-control", multiple: true},
-                                                                _react2.default.createElement(
-                                                                    "option",
-                                                                    {selected: true},
-                                                                    "24 pagine"
-                                                                ),
-                                                                _react2.default.createElement(
-                                                                    "option",
-                                                                    null,
-                                                                    "24 pagine"
-                                                                )
-                                                            )
-                                                        ),
                                                         _react2.default.createElement(
                                                             "span",
                                                             null,
                                                             "Brochure"
                                                         ),
+                                                        _react2.default.createElement(
+                                                            "div",
+                                                            {className: "selectWrap"},
+                                                            _react2.default.createElement(
+                                                                "select",
+                                                                {className: "form-control", multiple: true},
+                                                                _react2.default.createElement(
+                                                                    "option",
+                                                                    {selected: true},
+                                                                    "24 pagine"
+                                                                ),
+                                                                _react2.default.createElement(
+                                                                    "option",
+                                                                    null,
+                                                                    "24 pagine"
+                                                                )
+                                                            )
+                                                        ),
                                                         _react2.default.createElement("span", {className: "fakeRadioBox"})
                                                     )
                                                 )
@@ -32582,6 +32582,11 @@
                                                             value: ""
                                                         }),
                                                         _react2.default.createElement(
+                                                            "span",
+                                                            null,
+                                                            "Pieghevole"
+                                                        ),
+                                                        _react2.default.createElement(
                                                             "div",
                                                             {className: "selectWrap"},
                                                             _react2.default.createElement(
@@ -32598,11 +32603,6 @@
                                                                     "100 esemplari"
                                                                 )
                                                             )
-                                                        ),
-                                                        _react2.default.createElement(
-                                                            "span",
-                                                            null,
-                                                            "Pieghevole"
                                                         ),
                                                         _react2.default.createElement("span", {className: "fakeRadioBox"})
                                                     )
@@ -32767,6 +32767,11 @@
                                                             value: ""
                                                         }),
                                                         _react2.default.createElement(
+                                                            "span",
+                                                            null,
+                                                            "Video"
+                                                        ),
+                                                        _react2.default.createElement(
                                                             "div",
                                                             {className: "selectWrap"},
                                                             _react2.default.createElement(
@@ -32783,11 +32788,6 @@
                                                                     "1 minuto"
                                                                 )
                                                             )
-                                                        ),
-                                                        _react2.default.createElement(
-                                                            "span",
-                                                            null,
-                                                            "Video"
                                                         ),
                                                         _react2.default.createElement("span", {className: "fakeRadioBox"})
                                                     )
@@ -32815,6 +32815,11 @@
                                                             value: ""
                                                         }),
                                                         _react2.default.createElement(
+                                                            "span",
+                                                            null,
+                                                            "3D"
+                                                        ),
+                                                        _react2.default.createElement(
                                                             "div",
                                                             {className: "selectWrap"},
                                                             _react2.default.createElement(
@@ -32831,11 +32836,6 @@
                                                                     "1 minuto"
                                                                 )
                                                             )
-                                                        ),
-                                                        _react2.default.createElement(
-                                                            "span",
-                                                            null,
-                                                            "3D"
                                                         ),
                                                         _react2.default.createElement("span", {className: "fakeRadioBox"})
                                                     )
@@ -34238,16 +34238,16 @@
             _createClass(MobileHome, [{
                 key: "componentDidMount",
                 value: function componentDidMount() {
-                    this.fitText();
-                    var me = this;
-                    $('.carousel').on('slid.bs.carousel', function () {
-                        me.fitText();
-                    });
+                    // this.fitText();
+                    // var me = this;
+                    // $('.carousel').on('slid.bs.carousel', function () {
+                    //     me.fitText();
+                    // })
                 }
             }, {
                 key: "fitText",
                 value: function fitText() {
-                    jQuery(".captionTitle").fitText(1.2, {maxFontSize: '60px'});
+                    // jQuery(".captionTitle").fitText(1.2, {maxFontSize: '18px'});
                 }
             }, {
                 key: "render",
@@ -35144,7 +35144,7 @@
                                     id: "carousel-example-generic",
                                     className: "carousel slide",
                                     "data-ride": "carousel",
-                                    "data-interval": "5000"
+                                    "data-interval": "false"
                                 },
                                 _react2.default.createElement(
                                     "ol",

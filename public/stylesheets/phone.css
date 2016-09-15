@@ -1,6 +1,6 @@
 
 #root #rootApp.mobile .navbar {
-    height: 50px
+    height: 44px;
 }
 
 #root #rootApp.mobile .formInfo.contact .container-fluid form textarea.finalComment {
@@ -8,7 +8,7 @@
 }
 
 #root #rootApp.mobile .navbar .container-fluid .navbar-header .navbar-brand.logo img {
-    height: 50px;
+    height: 44px;
 }
 
 #root #rootApp.mobile p.navbar-text {
@@ -20,9 +20,10 @@
     height: 400px;
 }
 
-.contact.portraitView .container-fluid .infos .info:nth-child(1) {
-    margin-top: 54px;
+.modal-backdrop {
+    bottom: -1px;
 }
+
 
 #root .formInfo.portraitView.contact .container-fluid form div.row.infoPart input {
     max-width: none;
@@ -65,197 +66,74 @@
 
 }
 
+#root div.body {
+    min-height: calc(100vh - 39px);
+}
+
 @media only screen and (orientation: portrait) {
-    #root .formInfo {
-        padding-top: 70px;
+    .contact .container-fluid .infos .viewProfile {
+        margin-top: 20px;
     }
 
-    #root .formInfo .container-fluid form > div.row > div.labelInputGroup {
-        margin-top: 30px;
+    .contact .container-fluid .infos .info:nth-child(4) {
+        display: none;
     }
 
-    #root .formInfo form .part1 > div > :nth-child(1) {
-        margin-top: 30px;
+    .contact .container-fluid .infos .info:nth-child(3) {
+        display: none;
     }
 
-    #root .formInfo .container-fluid form > div.row > div.labelInputGroup label > input ~ .fakeRadioBox {
-        width: 36px;
-        height: 36px;
-        background-size: 36px;
+    .contact .container-fluid .infos .info:nth-child(2) {
+        margin-top: 14px;
     }
 
-    #root .formInfo .bootstrap-select.btn-group .dropdown-toggle .caret {
-        border-top: 8px dashed;
-        border-right: 8px solid transparent;
-        border-left: 8px solid transparent;
-    }
-
-    #root .formInfo .container-fluid div.selectWrap {
-        max-width: 85%;
-    }
-
-    .bootstrap-select.btn-group .dropdown-menu.inner {
-        font-size: 32px;
-    }
-
-    #root .formInfo .container-fluid .bootstrap-select > button {
-        font-size: 32px;
-    }
-
-    #root .formInfo .container-fluid select {
-        height: 60px;
-    }
-
-    #root .formInfo .container-fluid select {
-        font-size: 32px;
-    }
-
-    #root .formInfo .form-group label {
-        font-size: 32px;
-    }
-
-    #root .formInfo .container-fluid input[type=text], #root .formInfo .container-fluid input[type=email], #root .formInfo .container-fluid input[type=tel], #root .formInfo .container-fluid input[type=number] {
-        font-size: 32px;
-    }
-
-    #root .formInfo .container-fluid form div.row.infoPart input {
-        max-width: none;
-    }
-
-    #root .formInfo .container-fluid input[type=text], #root .formInfo .container-fluid input[type=email], #root .formInfo .container-fluid input[type=tel], #root .formInfo .container-fluid input[type=number] {
-        height: 80px;
-    }
-
-    #root .formInfo .container-fluid form div.row.infoPart .form-group label {
+    .contact .container-fluid .infos .info:nth-child(1) {
         font-size: 24px;
     }
 
-    #rootApp .body.formal .container-fluid form > div.row {
-        padding-left: 30px;
-        padding-right: 30px;
+    .contact.portraitView .container-fluid .infos .info:nth-child(1) {
+        margin-top: 20px;
     }
 
-    #root .formInfo h1 {
-        font-size: 60px;
+    #rootApp .body.about div.contact > div.container-fluid:nth-child(1) {
+        padding-bottom: 0;
     }
 
-    #root .formInfo div.formHeaderTitle h1 {
-        font-size: 120px;
-    }
-    .modal.userInfoModal .modal-content .modal-body .ownerInfo .infos .info:first-child {
-        margin-top: 70px;
+    .contact .container-fluid h1.titleForm {
+        font-size: 40px;
     }
 
-    .modal.userInfoModal .myBtn {
-        font-size: 36px;
-        height: 72px;
-        line-height: 60px;
-        background-size: 50px 50px;
+    .contact .container-fluid p {
+        font-size: 18px;
+        line-height: 25px;
     }
 
-    .modal.userInfoModal .modal-content .modal-body .ownerInfo .infos .info:first-child {
-        font-size: 60px;
-    }
-
-    .modal.userInfoModal .modal-content .modal-body .ownerInfo .infos .info:last-child {
-        font-size: 32px;
-    }
-
-    #rootApp .body.about div.contact > div.container-fluid:nth-child(2) {
-        padding-bottom: 160px;
-    }
-
-    #leftMenu .modal-dialog .menuLinksArea .gotoLink:after {
-        width: 210px;
-    }
-
-    #leftMenu .modal-dialog .menuLinksArea .gotoLink a {
-        font-size: 72px;
-        line-height: 160px;
-    }
-
-    div.body {
-        margin-top: 100px;
-        position: relative;
+    #root .navbar .navbar-brand.logo {
+        display: none;
     }
 
     #rootApp .homeSlider .carousel .carousel-inner .item .carousel-caption {
-        top: 105px;
+        left: 0;
+        font-size: 6vw;
     }
 
-    #leftMenu .modal-dialog .btnClose {
-        width: 70px;
-        height: 70px;
-        background: url(../images/X.png) no-repeat;
-        background-size: 70px;
+    #root .collapsed.navbar-toggle {
+        margin-right: 0;
     }
 
-    #leftMenu .modal-dialog .locale {
-        width: 96px;
-        height: 96px;
-        padding-top: 25px;
-        color: #000;
-        margin: 0 10px;
-        cursor: pointer;
-        font-size: 36px;
+    #root .navbar .navbar-brand.menu {
+        padding-left: 16px;
     }
 
-    #leftMenu .modal-dialog .btnArea span:first-child {
-        font-size: 48px;
-    }
-
-    #leftMenu .modal-dialog .modal-content {
+    .headerArea {
         width: 100vw;
     }
-
-    .container-fluid > .navbar-collapse, .container-fluid > .navbar-header, .container > .navbar-collapse, .container > .navbar-header {
-        margin-right: 30px;
-    }
-    #rootApp.mobile .navbar .container-fluid .navbar-header {
-        height: 100px;
-    }
-
-    #root p.navbar-text span {
-        font-size: 50px;
-    }
-
-    #root p.navbar-text a {
-        width: 70px;
-        height: 56px;
-        background: url(../images/Main_button.png) no-repeat;
-        background-size: 70px 56px;
-    }
-
     #root #rootApp.mobile p.navbar-text {
-        height: 100px;
-        margin: 0;
-    }
-
-    #root #rootApp.mobile p.navbar-text > * {
-        top: 50%;
-        position: relative;
-        transform: translateY(-50%);
-    }
-
-    #root #rootApp.mobile p.navbar-text > span {
-        top: 12px;
-    }
-
-    #rootApp.mobile .navbar .navbar-brand.menu {
-        height: 100px;
-        width: 100px;
-    }
-    #root #rootApp.mobile .navbar {
-        height: 100px;
-    }
-
-    #rootApp.mobile .navbar .container-fluid .navbar-header .navbar-brand.menu img {
-        height: 60px;
-        width: 90px;
+        /*width: 8px;*/
     }
     #rootApp.mobile .body.about div.contact > div.container-fluid {
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
     #rootApp.mobile .body.about div.contact > div.container-fluid:first-child {
@@ -272,48 +150,8 @@
     }
 
     #rootApp.mobile .body.about div.contact > div.container-fluid:nth-child(2) div.row.ownerInfo > div:last-child {
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-
-
-    #rootApp.mobile .contact .container-fluid .infos .info:nth-child(1) {
-        padding-left: 0px;
-        padding-right: 0px;
-    }
-
-    #rootApp.mobile .contact .container-fluid .infos .info:nth-child(1) {
-        font-size: 60px;
-    }
-
-    .contact .container-fluid .infos .info:nth-child(2) {
-        font-size: 32px;
-    }
-
-    .contact .container-fluid .infos .info:nth-child(3) {
-        font-size: 32px;
-    }
-
-    .contact .container-fluid .infos .info:nth-child(4) {
-        font-size: 32px;
-    }
-
-    #rootApp.mobile .contact.portraitView .container-fluid .userImage {
-        width: 100%;
-        height: auto;
-    }
-
-    #rootApp.mobile .contact .container-fluid h1.titleForm {
-        font-size: 120px;
-    }
-
-    #rootApp.mobile .contact .container-fluid p {
-        font-size: 50px;
-        line-height: 72px;
-    }
-
-    #root .navbar .navbar-brand.logo {
-        display: none;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
     #root #rootApp.mobile div.lanscapseView {
@@ -322,7 +160,6 @@
 
     #root #rootApp.mobile div.portraitView {
         display: block;
-        background: #fff;
     }
 
     #root #rootApp.mobile.modal.userInfoModal .modal-dialog {
@@ -330,49 +167,171 @@
     }
 
     #root #rootApp.mobile .modal.userInfoModal .modal-content {
-        width: calc(100vw - 60px);
-        /*height: 590px;*/
+        width: 100vw;
         max-width: none;
+        padding-left: 15px;
+        padding-right: 15px;
+        overflow: hidden;
+        height: auto;
+    }
+
+    .modal.userInfoModal .modal-content .modal-body {
+        padding: 10px 10px;
+    }
+
+    #root #rootApp.mobile .modal-content .modal-body div.row.ownerInfo > div.col-md-12.col-sm-12 {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .modal.userInfoModal .modal-content .modal-body .ownerInfo .infos .info:first-child {
+        font-size: 20px;
+    }
+
+    .modal.userInfoModal .modal-content .modal-body .ownerInfo .infos .info:last-child {
+        font-size: 14px;
+        /*max-width: 90%;*/
+        /*white-space: pre-wrap;*/
+    }
+
+    .modal.userInfoModal .modal-content .modal-body .ownerInfo .userImage {
+        margin-right: 10px;
+    }
+
+    .modal.userInfoModal .modal-content .modal-body .ownerInfo p {
+        margin-top: 30px;
+    }
+
+    .contact.portraitView .container-fluid .userImage {
+        width: 100vw;
+        height: auto;
+    }
+
+    .modal.userInfoModal .modal-content .modal-body .ownerInfo .userImage {
+        width: 100px;
+        height: 119px;
+    }
+
+    .modal.userInfoModal .myBtn {
+        height: 30px;
+        line-height: 15px;
+    }
+
+    #rootApp .body.formal .container-fluid form > div.row {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #root .formInfo div.formHeaderTitle h1 {
+        font-size: 40px;
+    }
+
+    #root .formInfo {
+        padding-top: 30px;
+    }
+
+    #root .body.formal .formInfo h1 {
+
+    }
+
+    #root .body.formal .formInfo h1 {
+        margin-top: 40px;
+    }
+
+    #root .formInfo div.formHeaderTitle h1 {
+        margin-bottom: 0px;
+    }
+
+    #root .formInfo h1 {
+        font-size: 24px;
+    }
+
+    #root .formInfo .form-group label {
+        font-size: 14px;
+    }
+
+    #root .formInfo .form-group {
+        margin-bottom: 10px;
+    }
+
+    #root .formInfo form .part1 > div > :nth-child(1) {
+        margin-top: 10px;
+    }
+
+    #root .formInfo .container-fluid div.selectWrap {
+        width: 250px;
+    }
+
+    #root .formInfo .container-fluid form div.form-group div.checkbox label > span {
+        padding-left: 40px;
+        display: inline-block;
+        margin-left: 0;
+    }
+
+    #root .formInfo .container-fluid form > div.row > div.labelInputGroup label > input ~ .fakeRadioBox {
+        left: 5px;
+        top: 50%;
+        transform: translateY(calc(-50% - 2px));
+        background: url('../images/radio.png') transparent no-repeat;
+    }
+
+    #root .formInfo .container-fluid form > div.row > div.labelInputGroup label > input:checked ~ .fakeRadioBox {
+        background: url('../images/radio_active.png') transparent no-repeat;
+    }
+
+    #root .formInfo .container-fluid form .labelInputGroup div.form-group div.checkbox label > div.selectWrap + span {
+        margin-left: 0px;
+        padding-left: 5px;
+    }
+
+    #root .formInfo .container-fluid .labelInputGroup .selectWrap {
+        margin-left: 0;
+        margin-top: 15px;
+        width: 180px;
+        display: block;
+    }
+
+    #root .formInfo .container-fluid form > div.row > div.labelInputGroup div.inputSelectGroup label > input ~ .fakeRadioBox {
+        top: 0px;
+    }
+
+    #root .formInfo form div.row div.labelInputGroup > div.form-group.inputSelectGroup {
+        margin-bottom: 15px;
+    }
+
+    #root .formInfo .container-fluid form > div.row > div.labelInputGroup.labelTextareaGroup label > input ~ .fakeRadioBox {
+        top: 10px;
+    }
+
+    #root .formInfo .container-fluid form .labelTextareaGroup textarea {
+        margin-top: 15px;
+    }
+
+    #rootApp div.body.product .carousel .carousel-inner .item .carousel-caption, #rootApp div.body.showcase .carousel .carousel-inner .item .carousel-caption {
         left: 50%;
         transform: translateX(-50%);
     }
 
-    #root #rootApp.mobile .modal.userInfoModal .modal-content .modal-body .ownerInfo .userImage {
-        width: 288px;
-        height: 348px;
-        margin-right: 30px;
+    #root .formInfo.contact {
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
-    #root #rootApp.mobile .modal.userInfoModal .modal-content .modal-body .ownerInfo p {
-        font-size: 23px;
+    #root .formInfo.contact .container-fluid {
+        padding-top: 15px;
     }
 
-    .contact .container-fluid .infos .viewProfile {
-        /* width: 180px; */
-        height: 72px;
-        margin-top: 60px;
-        font-size: 32px;
-        text-align: left;
-        line-height: 60px;
+    #root .formInfo.contact .formHeaderTitle > div:last-child {
+        margin-top: 45px;
     }
 
-    .myBtn {
-        background: url(../images/Harrow.png) center right 14px no-repeat #fff;
-        background-size: 40px 34px;
-        padding-right: 100px;
-        padding-left: 30px;
+    #root .formInfo.contact .form-group {
+        margin-top: 20px;
+        margin-bottom: 0;
     }
 
-    .contact.portraitView .container-fluid .infos .info:nth-child(1) {
-        padding-top: 40px;
-    }
-
-    #rootApp.mobile .body.about div.contact > div.container-fluid:first-child {
-        padding-bottom: 0;
-    }
-
-    #rootApp.mobile .contact .container-fluid .row.ownerInfo {
-        margin-top: 160px;
+    #root .body .formInfo.contact div.nexButton {
+        margin-top: 50px;
     }
 }
 
@@ -391,5 +350,23 @@
 
     #root .navbar {
 
+    }
+
+    .modal.userInfoModal .modal-dialog {
+        top: 0;
+        transform: translate(-50%, 0);
+    }
+
+    #root .formInfo.contact .container-fluid {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    #root .collapsed.navbar-toggle {
+        margin-right: 0;
+    }
+
+    #rootApp .homeSlider .carousel .carousel-inner .item .carousel-caption {
+        font-size: 6vw;
     }
 }

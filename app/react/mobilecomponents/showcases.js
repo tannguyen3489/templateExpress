@@ -7,7 +7,7 @@ class MobileShowCases extends Showcase {
             <div className="body showcase">
                 <div className="homeSlider showcaseSlider">
                     <div id="carousel-example-generic" className="carousel slide" data-ride="carousel"
-                         data-interval="5000">
+                         data-interval="false">
                         {/*<!-- Indicators -->*/}
                         <ol className="carousel-indicators">
                             <li data-target="#carousel-example-generic" data-slide-to="0" className="active"></li>
