@@ -52,9 +52,9 @@ exports.react = function(req, res) {
     console.log("aaaaaaaaaaaaaa", req.headers['user-agent']);
     var isMobile = md.mobile();
     var isPhone = md.phone();
-    console.log("check", isMobile);
-    console.log("check", isPhone);
-    console.log("check", md.tablet());
+    console.log("check isMobile ", isMobile);
+    console.log("check isPhone ", isPhone);
+    console.log("check isTablet", md.tablet());
 
     if (isMobile === "UnknownMobile") {
         isPhone = true;

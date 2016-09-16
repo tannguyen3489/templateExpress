@@ -1,0 +1,16 @@
+
+
+@media only screen and (orientation: portrait) {
+    #root #rootApp.mobile .modal.userInfoModal .modal-content {
+        height: auto;
+    }
+
+    #root .formInfo.contact .container-fluid {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+@media only screen and (orientation: landscape) {
+
+}
