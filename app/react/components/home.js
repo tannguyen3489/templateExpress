@@ -5,6 +5,21 @@ class Home extends Component {
     componentDidMount() {
         this.fitText();
         var me = this;
+
+        //Enable swiping...
+        $(".carousel-inner").swipe( {
+            //Generic swipe handler for all directions
+            swipeLeft:function(event, direction, distance, duration, fingerCount) {
+                $(this).parent().carousel('next');
+            },
+            swipeRight: function() {
+                $(this).parent().carousel('prev');
+            },
+            //Default is 75px, set to 0 for demo so any distance triggers swipe
+            threshold:75
+        });
+
+
         $('.carousel').on('slid.bs.carousel', function () {
             me.fitText();
         })
@@ -18,7 +33,7 @@ class Home extends Component {
         return (
             <div className="body home">
                 <div className="homeSlider">
-                    <div id="carousel-example-generic" className="carousel slide" data-ride="carousel"
+                    <div id="carousel-example-generic" className="carouse" data-ride="carousel"
                          data-interval="5000">
                         {/*<!-- Indicators -->*/}
                         <ol className="carousel-indicators">

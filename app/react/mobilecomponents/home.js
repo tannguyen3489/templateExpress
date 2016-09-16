@@ -3,15 +3,18 @@ import Home from "../components/home";
 class MobileHome extends Home {
 
     componentDidMount() {
-        // this.fitText();
-        // var me = this;
-        // $('.carousel').on('slid.bs.carousel', function () {
-        //     me.fitText();
-        // })
-    }
-
-    fitText() {
-        // jQuery(".captionTitle").fitText(1.2, {maxFontSize: '18px'});
+        //Enable swiping...
+        $(".carousel-inner").swipe( {
+            //Generic swipe handler for all directions
+            swipeLeft:function(event, direction, distance, duration, fingerCount) {
+                $(this).parent().carousel('next');
+            },
+            swipeRight: function() {
+                $(this).parent().carousel('prev');
+            },
+            //Default is 75px, set to 0 for demo so any distance triggers swipe
+            threshold:75
+        });
     }
 
     render() {
