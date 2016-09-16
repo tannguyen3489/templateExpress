@@ -6,8 +6,8 @@ var languages = {
 };
 
 
-let result = [];
-let desktop = Object.keys(languages).map(function (language) {
+var result = [];
+var desktop = Object.keys(languages).map(function (language) {
     return {
         name: language,
         entry: [
@@ -32,7 +32,7 @@ let desktop = Object.keys(languages).map(function (language) {
     }
 });
 
-let tablet = Object.keys(languages).map(function (language) {
+var tablet = Object.keys(languages).map(function (language) {
     return {
         name: language + "_tablet",
         entry: [
@@ -58,7 +58,7 @@ let tablet = Object.keys(languages).map(function (language) {
 });
 
 
-let mobile = Object.keys(languages).map(function (language) {
+var mobile = Object.keys(languages).map(function (language) {
     return {
         name: language + "_mobile",
         entry: [

@@ -29484,7 +29484,7 @@
 /* 242 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
+	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
 	    value: true
@@ -29514,122 +29514,123 @@
 	    }
 
 	    _createClass(Home, [{
-	        key: "componentDidMount",
+	        key: 'componentDidMount',
 	        value: function componentDidMount() {
 	            this.fitText();
 	            var me = this;
 
 	            //Enable swiping...
-	            $(".carousel-inner").swipe({
-	                //Generic swipe handler for all directions
-	                swipeLeft: function swipeLeft(event, direction, distance, duration, fingerCount) {
-	                    $(this).parent().carousel('next');
-	                },
-	                swipeRight: function swipeRight() {
-	                    $(this).parent().carousel('prev');
-	                },
-	                //Default is 75px, set to 0 for demo so any distance triggers swipe
-	                threshold: 75
-	            });
+	            // $(".carousel-inner").swipe( {
+	            //     //Generic swipe handler for all directions
+	            //     swipeLeft:function(event, direction, distance, duration, fingerCount) {
+	            //         $(this).parent().carousel('next');
+	            //     },
+	            //     swipeRight: function() {
+	            //         $(this).parent().carousel('prev');
+	            //     },
+	            //     //Default is 75px, set to 0 for demo so any distance triggers swipe
+	            //     threshold:75
+	            // });
+
 
 	            $('.carousel').on('slid.bs.carousel', function () {
 	                me.fitText();
 	            });
 	        }
 	    }, {
-	        key: "fitText",
+	        key: 'fitText',
 	        value: function fitText() {
 	            jQuery(".captionTitle").fitText(2, { maxFontSize: '54px' });
 	        }
 	    }, {
-	        key: "render",
+	        key: 'render',
 	        value: function render() {
 	            return _react2.default.createElement(
-	                "div",
-	                { className: "body home" },
+	                'div',
+	                { className: 'body home' },
 	                _react2.default.createElement(
-	                    "div",
-	                    { className: "homeSlider" },
+	                    'div',
+	                    { className: 'homeSlider' },
 	                    _react2.default.createElement(
-	                        "div",
-	                        { id: "carousel-example-generic", className: "carouse", "data-ride": "carousel",
-	                            "data-interval": "5000" },
+	                        'div',
+	                        { id: 'carousel-example-generic', className: 'carousel', 'data-ride': 'carousel',
+	                            'data-interval': '5000' },
 	                        _react2.default.createElement(
-	                            "ol",
-	                            { className: "carousel-indicators" },
-	                            _react2.default.createElement("li", { "data-target": "#carousel-example-generic", "data-slide-to": "0", className: "active" }),
-	                            _react2.default.createElement("li", { "data-target": "#carousel-example-generic", "data-slide-to": "1" })
+	                            'ol',
+	                            { className: 'carousel-indicators' },
+	                            _react2.default.createElement('li', { 'data-target': '#carousel-example-generic', 'data-slide-to': '0', className: 'active' }),
+	                            _react2.default.createElement('li', { 'data-target': '#carousel-example-generic', 'data-slide-to': '1' })
 	                        ),
 	                        _react2.default.createElement(
-	                            "div",
-	                            { className: "carousel-inner", role: "listbox" },
+	                            'div',
+	                            { className: 'carousel-inner', role: 'listbox' },
 	                            _react2.default.createElement(
-	                                "div",
-	                                { className: "item active" },
+	                                'div',
+	                                { className: 'item active' },
 	                                _react2.default.createElement(
-	                                    "div",
-	                                    { className: "wrapSlider" },
-	                                    _react2.default.createElement("img", { src: "images/slides/_1-home page/svizzera.jpg", alt: "Svizzera" }),
+	                                    'div',
+	                                    { className: 'wrapSlider' },
+	                                    _react2.default.createElement('img', { src: 'images/slides/_1-home page/svizzera.jpg', alt: 'Svizzera' }),
 	                                    _react2.default.createElement(
-	                                        "div",
-	                                        { className: "carousel-caption" },
+	                                        'div',
+	                                        { className: 'carousel-caption' },
 	                                        _react2.default.createElement(
-	                                            "div",
-	                                            { className: "captionTitle" },
-	                                            "ESPERIENZA INTERNAZIONALE"
+	                                            'div',
+	                                            { className: 'captionTitle' },
+	                                            'ESPERIENZA INTERNAZIONALE'
 	                                        ),
 	                                        _react2.default.createElement(
-	                                            "div",
-	                                            { className: "captionTitle" },
-	                                            "NEL SETTORE DELLA GRAFICA"
+	                                            'div',
+	                                            { className: 'captionTitle' },
+	                                            'NEL SETTORE DELLA GRAFICA'
 	                                        )
 	                                    )
 	                                )
 	                            ),
 	                            _react2.default.createElement(
-	                                "div",
-	                                { className: "item" },
+	                                'div',
+	                                { className: 'item' },
 	                                _react2.default.createElement(
-	                                    "div",
-	                                    { className: "wrapSlider" },
-	                                    _react2.default.createElement("img", { src: "images/slides/_1-home page/vietnam.jpg", alt: "VN" }),
+	                                    'div',
+	                                    { className: 'wrapSlider' },
+	                                    _react2.default.createElement('img', { src: 'images/slides/_1-home page/vietnam.jpg', alt: 'VN' }),
 	                                    _react2.default.createElement(
-	                                        "div",
-	                                        { className: "carousel-caption" },
+	                                        'div',
+	                                        { className: 'carousel-caption' },
 	                                        _react2.default.createElement(
-	                                            "div",
-	                                            { className: "captionTitle" },
-	                                            "VASTA GAMMA DI SERVIZI"
+	                                            'div',
+	                                            { className: 'captionTitle' },
+	                                            'VASTA GAMMA DI SERVIZI'
 	                                        ),
 	                                        _react2.default.createElement(
-	                                            "div",
-	                                            { className: "captionTitle" },
-	                                            "E PRODOTTI DI COMUNICAZIONE"
+	                                            'div',
+	                                            { className: 'captionTitle' },
+	                                            'E PRODOTTI DI COMUNICAZIONE'
 	                                        )
 	                                    )
 	                                )
 	                            )
 	                        ),
 	                        _react2.default.createElement(
-	                            "a",
-	                            { className: "left carousel-control", href: "#carousel-example-generic", role: "button",
-	                                "data-slide": "prev" },
-	                            _react2.default.createElement("span", { className: "glyphicon glyphicon-chevron-left", "aria-hidden": "true" }),
+	                            'a',
+	                            { className: 'left carousel-control', href: '#carousel-example-generic', role: 'button',
+	                                'data-slide': 'prev' },
+	                            _react2.default.createElement('span', { className: 'glyphicon glyphicon-chevron-left', 'aria-hidden': 'true' }),
 	                            _react2.default.createElement(
-	                                "span",
-	                                { className: "sr-only" },
-	                                "Previous"
+	                                'span',
+	                                { className: 'sr-only' },
+	                                'Previous'
 	                            )
 	                        ),
 	                        _react2.default.createElement(
-	                            "a",
-	                            { className: "right carousel-control", href: "#carousel-example-generic", role: "button",
-	                                "data-slide": "next" },
-	                            _react2.default.createElement("span", { className: "glyphicon glyphicon-chevron-right", "aria-hidden": "true" }),
+	                            'a',
+	                            { className: 'right carousel-control', href: '#carousel-example-generic', role: 'button',
+	                                'data-slide': 'next' },
+	                            _react2.default.createElement('span', { className: 'glyphicon glyphicon-chevron-right', 'aria-hidden': 'true' }),
 	                            _react2.default.createElement(
-	                                "span",
-	                                { className: "sr-only" },
-	                                "Next"
+	                                'span',
+	                                { className: 'sr-only' },
+	                                'Next'
 	                            )
 	                        )
 	                    )
