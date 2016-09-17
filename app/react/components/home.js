@@ -20,7 +20,7 @@ class Home extends Component {
         // });
 
 
-        $('.carousel').on('slid.bs.carousel', function () {
+        $('.body.home .carousel').on('slid.bs.carousel', function () {
             me.fitText();
         })
     }
