@@ -3,6 +3,21 @@
 /*src:url('/fonts/universal-condensed.ttf');*/
 /*}*/
 
+.carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next, .carousel-control .icon-prev {
+    width: 40px;
+    height: 40px;
+    font-size: 40px;
+}
+
+#root .carousel-control .glyphicon {
+    left: 50%;
+    margin-left: 0;
+    margin-right: 0;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    position: absolute;
+}
+
 body {
     font: 16px Arial, Helvetica, Arial, sans-serif;
 }
@@ -82,7 +97,7 @@ body {
 }
 
 #root div.body {
-    min-height: calc(100vh - 45px);
+    min-height: calc(100vh - 44px);
     /*background-color: rgba(235, 235, 235, 0.8);*/
     background-color: rgba(235, 235, 235, 0.8);
 }
@@ -653,7 +668,7 @@ input[type=checkbox]:checked:before {
 }
 
 div.body {
-    margin-top: 45px;
+    margin-top: 44px;
     position: relative;
 }
 
@@ -1054,6 +1069,7 @@ div.body.about .container-fluid > .row {
 
 #rootApp .homeSlider .carousel .carousel-inner .item .carousel-caption .captionTitle {
     white-space: nowrap;
+    text-shadow: none;
 }
 
 #rootApp div.body.product .carousel .carousel-inner .item .carousel-caption,

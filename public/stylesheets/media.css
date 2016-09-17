@@ -268,11 +268,11 @@
     /*}*/
 
     div.body {
-        margin-top: 70px;
+        margin-top: 69px;
     }
 
     #root div.body {
-        min-height: calc(100vh - 70px);
+        min-height: calc(100vh - 69px);
     }
     .contact .container-fluid {
         padding-left: 224px;

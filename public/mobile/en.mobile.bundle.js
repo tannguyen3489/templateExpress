@@ -32780,7 +32780,7 @@
 	    }, {
 	        key: 'fitText',
 	        value: function fitText() {
-	            jQuery(".captionTitle").fitText(2, { maxFontSize: '54px' });
+	            jQuery(".body.home .captionTitle").fitText(2, { maxFontSize: '54px' });
 	        }
 	    }, {
 	        key: 'render',

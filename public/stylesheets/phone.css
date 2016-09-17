@@ -1,4 +1,7 @@
-
+#root #rootApp.mobile .carousel-indicators,
+#root #rootApp.mobile .carousel-control {
+    display:  none;
+}
 #root #rootApp.mobile .navbar {
     height: 44px;
 }
@@ -47,6 +50,10 @@
     bottom: -1px;
 }
 
+#root .body div.nexButton span {
+    -webkit-transform: translateY(-50%);
+}
+
 .carousel-indicators {
     position: fixed;
     top: calc(100% - 50px);
@@ -70,7 +77,18 @@
     min-height: calc(100vh - 39px);
 }
 
+#rootApp div.body.product .carousel .carousel-inner .item .carousel-caption, #rootApp div.body.showcase .carousel .carousel-inner .item .carousel-caption {
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+}
+
 @media only screen and (orientation: portrait) {
+    .contact .container-fluid p {
+        margin-top: 25px;
+    }
+    #rootApp.mobile .body.about div.contact > div.container-fluid:first-child {
+        padding-top: 25px;
+    }
     .contact .container-fluid .infos .viewProfile {
         margin-top: 20px;
     }
@@ -272,6 +290,7 @@
         left: 5px;
         top: 50%;
         transform: translateY(calc(-50% - 2px));
+        -webkit-transform: translateY(calc(-50% - 2px));
         background: url('../images/radio.png') transparent no-repeat;
     }
 
@@ -332,6 +351,11 @@
 
     #root .body .formInfo.contact div.nexButton {
         margin-top: 50px;
+    }
+
+    #rootApp .homeSlider .carousel .carousel-inner .item img {
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
     }
 }
 
