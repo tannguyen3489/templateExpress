@@ -2,7 +2,10 @@
     min-height: 35px;
     height: 35px;
 }
-
+#root .body div.nexButton span {
+    transform: translateY(-50%);
+    : translateY(-50%);
+}
 
 #root #rootApp.mobile .navbar {
     height: 40px;
@@ -53,6 +56,7 @@
 
 .carousel-indicators {
     position: fixed;
+    top: -webkit-calc(100% - 50px);
     top: calc(100% - 50px);
 }
 
@@ -80,6 +84,7 @@ div.body {
 }
 
 #root div.body {
+    min-height: -webkit-calc(100vh - 39px);
     min-height: calc(100vh - 39px);
 }
 
@@ -106,11 +111,13 @@ div.body {
     }
 
     #root #rootApp.mobile .modal.userInfoModal .modal-content {
+        width: -webkit-calc(100vw - 100px);
         width: calc(100vw - 100px);
         height: 590px;
         max-width: none;
         left: 50%;
         transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
     }
 
     #root #rootApp.mobile .modal.userInfoModal .modal-content .modal-body .ownerInfo .userImage {

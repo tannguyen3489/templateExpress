@@ -56,6 +56,7 @@
 
 .carousel-indicators {
     position: fixed;
+    top: -webkit-calc(100% - 50px);
     top: calc(100% - 50px);
 }
 
@@ -74,6 +75,7 @@
 }
 
 #root div.body {
+    min-height: -webkit-calc(100vh - 39px);
     min-height: calc(100vh - 39px);
 }
 
@@ -289,8 +291,8 @@
     #root .formInfo .container-fluid form > div.row > div.labelInputGroup label > input ~ .fakeRadioBox {
         left: 5px;
         top: 50%;
+        -webkit-transform: translateY(-webkit-calc(-50% - 2px));
         transform: translateY(calc(-50% - 2px));
-        -webkit-transform: translateY(calc(-50% - 2px));
         background: url('../images/radio.png') transparent no-repeat;
     }
 
