@@ -28,9 +28,14 @@
     margin-top: 5px;
 }
 
-.contact.portraitView .container-fluid .userImage {
-    width: 346px;
-    height: 400px;
+/*.contact.portraitView .container-fluid .userImage {*/
+    /*width: 346px;*/
+    /*height: 400px;*/
+/*}*/
+
+body .modal-backdrop {
+    bottom: -1px;
+    right: -1px;
 }
 
 .contact.portraitView .container-fluid .infos .info:nth-child(1) {
@@ -101,7 +106,6 @@ div.body {
     height: 40px;
 }
 
-
 @media only screen and (orientation: portrait) {
     #root #rootApp.mobile div.lanscapseView {
         display: none;
@@ -137,6 +141,10 @@ div.body {
 }
 
 @media only screen and (orientation: landscape) {
+    #rootApp .homeSlider .carousel .carousel-inner .item .carousel-caption {
+        font-size: 5vw;
+    }
+
     #rootApp.mobile .homeSlider .carousel .carousel-control {
         width: 15%;
     }
