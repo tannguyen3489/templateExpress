@@ -9,7 +9,7 @@ class MobileLeftPanel extends LeftPanel {
             <div className="modal" id="leftMenu" tabIndex="-1" role="dialog" aria-labelledby="myModalLabel"
                  data-backdrop="static">
                 <div className="modal-dialog" role="document">
-                    <div className="animated fadeInLeft modal-content">
+                    <div className=" fadeInLeft modal-content">
                         <div className="modal-body">
                             <div className="btnArea">
                                 <div data-dismiss="modal"><span>Chiudi</span><span className="btnClose"

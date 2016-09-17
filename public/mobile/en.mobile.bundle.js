@@ -27712,7 +27712,7 @@
 	                    { className: "modal-dialog", role: "document" },
 	                    _react2.default.createElement(
 	                        "div",
-	                        { className: "animated fadeInLeft modal-content" },
+	                        { className: " fadeInLeft modal-content" },
 	                        _react2.default.createElement(
 	                            "div",
 	                            { className: "modal-body" },
