@@ -142,7 +142,7 @@ div.body {
 
 @media only screen and (orientation: landscape) {
     #rootApp .homeSlider .carousel .carousel-inner .item .carousel-caption {
-        font-size: 5vw;
+        font-size: 4vw;
     }
 
     #rootApp.mobile .homeSlider .carousel .carousel-control {
