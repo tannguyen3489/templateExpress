@@ -77,6 +77,7 @@ body .modal-backdrop {
 #rootApp .homeSlider .carousel .carousel-inner .item .carousel-caption {
     /*top: 80px;*/
     font-size: 6vw;
+    top: 15px;
 }
 
 div.body {
