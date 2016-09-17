@@ -2,6 +2,7 @@
 #root #rootApp.mobile .carousel-control {
     display:  none;
 }
+
 #root #rootApp.mobile .navbar {
     height: 44px;
 }
@@ -83,6 +84,7 @@
     transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
 }
+
 
 @media only screen and (orientation: portrait) {
     .modal.userInfoModal .myBtn {
@@ -201,12 +203,13 @@
         max-width: none;
         padding-left: 15px;
         padding-right: 15px;
-        overflow: hidden;
+        overflow: auto;
         height: auto;
     }
 
     .modal.userInfoModal .modal-content .modal-body {
         padding: 10px 10px;
+        max-height: 100vh;
     }
 
     #root #rootApp.mobile .modal-content .modal-body div.row.ownerInfo > div.col-md-12.col-sm-12 {
@@ -230,6 +233,7 @@
 
     .modal.userInfoModal .modal-content .modal-body .ownerInfo p {
         margin-top: 30px;
+        padding-bottom: 30px;
     }
 
     .contact.portraitView .container-fluid .userImage {

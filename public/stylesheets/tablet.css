@@ -1,3 +1,8 @@
+#root #rootApp.mobile .carousel-indicators,
+#root #rootApp.mobile .carousel-control {
+    display:  none;
+}
+
 #root .navbar {
     min-height: 35px;
     height: 35px;
