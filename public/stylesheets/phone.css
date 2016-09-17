@@ -85,6 +85,9 @@
 }
 
 @media only screen and (orientation: portrait) {
+    #root .body.formal .formInfo .container-fluid form > div.formHeaderTitle:first-child h1 {
+        margin-top: 0px;
+    }
     .contact .container-fluid p {
         margin-top: 25px;
     }

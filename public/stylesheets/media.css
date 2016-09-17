@@ -1,12 +1,14 @@
 @media (max-width: 530px) {
     #rootApp .homeSlider .carousel .carousel-inner .item .carousel-caption {
         left: 10px;
+        -webkit-transform: translate(0, 0);
         transform: translate(0, 0);
     }
 }
 
 @media (min-width: 962px) {
     #root .formInfo.contact .formHeaderTitle > div:last-child {
+        -webkit-transform: translateX(-40px);
         transform: translateX(-40px);
     }
 }
@@ -22,6 +24,7 @@
 
     #rootApp .homeSlider .carousel .carousel-inner .item img {
         top: 50%;
+        -webkit-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
         left: 50%;
         position: absolute;
@@ -36,6 +39,7 @@
 
     #root .formInfo .container-fluid form div.row.infoPart input{
         max-width: 300px;
+        width: -webkit-calc(100% - 10px);
         width: calc(100% - 10px);
     }
 
@@ -133,6 +137,7 @@
     }
 
     input[type=checkbox] {
+        -webkit-transform: translateY(5px);
         transform: translateY(5px);
     }
 
@@ -186,6 +191,7 @@
     }
 
     #root .formInfo form div.row div.labelInputGroup > div.form-group.inputSelectGroup input[type=checkbox] {
+        -webkit-transform: translateY(12px);
         transform: translateY(12px);
     }
 
@@ -272,6 +278,7 @@
     }
 
     #root div.body {
+        min-height: -webkit-calc(100vh - 69px);
         min-height: calc(100vh - 69px);
     }
     .contact .container-fluid {
