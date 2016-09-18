@@ -30100,6 +30100,11 @@
 	                                                { className: "form-inline" },
 	                                                _react2.default.createElement("input", { type: "checkbox", value: "" }),
 	                                                _react2.default.createElement(
+	                                                    "span",
+	                                                    null,
+	                                                    "Biglietto da visita"
+	                                                ),
+	                                                _react2.default.createElement(
 	                                                    "div",
 	                                                    { className: "selectWrap" },
 	                                                    _react2.default.createElement(
@@ -30116,11 +30121,6 @@
 	                                                            "500 esemplari"
 	                                                        )
 	                                                    )
-	                                                ),
-	                                                _react2.default.createElement(
-	                                                    "span",
-	                                                    null,
-	                                                    "Biglietto da visita"
 	                                                ),
 	                                                _react2.default.createElement("span", { className: "fakeRadioBox" })
 	                                            )
@@ -30144,29 +30144,29 @@
 	                                                "label",
 	                                                { className: "form-inline" },
 	                                                _react2.default.createElement("input", { type: "checkbox", value: "" }),
-	                                                _react2.default.createElement(
-	                                                    "div",
-	                                                    { className: "selectWrap" },
-	                                                    _react2.default.createElement(
-	                                                        "select",
-	                                                        { className: "form-control", multiple: true },
-	                                                        _react2.default.createElement(
-	                                                            "option",
-	                                                            { selected: true },
-	                                                            "100 esemplari"
-	                                                        ),
-	                                                        _react2.default.createElement(
-	                                                            "option",
-	                                                            null,
-	                                                            "100 esemplari"
-	                                                        )
-	                                                    )
-	                                                ),
 	                                                _react2.default.createElement(
 	                                                    "span",
 	                                                    null,
 	                                                    "Busta con carta intestata"
 	                                                ),
+	                                                _react2.default.createElement(
+	                                                    "div",
+	                                                    { className: "selectWrap" },
+	                                                    _react2.default.createElement(
+	                                                        "select",
+	                                                        { className: "form-control", multiple: true },
+	                                                        _react2.default.createElement(
+	                                                            "option",
+	                                                            { selected: true },
+	                                                            "100 esemplari"
+	                                                        ),
+	                                                        _react2.default.createElement(
+	                                                            "option",
+	                                                            null,
+	                                                            "100 esemplari"
+	                                                        )
+	                                                    )
+	                                                ),
 	                                                _react2.default.createElement("span", { className: "fakeRadioBox" })
 	                                            )
 	                                        )
@@ -30189,29 +30189,29 @@
 	                                                "label",
 	                                                { className: "form-inline" },
 	                                                _react2.default.createElement("input", { type: "checkbox", value: "" }),
-	                                                _react2.default.createElement(
-	                                                    "div",
-	                                                    { className: "selectWrap" },
-	                                                    _react2.default.createElement(
-	                                                        "select",
-	                                                        { className: "form-control", multiple: true },
-	                                                        _react2.default.createElement(
-	                                                            "option",
-	                                                            { selected: true },
-	                                                            "24 pagine"
-	                                                        ),
-	                                                        _react2.default.createElement(
-	                                                            "option",
-	                                                            null,
-	                                                            "24 pagine"
-	                                                        )
-	                                                    )
-	                                                ),
 	                                                _react2.default.createElement(
 	                                                    "span",
 	                                                    null,
 	                                                    "Brochure"
 	                                                ),
+	                                                _react2.default.createElement(
+	                                                    "div",
+	                                                    { className: "selectWrap" },
+	                                                    _react2.default.createElement(
+	                                                        "select",
+	                                                        { className: "form-control", multiple: true },
+	                                                        _react2.default.createElement(
+	                                                            "option",
+	                                                            { selected: true },
+	                                                            "24 pagine"
+	                                                        ),
+	                                                        _react2.default.createElement(
+	                                                            "option",
+	                                                            null,
+	                                                            "24 pagine"
+	                                                        )
+	                                                    )
+	                                                ),
 	                                                _react2.default.createElement("span", { className: "fakeRadioBox" })
 	                                            )
 	                                        )
@@ -30235,6 +30235,11 @@
 	                                                { className: "form-inline" },
 	                                                _react2.default.createElement("input", { type: "checkbox", value: "" }),
 	                                                _react2.default.createElement(
+	                                                    "span",
+	                                                    null,
+	                                                    "Pieghevole"
+	                                                ),
+	                                                _react2.default.createElement(
 	                                                    "div",
 	                                                    { className: "selectWrap" },
 	                                                    _react2.default.createElement(
@@ -30251,11 +30256,6 @@
 	                                                            "100 esemplari"
 	                                                        )
 	                                                    )
-	                                                ),
-	                                                _react2.default.createElement(
-	                                                    "span",
-	                                                    null,
-	                                                    "Pieghevole"
 	                                                ),
 	                                                _react2.default.createElement("span", { className: "fakeRadioBox" })
 	                                            )
@@ -30402,6 +30402,11 @@
 	                                                { className: "form-inline" },
 	                                                _react2.default.createElement("input", { type: "checkbox", value: "" }),
 	                                                _react2.default.createElement(
+	                                                    "span",
+	                                                    null,
+	                                                    "Video"
+	                                                ),
+	                                                _react2.default.createElement(
 	                                                    "div",
 	                                                    { className: "selectWrap" },
 	                                                    _react2.default.createElement(
@@ -30418,11 +30423,6 @@
 	                                                            "1 minuto"
 	                                                        )
 	                                                    )
-	                                                ),
-	                                                _react2.default.createElement(
-	                                                    "span",
-	                                                    null,
-	                                                    "Video"
 	                                                ),
 	                                                _react2.default.createElement("span", { className: "fakeRadioBox" })
 	                                            )
@@ -30447,6 +30447,11 @@
 	                                                { className: "form-inline" },
 	                                                _react2.default.createElement("input", { type: "checkbox", value: "" }),
 	                                                _react2.default.createElement(
+	                                                    "span",
+	                                                    null,
+	                                                    "3D"
+	                                                ),
+	                                                _react2.default.createElement(
 	                                                    "div",
 	                                                    { className: "selectWrap" },
 	                                                    _react2.default.createElement(
@@ -30463,11 +30468,6 @@
 	                                                            "1 minuto"
 	                                                        )
 	                                                    )
-	                                                ),
-	                                                _react2.default.createElement(
-	                                                    "span",
-	                                                    null,
-	                                                    "3D"
 	                                                ),
 	                                                _react2.default.createElement("span", { className: "fakeRadioBox" })
 	                                            )

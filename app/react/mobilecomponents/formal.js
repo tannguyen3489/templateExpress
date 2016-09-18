@@ -163,13 +163,13 @@ class MobileFormal extends Formal {
                                         <div className="checkbox">
                                             <label className="form-inline">
                                                 <input type="checkbox" value=""/>
+                                                <span>Biglietto da visita</span>
                                                 <div className="selectWrap">
                                                     <select className="form-control" multiple>
                                                         <option selected>500 esemplari</option>
                                                         <option>500 esemplari</option>
                                                     </select>
                                                 </div>
-                                                <span>Biglietto da visita</span>
                                                 <span className="fakeRadioBox"></span>
                                             </label>
                                         </div>
@@ -183,13 +183,13 @@ class MobileFormal extends Formal {
                                         <div className="checkbox">
                                             <label className="form-inline">
                                                 <input type="checkbox" value=""/>
-                                                <div className="selectWrap">
-                                                    <select className="form-control" multiple>
-                                                        <option selected>100 esemplari</option>
-                                                        <option>100 esemplari</option>
-                                                    </select>
-                                                </div>
                                                 <span>Busta con carta intestata</span>
+                                                <div className="selectWrap">
+                                                <select className="form-control" multiple>
+                                                    <option selected>100 esemplari</option>
+                                                    <option>100 esemplari</option>
+                                                </select>
+                                                </div>
                                                 <span className="fakeRadioBox"></span>
                                             </label>
                                         </div>
@@ -203,13 +203,13 @@ class MobileFormal extends Formal {
                                         <div className="checkbox">
                                             <label className="form-inline">
                                                 <input type="checkbox" value=""/>
+                                                <span>Brochure</span>
                                                 <div className="selectWrap">
                                                     <select className="form-control" multiple>
                                                         <option selected>24 pagine</option>
                                                         <option>24 pagine</option>
                                                     </select>
                                                 </div>
-                                                <span>Brochure</span>
                                                 <span className="fakeRadioBox"></span>
                                             </label>
                                         </div>
@@ -223,13 +223,13 @@ class MobileFormal extends Formal {
                                         <div className="checkbox">
                                             <label className="form-inline">
                                                 <input type="checkbox" value=""/>
+                                                <span>Pieghevole</span>
                                                 <div className="selectWrap">
                                                     <select className="form-control" multiple>
                                                         <option selected>100 esemplari</option>
                                                         <option>100 esemplari</option>
                                                     </select>
                                                 </div>
-                                                <span>Pieghevole</span>
                                                 <span className="fakeRadioBox"></span>
                                             </label>
                                         </div>
@@ -309,13 +309,13 @@ class MobileFormal extends Formal {
                                         <div className="checkbox">
                                             <label className="form-inline">
                                                 <input type="checkbox" value=""/>
+                                                <span>Video</span>
                                                 <div className="selectWrap">
                                                     <select className="form-control" multiple>
                                                         <option selected>1 minuto</option>
                                                         <option>1 minuto</option>
                                                     </select>
                                                 </div>
-                                                <span>Video</span>
                                                 <span className="fakeRadioBox"></span>
                                             </label>
                                         </div>
@@ -329,13 +329,13 @@ class MobileFormal extends Formal {
                                         <div className="checkbox">
                                             <label className="form-inline">
                                                 <input type="checkbox" value=""/>
+                                                <span>3D</span>
                                                 <div className="selectWrap">
                                                     <select className="form-control" multiple>
                                                         <option selected="true">1 minuto</option>
                                                         <option>1 minuto</option>
                                                     </select>
                                                 </div>
-                                                <span>3D</span>
                                                 <span className="fakeRadioBox"></span>
                                             </label>
                                         </div>

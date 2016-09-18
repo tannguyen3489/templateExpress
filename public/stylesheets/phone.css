@@ -1,6 +1,5 @@
-#root #rootApp.mobile .carousel-indicators,
-#root #rootApp.mobile .carousel-control {
-    display:  none;
+#root #rootApp.mobile .carousel-indicators, #root #rootApp.mobile .carousel-control {
+    display: none;
 }
 
 #root #rootApp.mobile .navbar {
@@ -28,7 +27,6 @@
     bottom: -1px;
 }
 
-
 #root .formInfo.portraitView.contact .container-fluid form div.row.infoPart input {
     max-width: none;
     width: 100%;
@@ -38,9 +36,7 @@
     max-width: none;
 }
 
-#rootApp div.body.home,
-#rootApp div.body.product,
-#rootApp div.body.showcase {
+#rootApp div.body.home, #rootApp div.body.product, #rootApp div.body.showcase {
     overflow: hidden;
     /*width: 100vw;*/
     background-color: #000;
@@ -61,7 +57,7 @@
     top: calc(100% - 50px);
 }
 
-.right.carousel-control > span {
+.right.carousel-control>span {
     margin-right: 0px !important;
 }
 
@@ -72,7 +68,6 @@
 #rootApp .homeSlider {
     position: fixed;
     top: 50px;
-
 }
 
 #root div.body {
@@ -85,119 +80,97 @@
     -webkit-transform: translateX(-50%);
 }
 
-
 @media only screen and (orientation: portrait) {
     .modal.userInfoModal .myBtn {
         right: -5px;
     }
-    .modal.userInfoModal .modal-content .modal-body .ownerInfo > div > div {
+    .modal.userInfoModal .modal-content .modal-body .ownerInfo>div>div {
         clear: both;
     }
-    #root .body.formal .formInfo .container-fluid form > div.formHeaderTitle:first-child h1 {
+    #root .body.formal .formInfo .container-fluid form>div.formHeaderTitle:first-child h1 {
         margin-top: 0px;
     }
     .contact .container-fluid p {
         margin-top: 25px;
     }
-    #rootApp.mobile .body.about div.contact > div.container-fluid:first-child {
+    #rootApp.mobile .body.about div.contact>div.container-fluid:first-child {
         padding-top: 25px;
     }
     .contact .container-fluid .infos .viewProfile {
         margin-top: 20px;
     }
-
     .contact .container-fluid .infos .info:nth-child(4) {
         display: none;
     }
-
     .contact .container-fluid .infos .info:nth-child(3) {
         display: none;
     }
-
     .contact .container-fluid .infos .info:nth-child(2) {
         margin-top: 14px;
     }
-
     .contact .container-fluid .infos .info:nth-child(1) {
         font-size: 24px;
     }
-
     .contact.portraitView .container-fluid .infos .info:nth-child(1) {
         margin-top: 20px;
     }
-
-    #rootApp .body.about div.contact > div.container-fluid:nth-child(1) {
+    #rootApp .body.about div.contact>div.container-fluid:nth-child(1) {
         padding-bottom: 0;
     }
-
     .contact .container-fluid h1.titleForm {
         font-size: 40px;
     }
-
     .contact .container-fluid p {
         font-size: 18px;
         line-height: 25px;
     }
-
     #root .navbar .navbar-brand.logo {
         display: none;
     }
-
     #rootApp .homeSlider .carousel .carousel-inner .item .carousel-caption {
         left: 0;
         font-size: 6vw;
         top: 10px;
     }
-
     #root .collapsed.navbar-toggle {
         margin-right: 0;
     }
-
     #root .navbar .navbar-brand.menu {
         padding-left: 16px;
     }
-
     .headerArea {
         width: 100vw;
     }
     #root #rootApp.mobile p.navbar-text {
         /*width: 8px;*/
     }
-    #rootApp.mobile .body.about div.contact > div.container-fluid {
+    #rootApp.mobile .body.about div.contact>div.container-fluid {
         padding-left: 10px;
         padding-right: 10px;
     }
-
-    #rootApp.mobile .body.about div.contact > div.container-fluid:first-child {
+    #rootApp.mobile .body.about div.contact>div.container-fluid:first-child {
         background: #fff;
     }
-
-    #rootApp.mobile .body.about div.contact > div.container-fluid:last-child {
+    #rootApp.mobile .body.about div.contact>div.container-fluid:last-child {
         background: rgba(235, 235, 235, 0.8);
     }
-
-    #rootApp.mobile .body.about div.contact > div.container-fluid:nth-child(2) {
+    #rootApp.mobile .body.about div.contact>div.container-fluid:nth-child(2) {
         padding-left: 0;
         padding-right: 0;
     }
-
-    #rootApp.mobile .body.about div.contact > div.container-fluid:nth-child(2) div.row.ownerInfo > div:last-child {
+    #rootApp.mobile .body.about div.contact>div.container-fluid:nth-child(2) div.row.ownerInfo>div:last-child {
         padding-left: 10px;
         padding-right: 10px;
     }
-
     #root #rootApp.mobile div.lanscapseView {
         display: none;
     }
-
     #root #rootApp.mobile div.portraitView {
         display: block;
     }
-
     #root #rootApp.mobile.modal.userInfoModal .modal-dialog {
         max-width: none;
     }
-
     #root #rootApp.mobile .modal.userInfoModal .modal-content {
         width: 100vw;
         max-width: none;
@@ -206,169 +179,131 @@
         overflow: auto;
         height: auto;
     }
-
     .modal.userInfoModal .modal-content .modal-body {
         padding: 10px 10px;
         max-height: 100vh;
     }
-
-    #root #rootApp.mobile .modal-content .modal-body div.row.ownerInfo > div.col-md-12.col-sm-12 {
+    #root #rootApp.mobile .modal-content .modal-body div.row.ownerInfo>div.col-md-12.col-sm-12 {
         padding-left: 0;
         padding-right: 0;
     }
-
     .modal.userInfoModal .modal-content .modal-body .ownerInfo .infos .info:first-child {
         font-size: 20px;
     }
-
     .modal.userInfoModal .modal-content .modal-body .ownerInfo .infos .info:last-child {
         font-size: 14px;
         /*max-width: 90%;*/
         /*white-space: pre-wrap;*/
     }
-
     .modal.userInfoModal .modal-content .modal-body .ownerInfo .userImage {
         margin-right: 10px;
     }
-
     .modal.userInfoModal .modal-content .modal-body .ownerInfo p {
         margin-top: 30px;
         padding-bottom: 30px;
     }
-
     .contact.portraitView .container-fluid .userImage {
         width: 100vw;
         height: auto;
     }
-
     .modal.userInfoModal .modal-content .modal-body .ownerInfo .userImage {
         width: 100px;
         height: 119px;
     }
-
     .modal.userInfoModal .myBtn {
         height: 30px;
         line-height: 15px;
     }
-
-    #rootApp .body.formal .container-fluid form > div.row {
+    #rootApp .body.formal .container-fluid form>div.row {
         padding-left: 10px;
         padding-right: 10px;
     }
-
     #root .formInfo div.formHeaderTitle h1 {
         font-size: 40px;
     }
-
     #root .formInfo {
         padding-top: 30px;
     }
-
-    #root .body.formal .formInfo h1 {
-
-    }
-
+    #root .body.formal .formInfo h1 {}
     #root .body.formal .formInfo h1 {
         margin-top: 40px;
     }
-
     #root .formInfo div.formHeaderTitle h1 {
         margin-bottom: 0px;
     }
-
     #root .formInfo h1 {
         font-size: 24px;
     }
-
     #root .formInfo .form-group label {
         font-size: 14px;
     }
-
     #root .formInfo .form-group {
         margin-bottom: 10px;
     }
-
-    #root .formInfo form .part1 > div > :nth-child(1) {
+    #root .formInfo form .part1>div> :nth-child(1) {
         margin-top: 10px;
     }
-
     #root .formInfo .container-fluid div.selectWrap {
         width: 250px;
     }
-
-    #root .formInfo .container-fluid form div.form-group div.checkbox label > span {
+    #root .formInfo .container-fluid form div.form-group div.checkbox label>span {
         padding-left: 40px;
         display: inline-block;
         margin-left: 0;
     }
-
-    #root .formInfo .container-fluid form > div.row > div.labelInputGroup label > input ~ .fakeRadioBox {
+    #root .formInfo .container-fluid form>div.row>div.labelInputGroup label>input~.fakeRadioBox {
         left: 5px;
         top: 50%;
         -webkit-transform: translateY(-webkit-calc(-50% - 2px));
         transform: translateY(calc(-50% - 2px));
         background: url('../images/radio.png') transparent no-repeat;
     }
-
-    #root .formInfo .container-fluid form > div.row > div.labelInputGroup label > input:checked ~ .fakeRadioBox {
+    #root .formInfo .container-fluid form>div.row>div.labelInputGroup label>input:checked~.fakeRadioBox {
         background: url('../images/radio_active.png') transparent no-repeat;
     }
-
-    #root .formInfo .container-fluid form .labelInputGroup div.form-group div.checkbox label > div.selectWrap + span {
+    #root .formInfo .container-fluid form .labelInputGroup div.form-group div.checkbox label>div.selectWrap+span {
         margin-left: 0px;
         padding-left: 5px;
     }
-
     #root .formInfo .container-fluid .labelInputGroup .selectWrap {
         margin-left: 0;
         margin-top: 15px;
         width: 180px;
         display: block;
     }
-
-    #root .formInfo .container-fluid form > div.row > div.labelInputGroup div.inputSelectGroup label > input ~ .fakeRadioBox {
+    #root .formInfo .container-fluid form>div.row>div.labelInputGroup div.inputSelectGroup label>input~.fakeRadioBox {
         top: 0px;
     }
-
-    #root .formInfo form div.row div.labelInputGroup > div.form-group.inputSelectGroup {
+    #root .formInfo form div.row div.labelInputGroup>div.form-group.inputSelectGroup {
         margin-bottom: 15px;
     }
-
-    #root .formInfo .container-fluid form > div.row > div.labelInputGroup.labelTextareaGroup label > input ~ .fakeRadioBox {
+    #root .formInfo .container-fluid form>div.row>div.labelInputGroup.labelTextareaGroup label>input~.fakeRadioBox {
         top: 10px;
     }
-
     #root .formInfo .container-fluid form .labelTextareaGroup textarea {
         margin-top: 15px;
     }
-
     #rootApp div.body.product .carousel .carousel-inner .item .carousel-caption, #rootApp div.body.showcase .carousel .carousel-inner .item .carousel-caption {
         left: 50%;
         transform: translateX(-50%);
     }
-
     #root .formInfo.contact {
         padding-left: 10px;
         padding-right: 10px;
     }
-
     #root .formInfo.contact .container-fluid {
         padding-top: 15px;
     }
-
-    #root .formInfo.contact .formHeaderTitle > div:last-child {
+    #root .formInfo.contact .formHeaderTitle>div:last-child {
         margin-top: 45px;
     }
-
     #root .formInfo.contact .form-group {
         margin-top: 20px;
         margin-bottom: 0;
     }
-
     #root .body .formInfo.contact div.nexButton {
         margin-top: 50px;
     }
-
     #rootApp .homeSlider .carousel .carousel-inner .item img {
         transform: translate(-50%, -50%);
         -webkit-transform: translate(-50%, -50%);
@@ -376,41 +311,268 @@
 }
 
 @media only screen and (orientation: landscape) {
+    #root #rootApp.mobile p.navbar-text {
+        margin-top: 3px;
+    }
+    #root .collapsed.navbar-toggle {
+        padding-right: 5px;
+    }
+    #root #rootApp.mobile .navbar {
+        height: 35px;
+        min-height: 35px;
+    }
+    #root div.body {
+        min-height: -webkit-calc(100vh - 34px);
+        min-height: calc(100vh - 34px);
+    }
+    div.body {
+        margin-top: 34px;
+    }
+    #root .navbar-brand {
+        height: 35px;
+    }
+    #root .navbar .container-fluid .navbar-header {
+        height: 35px;
+    }
+    #root .navbar .container-fluid .navbar-header .navbar-brand.menu img {
+        width: 31px;
+        height: 19px
+    }
+    #root .navbar .navbar-brand.menu {
+        padding-top: 8px;
+        padding-left: 15px;
+    }
+    #root #rootApp.mobile .navbar .container-fluid .navbar-header .navbar-brand.logo img {
+        height: 34px;
+    }
     #rootApp.mobile .homeSlider .carousel .carousel-control {
         width: 15%;
     }
-
     #root #rootApp.mobile div.lanscapseView {
         display: block;
     }
-
     #root #rootApp.mobile div.portraitView {
         display: none;
     }
-
-    #root .navbar {
-
-    }
-
+    #root .navbar {}
     .modal.userInfoModal .modal-dialog {
         top: 0;
         transform: translate(-50%, 0);
     }
-
     #root .formInfo.contact .container-fluid {
-        padding-left: 50px;
-        padding-right: 50px;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 10px;
     }
-
     #root .collapsed.navbar-toggle {
         margin-right: 0;
     }
-
     #rootApp .homeSlider .carousel .carousel-inner .item .carousel-caption {
-        font-size: 6vw;
+        font-size: 3.2vw;
+        top: 15px;
+    }
+    #rootApp .homeSlider {
+        top: 35px;
+    }
+    #root .formInfo.contact .container-fluid form>.row {
+        max-width: 75%;
+    }
+    #root .formInfo div.formHeaderTitle h1 {
+        margin-bottom: 45px;
+    }
+    #root .formInfo.contact .contactEmail {
+        margin-top: 25px;
+        margin-bottom: 35px;
+    }
+    #root .body .formInfo.contact div.nexButton {
+        margin-top: 30px;
+    }
+    #root .formInfo.contact {
+        padding-bottom: 40px;
+    }
+    #root .body .formInfo.contact div.nexButton span {
+        font-size: 24px;
+    }
+    .contact .container-fluid h1.titleForm {
+        font-size: 40px;
+    }
+    #rootApp .body.about div.contact>div.container-fluid:first-child {
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+    .contact .container-fluid p {
+        margin-top: 30px;
+    }
+    #rootApp .body.about div.contact>div.container-fluid {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    #rootApp .body.about .contact .container-fluid p {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    #rootApp .body.about div.contact > div.container-fluid:nth-child(2) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .contact .container-fluid .userImage {
+        width: 160px;
+        height: 197px;
+        margin-right: 30px;
+    }
+    .contact .container-fluid .infos {
+        width: inherit;
+        min-width: 0;
+        max-width: 60%;
     }
 
-    #rootApp .homeSlider {
-        top: 45px;
+    .contact .container-fluid .infos .info:nth-child(1) {
+        font-size: 24px;
+        line-height: 24px;
+    }
+
+    .contact .container-fluid .infos .info:nth-child(3),
+    .contact .container-fluid .infos .info:nth-child(4) {
+        display: none;
+    }
+    .contact .container-fluid .infos .info:nth-child(2) {
+        margin-top: 20px;
+            line-height: 16px;
+    }
+    .contact .container-fluid .infos .viewProfile {
+        margin-top: 45px;
+    }
+
+    .contact .container-fluid .row.ownerInfo {
+        margin-top: 40px;
+    }
+
+    #rootApp .body.about div.contact > div.container-fluid:nth-child(2) {
+        padding-bottom: 40px;
+    }
+
+    #rootApp .body.about div.contact > div.container-fluid:nth-child(3) {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    #rootApp .body.about div.contact > div.container-fluid:nth-child(3) > div.row:last-child {
+        margin-top: 60px;
+    }
+
+    #root .body.formal .formInfo h1{
+        font-size: 40px;
+        line-height: 40px;
+        margin-top: 45px;
+    }
+    #root .formInfo {
+        padding-top: 30px;
+    }
+
+    #rootApp .body.formal .container-fluid form > div.row {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    #root .body.formal .formInfo h1 {
+        font-size: 24px;
+    }
+
+    #root .formInfo h1 {
+        margin-bottom: 40px;
+        color: #4c4c4c;
+    }
+
+    #rootApp .body.formal .container-fluid > form > div.row:first-child h1 {
+        font-size: 40px;
+        margin-bottom: 40px;
+    }
+
+    #root .body.formal .formInfo .form-group {
+        margin-bottom: 10px;
+    }
+
+    #rootApp .body.formal .container-fluid > form > div.row:nth-child(2) h1 {
+        margin-top: 0;
+    }
+
+    #rootApp .body.formal .container-fluid > form > div.row:nth-child(4) h1 {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    #root .formInfo .container-fluid form div.form-group div.checkbox label > span {
+        margin-left: 35px;
+        display: inline-block;
+        line-height: 24px;
+    }
+
+    #root .formInfo .container-fluid form > div.row > div.labelInputGroup label > input ~ .fakeRadioBox {
+        top: 50%;
+        transform: -webkit-translateY(-50%);
+        transform: translateY(-50%);
+    }
+
+    #root .body.formal .formInfo form .row:nth-child(9) > div.labelInputGroup > div.form-group {
+        margin-top: -8px;
+    }
+
+    #root .body.formal .formInfo form .row:nth-child(10) h1 {
+        margin-top: 30px;
+        font-size: 30px;
+        margin-bottom: 25px;
+    }
+
+    #root .formInfo .container-fluid .labelInputGroup .selectWrap {
+        clear: both;
+        display: block;
+        max-width: 180px;
+        margin-left: 0;
+        margin-top: 12px;
+    }
+    #root .formInfo .container-fluid form > div.row > div.labelInputGroup div.inputSelectGroup label > input ~ .fakeRadioBox {
+        top: 3px;
+        margin-left: 0;
+    }
+
+    #root .formInfo form div.row div.labelInputGroup > div.form-group.inputSelectGroup {
+        margin-bottom: 22px;
+    }
+    #root .formInfo .container-fluid form > div.row > div.labelInputGroup.labelTextareaGroup label > input ~ .fakeRadioBox {
+        top: 12px;
+    }
+
+    #root .body.formal .formInfo form > .row:nth-child(16) h1 {
+        margin-top: 35px;
+        margin-bottom: 30px;
+        font-size: 30px;
+    }
+
+    #root .formInfo form div.row div.labelInputGroup > div.form-group.inputSelectGroup {
+
+    }
+
+    #root .formInfo .container-fluid form > div.row > div.labelInputGroup label > textarea {
+        max-width: 300px;
+    }
+
+    #root .body.formal .formInfo h1 {
+        font-size: 30px;
+    }
+    #root .formInfo .container-fluid div.selectWrap {
+        max-width: 250px;
+    }
+
+    #root .body.formal .formInfo {
+        padding-bottom: 40px;
+    }
+
+    #rootApp .body.formal .container-fluid > form > div.row:first-child h1 {
+        margin-top: 0;
+    }
+
+    #rootApp div.body.product .carousel .carousel-inner .item .carousel-caption,
+    #rootApp div.body.showcase .carousel .carousel-inner .item .carousel-caption {
+        left: 50%;
     }
 }
